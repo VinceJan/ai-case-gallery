@@ -40,8 +40,10 @@ try {
     & npm run build
     if ($LASTEXITCODE -ne 0) { throw '更新验证结果后的站点构建失败' }
     if ($LocalOnly) { Write-Host '已完成本地收录。可用 npm run preview 查看，原目录保留。'; return }
-    & git add -- cases
+    & git add --force -- cases
     if ($LASTEXITCODE -ne 0) { throw 'Git 暂存失败' }
+    & npm run check -- --tracked
+    if ($LASTEXITCODE -ne 0) { throw '存在未进入 Git 提交的收录文件，暂不发布' }
     & git commit -m ('Add cases: ' + ($importedIds -join ', '))
     if ($LASTEXITCODE -ne 0) { throw 'Git 提交失败' }
     & git push
