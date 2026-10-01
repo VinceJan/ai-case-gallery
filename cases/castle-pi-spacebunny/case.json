@@ -1,0 +1,38 @@
+{
+  "id": "castle-pi-spacebunny",
+  "title": "中世纪微缩领地 · Space Bunny Alpha",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "Space Bunny Alpha",
+  "harness": "Pi",
+  "modelEvidence": "目录命名；没有据此推断未记录的模型配置",
+  "date": null,
+  "promptVariant": "原始提示词",
+  "promptHash": "f64e017e5c57a0c841372038aa3254576ff6f7b203bdf5370db7ba4d0f87c794",
+  "description": "石砌城堡、木筋村庄与麦田，构成可旋转观看的微缩领地。",
+  "notes": [
+    "原始提示词同时包含“无 UI”与“加入天气系统与 UI”，全文保留。"
+  ],
+  "controls": "拖拽旋转，滚轮缩放；天气切换以场景内说明为准。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "castle-farmstead-diorama.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp",
+    "view-3.webp",
+    "view-4.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "be99479fd0266df59f67c62a217625b8cab1fb49776d5a09c88d612d5a464bd6",
+  "buildError": null,
+  "demoFingerprint": "e06d50ba1ce22b1c7df9b58ffb50f89ddd358480efd8d2dee42403439d047bfe"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "castle-agy-3-8",
+  "title": "中世纪微缩领地 · Gemini 3.8 Flash",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "Gemini 3.8 Flash",
+  "harness": "Antigravity",
+  "modelEvidence": "目录命名；没有据此推断未记录的模型配置",
+  "date": null,
+  "promptVariant": "原始提示词",
+  "promptHash": "f64e017e5c57a0c841372038aa3254576ff6f7b203bdf5370db7ba4d0f87c794",
+  "description": "石砌城堡、木筋村庄与麦田，构成可旋转观看的微缩领地。",
+  "notes": [
+    "原始提示词同时包含“无 UI”与“加入天气系统与 UI”，全文保留。",
+    "原锁文件与 package.json 不一致；发布时重新同步，原锁文件保存在 package-lock.original.json。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "拖拽旋转，滚轮缩放；天气切换以场景内说明为准。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "df1565623643621f7b10463484b8c55dd17ccf9f75e3bd1235f71a8f58c255df",
+  "buildError": null,
+  "demoFingerprint": "181494d6275cbc7bae897e784f529b07fd524cf58367d1529f8ec2df7e6c594a"
+}

@@ -1,0 +1,20 @@
+{
+  "sha256": "2f9200c1d1ee0310c9b0b9f83911bc6cdf9f4166ea8bff28cff0db794d012894",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-fywVAmWM.js",
+      "sha256": "067cc8bf82ebd15608e48f60f4c896265a12e328daad9a544de195ccf0cb18a9",
+      "bytes": 622905
+    },
+    {
+      "path": "index.html",
+      "sha256": "898025d3d66e6d65ca6143e6431014911e1e8e40eaabf18ae383aa69fd6c39d9",
+      "bytes": 673
+    }
+  ]
+}

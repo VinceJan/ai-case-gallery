@@ -1,0 +1,65 @@
+{
+  "url": "http://127.0.0.1:5173",
+  "mode": "desktop",
+  "state": "active-play",
+  "requestedState": "active-play",
+  "appliedState": "active-play",
+  "runId": "pass-3",
+  "seed": null,
+  "screenshotPath": "artifacts\\pass-3\\desktop-active-play.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 239,
+    "colorBuckets": 59,
+    "metrics": {
+      "colorBuckets": 88,
+      "colorEntropyBits": 2.6,
+      "edgeDensity": 0.076,
+      "luminance": {
+        "mean": 115.5,
+        "p5": 25.3,
+        "p95": 196.6,
+        "contrast": 171.3
+      },
+      "dominantColorShare": 0.379,
+      "nonBackgroundShare": 0.621
+    },
+    "renderBudget": null,
+    "diagnostics": {
+      "info": {
+        "drawCalls": 46,
+        "triangles": 11856,
+        "geometries": 921,
+        "textures": 2,
+        "programs": 5,
+        "npcs": 8,
+        "hour": 8,
+        "weather": "晴",
+        "player": {
+          "x": 2,
+          "z": -6
+        },
+        "train": "running"
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

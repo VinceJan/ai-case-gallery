@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9bb5bc" />
+    <meta name="description" content="一幅可环绕观看的方块山川、云海与瀑布全景。" />
+    <title>雾岭 · 云上山川</title>
+    <script type="module" crossorigin src="./assets/index-BeHEox-G.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BKkWN8Wm.css">
+  </head>
+  <body>
+    <main class="experience" aria-label="雾岭体素山川全景">
+      <canvas id="scene" aria-label="可拖动旋转的 3D 方块山川、云海和瀑布场景"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#scene" aria-label="雾岭首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name">雾岭<span>FIELD NOTES · 01</span></span>
+        </a>
+        <div class="top-meta"><span class="live-dot"></span> 晨光 · 云线渐起</div>
+      </header>
+
+      <section class="intro" aria-label="场景介绍">
+        <p class="eyebrow"><span>01</span> 山野地貌档案 <span class="eyebrow-rule"></span></p>
+        <h1>云上<br /><em>有峰。</em></h1>
+        <p class="lede">流水越过石脊，<br />跌入松林深处。</p>
+      </section>
+
+      <div class="side-note" aria-hidden="true">
+        <span>山中清晨</span><i></i><span>远山 · 云海 · 飞瀑</span>
+      </div>
+
+      <footer class="bottom-bar">
+        <div class="scene-stats" aria-label="场景内容">
+          <div class="stat"><strong>05</strong><span>层峦</span></div>
+          <span class="stat-divider"></span>
+          <div class="stat"><strong>02</strong><span>飞瀑</span></div>
+          <span class="stat-divider"></span>
+          <div class="stat"><strong>01</strong><span>云海</span></div>
+        </div>
+        <div class="interaction-hint"><span class="orbit-icon" aria-hidden="true">↻</span> 拖动旋转 <span class="hint-divider">·</span> 滚轮缩放</div>
+        <div class="performance"><span class="performance-dot"></span><strong id="fps">60</strong><span>FPS</span></div>
+      </footer>
+      <div id="error-message" class="error-message" role="status" hidden>当前浏览器未能启动 WebGL。请使用最新版 Chrome、Edge 或 Firefox 打开。</div>
+    </main>
+  </body>
+</html>

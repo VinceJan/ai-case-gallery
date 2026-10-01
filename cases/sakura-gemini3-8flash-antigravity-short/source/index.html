@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>🌸 桜花小町 (Sakura Town) — 3D Anime Living Simulation</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body, html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #a0c4ff;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Meiryo", "Noto Sans JP", sans-serif;
+      }
+      #canvas-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      /* Initial Loading & Splash Screen */
+      #loading-screen {
+        position: fixed;
+        inset: 0;
+        background: linear-gradient(135deg, #ffccd5 0%, #c2e2fe 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.8s ease, visibility 0.8s ease;
+      }
+      .loading-petal {
+        font-size: 68px;
+        animation: spin 3.5s infinite linear;
+      }
+      .loading-title {
+        font-size: 34px;
+        font-weight: 800;
+        color: #d63384;
+        margin-top: 16px;
+        letter-spacing: 2px;
+      }
+      .loading-sub {
+        font-size: 15px;
+        color: #4b6584;
+        margin-top: 8px;
+        font-weight: 500;
+      }
+      .start-btn {
+        margin-top: 28px;
+        padding: 14px 36px;
+        background: #ff4757;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+        transition: transform 0.2s, background 0.2s;
+      }
+      .start-btn:hover {
+        background: #ff6b81;
+        transform: scale(1.06);
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg) scale(1); }
+        50% { transform: rotate(180deg) scale(1.15); }
+        100% { transform: rotate(360deg) scale(1); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="loading-petal">🌸</div>
+      <div class="loading-title">桜花小町 • SAKURA TOWN</div>
+      <div class="loading-sub">3D Open Living Simulation Game (日式乡镇生活模拟)</div>
+      <button class="start-btn" id="start-btn">Click to Enter Town (小町へ入る)</button>
+    </div>
+    <div id="canvas-container"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+{
+  "sha256": "cdcd9e7c2bed9280f2c130aa840abc02914d045f8db79bcb852cc2f099d32f14",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d75ca059ac260f300447cd836a44a2dee0ebee15c21d19a841d8f61642d5120b",
+      "bytes": 11996
+    },
+    {
+      "path": "index.html",
+      "sha256": "aa61b2858300de0f9b7bebc34380d37c595112f35ad2fa91791a1304ddbe563e",
+      "bytes": 2751
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f1b0ebccdc7f1b7bc80f8485dd428a029a7722cf4da481a6e98be4c82a104cb3",
+      "bytes": 39518
+    },
+    {
+      "path": "package.json",
+      "sha256": "41e37605bbab8cba419b1252b164f3ec384b2678ef21757df92155a1a873ad2a",
+      "bytes": 331
+    },
+    {
+      "path": "sakura_town_detailed.md",
+      "sha256": "26dbc3c6b9c95fd2fb3fe9f90ae0997721e5903dbae6632f9f5f008ac1764f84",
+      "bytes": 22913
+    },
+    {
+      "path": "src/buildings/CafeKomorebi.ts",
+      "sha256": "0d149e65b5b1f6216644bbbdf8c819b177c9f95ab7ed92857b7314579e1709f2",
+      "bytes": 10133
+    },
+    {
+      "path": "src/buildings/PlayerHouse.ts",
+      "sha256": "8f7b77fb7964b095c1bdeb46638422b73c932a06680fe4ed211e225624279746",
+      "bytes": 14300
+    },
+    {
+      "path": "src/buildings/RailwayCrossing.ts",
+      "sha256": "266ac1c1a931f4f57fa6dcf7b19133b9434d3ccbead30cccaaa399eff27a79f5",
+      "bytes": 8893
+    },
+    {
+      "path": "src/buildings/SakuraMart.ts",
+      "sha256": "6aaaa223cc6b71d6c0ca1c6a9ef6fa591910b377432462388a7db433cc207603",
+      "bytes": 12660
+    },
+    {
+      "path": "src/buildings/SakuraShrine.ts",
+      "sha256": "b4c54fe444fb70953af19e99f533c52b006aef138f1a53d1b70ac931b045545e",
+      "bytes": 13067
+    },
+    {
+      "path": "src/buildings/SakuraStation.ts",
+      "sha256": "62ac8735d072bc8e1fc40d550cab5aaab1654513d246bdb0542839d9e24f9f10",
+      "bytes": 8816
+    },
+    {
+      "path": "src/buildings/TownSchool.ts",
+      "sha256": "03c8c25fdd2228589613b3b284bc1469efde7b50079378d48fb12b8eb4fb0325",
+      "bytes": 7106
+    },
+    {
+      "path": "src/characters/AvatarGenerator.ts",
+      "sha256": "53f7ad49efb5029f81da326bebc6068c407262783112d04b3b39d037b4373b20",
+      "bytes": 11059
+    },
+    {
+      "path": "src/characters/NPCSystem.ts",
+      "sha256": "6e357c304df069b89a1e6941aee8dbed3064d6597bfe65e285aa6330aedc050e",
+      "bytes": 14671
+    },
+    {
+      "path": "src/engine/AudioSynthesizer.ts",
+      "sha256": "47d1af79e9d4b02df2b1145f9f1f7b4dfc389b58a7d01f363ce4091589d778db",
+      "bytes": 21761
+    },
+    {
+      "path": "src/engine/CelShaders.ts",
+      "sha256": "8cb83a8643d86e98e6e7d362953115507221b74bf961860efa585a628ff7af91",
+      "bytes": 5831
+    },
+    {
+      "path": "src/engine/Physics.ts",
+      "sha256": "93a4134bb2e3a797524aa7917b57947199dae7719fa7688c3f792dd519883536",
+      "bytes": 5549
+    },
+    {
+      "path": "src/engine/TextureGenerator.ts",
+      "sha256": "48c6719023e7dbcc2b4ca72fbb98192f6eab3e47b0eb594e7276f93d6d97fc9f",
+      "bytes": 18274
+    },
+    {
+      "path": "src/gameplay/InteractionManager.ts",
+      "sha256": "452a753d6c6123274133128d4f0ef9b5bb07422b94dd5a5d2e0ef73f03113a91",
+      "bytes": 8037
+    },
+    {
+      "path": "src/gameplay/InventorySystem.ts",
+      "sha256": "2db0fbfa67b6036b645d5dc379779bdaf9ec4e9035150ccb39f6dcba43afe5c4",
+      "bytes": 4204
+    },
+    {
+      "path": "src/gameplay/PhotographySystem.ts",
+      "sha256": "602e0a44c49cdc9607f1e75a27f48b7aabefc1488b4939acb6aa89a6d96daa75",
+      "bytes": 2899
+    },
+    {
+      "path": "src/gameplay/PlayerController.ts",
+      "sha256": "2f6e80c5a4e9c258a3185bca1c8001b8f06e95334e89be13320a00f4a378fba0",
+      "bytes": 9111
+    },
+    {
+      "path": "src/gameplay/QuestManager.ts",
+      "sha256": "9de3b35d2c443578f36d70d077f486f43eb15a5183c2ee62207ded6b31fe7c49",
+      "bytes": 5230
+    },
+    {
+      "path": "src/gameplay/SaveManager.ts",
+      "sha256": "4d5357b75a8f93e2490f04ab275fb47fbcbeb9decd8d61fd2f6553b7bc8baff9",
+      "bytes": 2295
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "310ac5eb0df800d2367587bb6a6d540f4d1f96033061cb0d83da22cf738d7286",
+      "bytes": 9708
+    },
+    {
+      "path": "src/types.ts",
+      "sha256": "7f64c86eb9dde3454240700b51b02dbcc71512c9b8dfc37d3be154c476fb4c60",
+      "bytes": 2452
+    },
+    {
+      "path": "src/ui/UIManager.ts",
+      "sha256": "42da1761ec5d0717ada1b18d2fb8ca4c40dd2116d6da3a8fa8cfa6986328604d",
+      "bytes": 31567
+    },
+    {
+      "path": "src/vehicles/Bicycle.ts",
+      "sha256": "4361e7637edc000d1cc8c8b38ad0eb27c60c44285ad3385d6d82257ceb06b4ee",
+      "bytes": 6989
+    },
+    {
+      "path": "src/vehicles/Train.ts",
+      "sha256": "8fb480ff3c8ee91a4a2b90813406f3d1cdfa4f68aeb322b72154843b786e3b32",
+      "bytes": 14091
+    },
+    {
+      "path": "src/world/FoliageAndProps.ts",
+      "sha256": "172e9bd1cc52cbccf910022755f3430161903f16094fbdd14b49f09f24eb2dbd",
+      "bytes": 16703
+    },
+    {
+      "path": "src/world/LightingSky.ts",
+      "sha256": "0ec8cf34330931f13e9d6083056627438a54fb80b8a16a6b6bccd79af6c9d7b4",
+      "bytes": 9309
+    },
+    {
+      "path": "src/world/TerrainAndRoads.ts",
+      "sha256": "e414b82f01c8ddd094c50fee3367d567d36f2065ba3ccb3732485007b14d20dd",
+      "bytes": 14238
+    },
+    {
+      "path": "src/world/Weather.ts",
+      "sha256": "92b2e36ae7611bf00c271cedddaa45d72a5e45c1876c0a0682cab2dbdbebccf5",
+      "bytes": 5911
+    },
+    {
+      "path": "test-browser.mjs",
+      "sha256": "5c315f7d24ebf40205a622b1b56af1f04504fd63197b2a337d644b9183286f8d",
+      "bytes": 4205
+    },
+    {
+      "path": "test-comprehensive.mjs",
+      "sha256": "3ec2ed3dc308e7ab021f04f60d3a9ed487bee7c919779f327a12c1ac92de093e",
+      "bytes": 6194
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cd4fd87048ffb7fb5cb7aa8709e89bb6ce4deca76bc00a5ce67c0231116d5f6d",
+      "bytes": 487
+    },
+    {
+      "path": "verification_screenshot.png",
+      "sha256": "92165673bb9ae592b2965dc0e0bd78c3b20326f7bed724ae43106313aa50e147",
+      "bytes": 133702
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "ee27a585c7896810092e908e7e5c70d09f5306310fff345be1e49625427980d8",
+      "bytes": 173
+    }
+  ]
+}

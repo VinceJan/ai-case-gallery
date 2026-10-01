@@ -1,0 +1,36 @@
+{
+  "id": "castle-codex-61-sol",
+  "title": "丰穗领地 · GPT-6.1 Sol",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "gpt-6.1-sol",
+  "harness": "Codex",
+  "modelEvidence": "归档“构建城堡农庄微缩场景”的生成轮 turn_context；后续问答切换模型未用于归属",
+  "date": "2026-09-30",
+  "promptVariant": "原始提示词",
+  "promptHash": "49264aee7942b17058425d9d54a006a3a7f7d22f73a127435318ca8a3391a4fe",
+  "description": "暖色石砌城堡、村路和农田组成桌面沙盘，带天气与像素角色。",
+  "notes": [
+    "原始归档记录曾报告 16 项交互检查；本站另行记录当前发布验证。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放。",
+  "adapter": "custom",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "ab0e102f70186cf42311b20597d6a9561b92600082e4c72a3cfb8bd44dd35595",
+  "buildError": null,
+  "demoFingerprint": "3f826422a135fffdbbbea3477160660f96fa6dad4dfeb74ccdf50dc11159aedd"
+}

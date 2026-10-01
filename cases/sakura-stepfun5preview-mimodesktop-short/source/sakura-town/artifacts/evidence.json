@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "runId": "pass-3",
+  "captures": [
+    {
+      "mode": "desktop",
+      "state": "active-play",
+      "report": "artifacts/pass-3/desktop-active-play.json"
+    },
+    {
+      "mode": "desktop",
+      "state": "night",
+      "report": "artifacts/pass-3/desktop-night.json"
+    },
+    {
+      "mode": "desktop",
+      "state": "rain",
+      "report": "artifacts/pass-3/desktop-rain.json"
+    },
+    {
+      "mode": "desktop",
+      "state": "festival",
+      "report": "artifacts/pass-3/desktop-festival.json"
+    },
+    {
+      "mode": "desktop",
+      "state": "interior-bakery",
+      "report": "artifacts/pass-3/desktop-interior-bakery.json"
+    },
+    {
+      "mode": "mobile",
+      "state": "active-play",
+      "report": "artifacts/pass-3/mobile-active-play.json"
+    }
+  ],
+  "artifacts": [
+    "dist/index.html"
+  ]
+}

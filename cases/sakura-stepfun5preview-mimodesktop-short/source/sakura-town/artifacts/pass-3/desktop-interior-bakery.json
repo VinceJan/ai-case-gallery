@@ -1,0 +1,126 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "mode": "desktop",
+  "state": "interior-bakery",
+  "requestedState": "interior-bakery",
+  "appliedState": "interior-bakery",
+  "runId": "pass-3",
+  "seed": 42,
+  "screenshotPath": "artifacts\\pass-3\\desktop-interior-bakery.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 242,
+    "colorBuckets": 57,
+    "metrics": {
+      "colorBuckets": 78,
+      "colorEntropyBits": 1.81,
+      "edgeDensity": 0.081,
+      "luminance": {
+        "mean": 109.2,
+        "p5": 0,
+        "p95": 197.2,
+        "contrast": 197.2
+      },
+      "dominantColorShare": 0.489,
+      "nonBackgroundShare": 0.511
+    },
+    "renderBudget": {
+      "tier": "desktop",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 13,
+          "limit": 300,
+          "ok": true
+        },
+        {
+          "metric": "triangles",
+          "actual": 2860,
+          "limit": 750000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": 57,
+          "limit": 300,
+          "ok": true
+        },
+        {
+          "metric": "textures",
+          "actual": 7,
+          "limit": 60,
+          "ok": true
+        }
+      ],
+      "withinBudget": true
+    },
+    "diagnostics": {
+      "frame": 132,
+      "elapsed": 0,
+      "uiMode": "play",
+      "day": 1,
+      "minutes": 600,
+      "weather": "clear",
+      "money": 800,
+      "indoor": "b_bakery",
+      "player": {
+        "position": {
+          "x": 0,
+          "y": -1000,
+          "z": 2
+        },
+        "speed": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": -996.4,
+        "z": 10.5,
+        "fov": 48,
+        "far": 320
+      },
+      "npcs": {
+        "total": 14,
+        "outdoor": 0
+      },
+      "quests": {
+        "active": 0,
+        "done": 0
+      },
+      "questTarget": null,
+      "festival": false,
+      "renderer": {
+        "calls": 13,
+        "triangles": 2860,
+        "geometries": 57,
+        "textures": 7
+      },
+      "canvas": {
+        "clientWidth": 1280,
+        "clientHeight": 720,
+        "width": 1280,
+        "height": 720,
+        "dpr": 1
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

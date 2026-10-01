@@ -1,0 +1,80 @@
+{
+  "sha256": "e99f6bfe60bc476f060590cabff0838c0e80a709dedfa99c15953a0843e8bdcb",
+  "files": [
+    {
+      "path": "capture.js",
+      "sha256": "49aa12575821d5309f2ce253b242f3e854f1cc5aad40aa0eb35855d59dfa5a3a",
+      "bytes": 2382
+    },
+    {
+      "path": "diorama_shot.png",
+      "sha256": "74ea3a8551f185f3e452b0a310184299db56a82c6729c0223002f6ce2fad9916",
+      "bytes": 329011
+    },
+    {
+      "path": "index.html",
+      "sha256": "5ab1900df45f561220e9b309e70c6865ab57f262acb5276f6114429f72a9d1af",
+      "bytes": 838
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7cb590e8706e83e32b628809b5efe9c794f6fda1b3633524f5390e01686e9896",
+      "bytes": 36037
+    },
+    {
+      "path": "package-lock.original.json",
+      "sha256": "855b53280c8a588edcd2dd969d9269eac6f8d87c7df351bf12d9d6f38a6392c3",
+      "bytes": 25095
+    },
+    {
+      "path": "package.json",
+      "sha256": "d52529cce04a56ccc057264b3d4222cf2401fd37f86604fb80aa27fb1cb02d0f",
+      "bytes": 401
+    },
+    {
+      "path": "src/effects/rainSystem.js",
+      "sha256": "4881afb09d637c7ac0d535c7075e0caaec703208cab6ead62ad18a8eb8a3c692",
+      "bytes": 8559
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "25ae5248ff828d3822f855dfc95bcfaae0966ee2801f0e30fd330c9108d770dd",
+      "bytes": 6287
+    },
+    {
+      "path": "src/materials/celShader.js",
+      "sha256": "e5b54491b37702e830f32f62d1c8ed25a1aadbb80eb593d19e54f5ac00321507",
+      "bytes": 9527
+    },
+    {
+      "path": "src/models/convenienceStore.js",
+      "sha256": "e03597b3ed488ae958422793c4676da1b485e9785bfbe298ff0aee85fadfe81d",
+      "bytes": 21861
+    },
+    {
+      "path": "src/models/dioramaBase.js",
+      "sha256": "9d51edb3190f989c1605813ee28de842237c68a769a02a56496107234c6a6d40",
+      "bytes": 3279
+    },
+    {
+      "path": "src/models/street.js",
+      "sha256": "a7e78e5a4757e77b82ab11145cdae0e81fbe649c979b15b288c9178eb59b2544",
+      "bytes": 8279
+    },
+    {
+      "path": "src/models/streetFurniture.js",
+      "sha256": "466a6fdf6a1db246899feb125bbda27a125e218164ff26bdaad412d546ad587d",
+      "bytes": 27339
+    },
+    {
+      "path": "src/textures/canvasTextures.js",
+      "sha256": "594e2788f7afc116fb0b40bda46a174956bbdeedbf3fb78cc15c1317a432f367",
+      "bytes": 31637
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "3b08da313ae305ced5f9291f4e946350eaf7c0a8da3563ca6a631f58e885ae56",
+      "bytes": 193
+    }
+  ]
+}

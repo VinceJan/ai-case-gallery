@@ -1,0 +1,17 @@
+{
+  "name": "rainy-night-convenience-store",
+  "version": "1.0.0",
+  "description": "Rainy Night Japanese Convenience Store Street Corner Diorama",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000 --host",
+    "build": "vite build",
+    "preview": "vite preview --port 3000 --host"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

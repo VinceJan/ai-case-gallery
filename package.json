@@ -1,0 +1,23 @@
+{
+  "name": "ai-case-gallery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "node scripts/prepare-site.mjs && astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "import": "node scripts/import-case.mjs",
+    "rebuild": "node scripts/build-demo.mjs",
+    "check": "node scripts/check.mjs",
+    "verify:browser": "node scripts/verify-browser.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.5",
+    "esbuild": "0.25.10",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

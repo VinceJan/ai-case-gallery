@@ -1,0 +1,15 @@
+{
+  "sha256": "584637c76280efa19a6da87bd3e9774b2db6f23fb7c3da02b0c5add0d15111b6",
+  "files": [
+    {
+      "path": "cover.png",
+      "sha256": "8878ad4d222f9d674b5d37489dae23aacdb651f13214476afe0b5f92d2deab5a",
+      "bytes": 1071467
+    },
+    {
+      "path": "rainy-konbini-corner.html",
+      "sha256": "c3835a86645e73ce3701407522653700c8a99cfc83fcdcf3530d03cc97e0689e",
+      "bytes": 641060
+    }
+  ]
+}

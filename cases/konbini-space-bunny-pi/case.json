@@ -1,0 +1,40 @@
+{
+  "id": "konbini-space-bunny-pi",
+  "title": "雨夜のコンビニ · Space Bunny Alpha",
+  "topic": "konbini",
+  "topicLabel": "雨夜便利店",
+  "model": "stealth/space-bunny-alpha",
+  "harness": "Pi",
+  "modelEvidence": "Pi 会话的 model_change 事件与创建 konbini-corner 的工具记录一致",
+  "date": "2026-09-27",
+  "promptVariant": "原始提示词",
+  "promptHash": "b9088c9e8553018721778be0680f197d87175aee0774b394029565f09bbaa795",
+  "description": "没有界面遮挡的雨夜便利店微缩景观，橱窗、雨滴与街角灯光构成画面。",
+  "notes": [
+    "源码引用保留了原项目 MIT 许可证。",
+    "来源记录显示复用了既有 Sakuragaoka Station 的部分场景工具；不作为纯粹从零生成的横向比较。",
+    "展示版将 Three.js 与场景模块打包，移除了运行时 CDN 模块依赖。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放。",
+  "adapter": "bundle",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp",
+    "view-3.webp",
+    "view-4.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "8eb530ba834b0a284aa332d47add2c8a4e514f25850bd4a22c01e54e2ea85b05",
+  "buildError": null,
+  "demoFingerprint": "dee5f0e991c1fc82ef787fb50596a8ff45ea6fb2bcd7f5bc1b91cdd5d34687e4"
+}

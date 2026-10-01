@@ -1,0 +1,40 @@
+{
+  "sha256": "be99479fd0266df59f67c62a217625b8cab1fb49776d5a09c88d612d5a464bd6",
+  "files": [
+    {
+      "path": "castle-farmstead-diorama.html",
+      "sha256": "b62d179fbe8ff2b25aec816f8e102bccf468e75e4a31c2b37bba7d1b0d50aa72",
+      "bytes": 888064
+    },
+    {
+      "path": "docs/01-overview.png",
+      "sha256": "0fce098783ee039735a22cbe8ca7ca7a4f97c3048ae9984c45865c171a4fa80a",
+      "bytes": 699673
+    },
+    {
+      "path": "docs/02-village.png",
+      "sha256": "edac7d88714dca82da9e5e8f8710cb914e79b97bae25ca3c29d0e02f5f7e6050",
+      "bytes": 999534
+    },
+    {
+      "path": "docs/03-castle.png",
+      "sha256": "80310d8ffed4ed7a5848853181c63dcc85a739ca94ecef1666885a17a5bc4482",
+      "bytes": 759215
+    },
+    {
+      "path": "docs/04-storm.png",
+      "sha256": "d85dfd015fb05dd02d3ce435acc37010542640d3be8a10db67c7ef23fd730ff5",
+      "bytes": 1016133
+    },
+    {
+      "path": "docs/05-night.png",
+      "sha256": "69b3e0673173464a7856f3160bc1aa504112f14837b2b4b1f7c3a1485ac22634",
+      "bytes": 783167
+    },
+    {
+      "path": "docs/06-sky.png",
+      "sha256": "019bdcbbc96ceb5783996ff6701600f7d952b1999f674b408eae2696dcc71e57",
+      "bytes": 278838
+    }
+  ]
+}

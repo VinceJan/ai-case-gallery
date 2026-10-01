@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1a2848" />
+    <link rel="icon" href="data:," />
+    <title>樱花小镇 · Sakura Town</title>
+    <script type="module" crossorigin src="./assets/index-J-JXBmGk.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DHJn8cuu.css">
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Sakura Town 3D canvas"></canvas>
+
+      <section id="hud" aria-live="polite">
+        <div class="hud-top">
+          <div class="hud-badge">
+            <span class="label">时刻</span>
+            <strong id="hud-time">08:30 · 1日目</strong>
+          </div>
+          <div class="hud-badge">
+            <span class="label">天气</span>
+            <strong id="hud-weather">晴れ</strong>
+          </div>
+          <div class="hud-badge money">
+            <span class="label">所持</span>
+            <strong id="hud-money">¥1500</strong>
+          </div>
+        </div>
+
+        <div id="quest-panel">
+          <div class="panel-title">今日的线索</div>
+          <div id="quest-list"></div>
+        </div>
+
+        <div id="event-banner"></div>
+        <div id="toast"></div>
+        <div id="hud-prompt"></div>
+        <div id="hud-hint">WASD 移动 · E 交互 · Shift 奔跑</div>
+
+        <div id="inventory"></div>
+      </section>
+
+      <div id="dialogue" class="hidden-ui">
+        <div id="dialogue-name">？</div>
+        <div id="dialogue-text"></div>
+      </div>
+
+      <div id="touch-controls" aria-hidden="true">
+        <div id="touch-stick">
+          <div id="touch-knob"></div>
+        </div>
+        <button id="dash-button" type="button">跑</button>
+      </div>
+    </main>
+  </body>
+</html>

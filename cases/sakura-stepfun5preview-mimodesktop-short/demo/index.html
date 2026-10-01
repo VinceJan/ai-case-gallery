@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1a1e1c" />
+    <link rel="icon" href="data:," />
+    <title>樱花小镇 Sakura Town</title>
+    <script type="module" crossorigin src="./assets/index-CyNXvG7-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BhwQd8L_.css">
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="樱花小镇游戏画面"></canvas>
+
+      <!-- HUD -->
+      <div id="hud">
+        <div class="hud-cluster" id="clock-cluster">
+          <span id="clock-weather"></span>
+          <div class="clock-stack">
+            <strong id="clock-time">07:00</strong>
+            <span id="clock-day">第 1 天</span>
+          </div>
+        </div>
+        <div class="hud-cluster" id="money-cluster">
+          <span class="cluster-label">现金</span>
+          <strong id="money-value">¥ 800</strong>
+        </div>
+      </div>
+
+      <div id="quest-tracker"></div>
+      <div id="interact-prompt" class="hidden"></div>
+      <div id="toasts"></div>
+      <canvas id="minimap" width="176" height="176" aria-label="小地图"></canvas>
+      <div id="controls-hint">WASD 移动 · E 交互 · 拖拽转视角 · I 背包 · J 委托 · Esc 菜单</div>
+
+      <!-- 对话 -->
+      <section id="dialogue" class="hidden">
+        <div id="dialogue-speaker"></div>
+        <p id="dialogue-text"></p>
+        <div id="dialogue-choices"></div>
+      </section>
+
+      <!-- 背包 -->
+      <section id="inventory-panel" class="hidden">
+        <header>
+          <h2>背包</h2>
+          <span id="inventory-money">¥ 800</span>
+          <button id="inventory-close" type="button" class="panel-close">×</button>
+        </header>
+        <div id="inventory-grid"></div>
+      </section>
+
+      <!-- 委托 -->
+      <section id="quest-panel" class="hidden">
+        <header>
+          <h2>委托</h2>
+          <button id="quest-close" type="button" class="panel-close">×</button>
+        </header>
+        <div id="quest-list"></div>
+      </section>
+
+      <!-- 商店 -->
+      <section id="shop-panel" class="hidden">
+        <header>
+          <h2 id="shop-title">商店</h2>
+          <span id="shop-money">¥ 800</span>
+          <button id="shop-close" type="button" class="panel-close">×</button>
+        </header>
+        <div class="shop-columns">
+          <div>
+            <h3>购买</h3>
+            <div id="shop-buy"></div>
+          </div>
+          <div>
+            <h3>出售</h3>
+            <div id="shop-sell"></div>
+          </div>
+        </div>
+        <div id="shop-message" class="hidden"></div>
+      </section>
+
+      <!-- 菜单 -->
+      <section id="menu-overlay" class="hidden">
+        <div class="menu-card">
+          <h2>暂停</h2>
+          <button id="menu-resume" type="button" class="menu-button primary">继续游戏</button>
+          <button id="menu-save" type="button" class="menu-button">保存进度</button>
+          <button id="menu-load" type="button" class="menu-button">读取进度</button>
+          <button id="menu-new" type="button" class="menu-button danger">开始新游戏</button>
+          <button id="menu-help-toggle" type="button" class="menu-button ghost">操作说明</button>
+          <div id="menu-help" class="hidden">
+            <p><b>WASD / 方向键</b> 移动，<b>Shift</b> 快走（触屏用左下摇杆）</p>
+            <p><b>E</b> 交互：对话、进出建筑、购物、睡眠</p>
+            <p><b>鼠标拖拽</b> 旋转视角，<b>滚轮</b> 缩放</p>
+            <p><b>I</b> 背包 · <b>J</b> 委托 · <b>Esc</b> 菜单 · <b>H</b> 收起提示</p>
+            <p>镇民有自己的作息：商店白天营业，下雨天大家会躲起来。樱花祭在每逢第 3 天的傍晚举行。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 标题界面 -->
+      <section id="title-screen">
+        <div class="title-inner">
+          <div class="title-petals" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <h1>樱花小镇</h1>
+          <p class="title-sub">Sakura Town — 晚春的乡镇生活</p>
+          <div class="title-buttons">
+            <button id="title-continue" type="button" class="menu-button primary">继续游戏</button>
+            <button id="title-new" type="button" class="menu-button">新的开始</button>
+            <button id="title-help-toggle" type="button" class="menu-button ghost">操作说明</button>
+          </div>
+          <div id="title-help" class="hidden">
+            <p><b>WASD / 方向键</b> 移动 · <b>E</b> 交互 · <b>I</b> 背包 · <b>J</b> 委托 · <b>Esc</b> 菜单</p>
+            <p>和镇民说话、送礼、完成委托来提升好感；在自家床上睡觉可以推进到第二天并自动存档。</p>
+          </div>
+          <p class="title-foot">Three.js 程序化生成 · 无需外部资源</p>
+        </div>
+      </section>
+
+      <!-- 触屏控制 -->
+      <div id="touch-controls" aria-hidden="true">
+        <div id="touch-stick">
+          <div id="touch-knob"></div>
+        </div>
+        <button id="action-button" type="button">互动</button>
+      </div>
+    </main>
+  </body>
+</html>

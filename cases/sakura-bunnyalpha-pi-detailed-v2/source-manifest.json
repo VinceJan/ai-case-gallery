@@ -1,0 +1,235 @@
+{
+  "sha256": "d9fa95edcc3af2cb1eb4c19ab763d154171464ba052c74c5db077063fe87e03d",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "3a91109be22ee27ed56b4a99366974b28c96c163164565f4e0da4e5ffa3c5ab7",
+      "bytes": 62
+    },
+    {
+      "path": "README.md",
+      "sha256": "187041b6d787e33dbfeeaf46fcf54c43ca13be06e0bbcec15c4a4d8e873a2240",
+      "bytes": 9172
+    },
+    {
+      "path": "index.html",
+      "sha256": "6ea264a861a542d819222c6390ad6d2eafb7850147d409f3bb8e3030746ad996",
+      "bytes": 4583
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "b9d3295ff2909f0ac42159edc3b3301f1f7e386a4c7359efbb2d145e4ea3f957",
+      "bytes": 32417
+    },
+    {
+      "path": "package.json",
+      "sha256": "4e15a01434fb1d2260d680d4789b98fb5fa3d7f292371adfd5eb923108cad7e2",
+      "bytes": 444
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "d8d74c86ce19c4696a706c2837a0b43ccf43235f4f01ece7bf26d7db95dd1bfa",
+      "bytes": 322
+    },
+    {
+      "path": "sakura_town_detailed_v2.md",
+      "sha256": "f923e192205a0e4ffeefc9e79effac516e55f3dc304a00436df266d749796418",
+      "bytes": 16607
+    },
+    {
+      "path": "src/core/game.js",
+      "sha256": "3f7f14cf32c191685ae8842dafc064b4b6757e43fb031cb7cc86d0ac59feecdd",
+      "bytes": 15796
+    },
+    {
+      "path": "src/core/input.js",
+      "sha256": "e185c86bea69a4a4b5b91def955a168669227f635978877760d4fd4e9fde1dc1",
+      "bytes": 2559
+    },
+    {
+      "path": "src/data/dialogue.js",
+      "sha256": "bb1576a0503085c323fa03c53f38d39dc082c960e2272cc9fb99f113848f9015",
+      "bytes": 6751
+    },
+    {
+      "path": "src/data/npcData.js",
+      "sha256": "1400df1b22926bbf017d4dfd448376b1d9b0c3e1da8137e69498f96d5acacdb3",
+      "bytes": 7751
+    },
+    {
+      "path": "src/entities/camera.js",
+      "sha256": "328defa3f9c1c79428046f724debcffec0af0a52fdb854336ebca85325e76e79",
+      "bytes": 3562
+    },
+    {
+      "path": "src/entities/character.js",
+      "sha256": "c0fe9dfd0f8c4f04bd0ae22722e3eaa11a127cd5308c785246e428cbeec3babb",
+      "bytes": 21175
+    },
+    {
+      "path": "src/entities/npc.js",
+      "sha256": "b3ab383b7b39381a80bd174c5c4cc01e32191ff00b09238048b9552b374206d5",
+      "bytes": 13827
+    },
+    {
+      "path": "src/entities/player.js",
+      "sha256": "6e5daa200c32a92ff9a07746d26b32ced3684409061af8c67f68c2184a594f2c",
+      "bytes": 3567
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "f7c6ae77d4ea519a9e47326f13649456fcbefcc57ed48ce9a873a56ecf8bbd9b",
+      "bytes": 1582
+    },
+    {
+      "path": "src/render/palette.js",
+      "sha256": "19bcd6900e2725bf57b7bfc5349012bb53244a75a5d204870f94dccbee63d0cc",
+      "bytes": 2584
+    },
+    {
+      "path": "src/render/textures.js",
+      "sha256": "99fbda6d032deeaa39217c45150b0db8ad9a2de33b89f26ef045e56e5dc7dba0",
+      "bytes": 23978
+    },
+    {
+      "path": "src/render/toon.js",
+      "sha256": "d737fd25ceea39635aad3e6b9453587d48fa06515157326eba2cc5709c5976dc",
+      "bytes": 9485
+    },
+    {
+      "path": "src/systems/audio.js",
+      "sha256": "c8d4d2fe7ee42affb04e521a13f37b2fafc93583f643ac4f8c646253a4309928",
+      "bytes": 11694
+    },
+    {
+      "path": "src/systems/collision.js",
+      "sha256": "a6b5363a782a5ba0ae38e5b4653ab9f6a8d466ee1ed3dd02a2474c809ca55897",
+      "bytes": 4943
+    },
+    {
+      "path": "src/systems/events.js",
+      "sha256": "5ec7f080bfc7965fd32c029ea8c089736902fc8f9a4c3abf0f3d79aae0eb1a32",
+      "bytes": 4681
+    },
+    {
+      "path": "src/systems/interaction.js",
+      "sha256": "d62f41f6788bf5d292c5b9ec59ae90e050654d4c89972b1edaccbe2a935c9866",
+      "bytes": 5744
+    },
+    {
+      "path": "src/systems/inventory.js",
+      "sha256": "d213e0d150f00a065f94f61ee3e0c6423344913bfe51e16a83086a379c500a1c",
+      "bytes": 2874
+    },
+    {
+      "path": "src/systems/quest.js",
+      "sha256": "85abf3c84eae23c38cac2a67aed1b4e15141d40fad66b00714b2ce2b517b3397",
+      "bytes": 27352
+    },
+    {
+      "path": "src/systems/time.js",
+      "sha256": "ea89fff6a0c4140b96dd9b63beecf76984f13e7105fe0b2200e1a4887568e494",
+      "bytes": 1855
+    },
+    {
+      "path": "src/systems/weather.js",
+      "sha256": "ec7ecca7f7cc962bfb423a8b3297230f2369a46a274a54c20af4451ed7828188",
+      "bytes": 4144
+    },
+    {
+      "path": "src/systems/zones.js",
+      "sha256": "ff3e6ea58aee3ac8137ff21b57a5725f91bb6b848d8cb693249fa6c638f80833",
+      "bytes": 3168
+    },
+    {
+      "path": "src/ui/hud.js",
+      "sha256": "cba14cfc39a69e749376e008c271ff11297e44fc658d0801b1a77f906e7abf0e",
+      "bytes": 30831
+    },
+    {
+      "path": "src/ui/style.css",
+      "sha256": "e82ad92bebd401d6eb1fe412e7291e55f0096b4abb40f9f29f90584181a3a109",
+      "bytes": 17169
+    },
+    {
+      "path": "src/util/math.js",
+      "sha256": "138cbf68ada0ce1a005c41b21a1435418c389e633c3c9469e6ed7337cf305467",
+      "bytes": 2590
+    },
+    {
+      "path": "src/util/noise.js",
+      "sha256": "ccb8177a11f889b3e2ac5db58780751cec9ae83908a6ce1f95d3ec5d12e7184a",
+      "bytes": 1776
+    },
+    {
+      "path": "src/world/building.js",
+      "sha256": "9c36486cc5dcef901257b86c27aac507e057db3105bc435aa06a89e390acdc7b",
+      "bytes": 18969
+    },
+    {
+      "path": "src/world/furniture.js",
+      "sha256": "87f4fcf33c8b815b5bc1362a0832797bc4df4bc2f1afa0089e10c7b06a5305a6",
+      "bytes": 12241
+    },
+    {
+      "path": "src/world/geom.js",
+      "sha256": "e3fd0c329b05e3b374af4e1fba14655a4b3e3399556286933629e75385050f62",
+      "bytes": 13653
+    },
+    {
+      "path": "src/world/instancing.js",
+      "sha256": "c5559dbbaab572cf755a9b944d686c5a5073854c8671f4d12f8c30f667172f3b",
+      "bytes": 3963
+    },
+    {
+      "path": "src/world/interiors.js",
+      "sha256": "b5c2581394f905b24c92b9af8ac276127843c261fcb379b29edad0d41a086012",
+      "bytes": 24317
+    },
+    {
+      "path": "src/world/layout.js",
+      "sha256": "4ea2ce833b271e5bda8c269009710b705a3547942a919f6ef0e38d7658f53164",
+      "bytes": 12482
+    },
+    {
+      "path": "src/world/navgraph.js",
+      "sha256": "fa012151b531e44bfa83f7bdee34970c23b7551264d8652e438cb070ebf91484",
+      "bytes": 6323
+    },
+    {
+      "path": "src/world/props.js",
+      "sha256": "e7a57424b1cde28dce6517ed30739e81610b1daab4c783f6d97d0529623d1894",
+      "bytes": 20870
+    },
+    {
+      "path": "src/world/railway.js",
+      "sha256": "4a67333d9bb07676c66767166f3ff630bfaeced0c06263dd49e73eed0d1937ba",
+      "bytes": 23432
+    },
+    {
+      "path": "src/world/roads.js",
+      "sha256": "506ea7e7a438f86047bed41e95147fe0572f5d93c11ff17bb4b62257bd307bbc",
+      "bytes": 12384
+    },
+    {
+      "path": "src/world/sky.js",
+      "sha256": "24fc7a7a54cfc02fc2cf17bb2f5cf20588f45aaf2b016a3dfc9befef2d2448a6",
+      "bytes": 11041
+    },
+    {
+      "path": "src/world/terrain.js",
+      "sha256": "957eca756c1b1133e7758d87f5128be6bd3fbb29fdcd8d12ba834b0e1484dc01",
+      "bytes": 15604
+    },
+    {
+      "path": "src/world/town.js",
+      "sha256": "b916da7d233f613a285e805fbc1b765cfae50525d4bac3b866639004fed2d2e4",
+      "bytes": 43526
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "bcda1d9420e81f8776b00db9cd75214ae03f072f279daedd6d49460482636632",
+      "bytes": 277
+    }
+  ]
+}

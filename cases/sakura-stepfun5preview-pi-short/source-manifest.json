@@ -1,0 +1,330 @@
+{
+  "sha256": "5c47e1d9c78d1c375ab2d0ae321c2d3ef728aad132c90527eb92e7db4527c39b",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5e7a35e1bafb8e1ab88bbee5e6c624e700cc9d9418bda01a07caae1ba99b064c",
+      "bytes": 8013
+    },
+    {
+      "path": "index.html",
+      "sha256": "b69da45278a0a50d74a52b10b31e59b4323f97cf313b7392de0b3d2062519394",
+      "bytes": 4402
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "a7e6f9f2554d96565f0516faa3c29a7ff8650b96cb3a53f4583d2db4128bfeed",
+      "bytes": 13393
+    },
+    {
+      "path": "package.json",
+      "sha256": "564eb5040dbe362a5d09af4220ae4db65f080dd75bf16ae30f07dd5c7efee711",
+      "bytes": 617
+    },
+    {
+      "path": "sakura_town_short.md",
+      "sha256": "f0295a42a92c1c2cd3bd03ea05ecb59c4e9cee3ffca212159bf7202256c667d8",
+      "bytes": 880
+    },
+    {
+      "path": "serve.mjs",
+      "sha256": "b68c30b04d122a354012d1af1f40824d482b87222f0205c4d5958038e0c02cf3",
+      "bytes": 1521
+    },
+    {
+      "path": "src/core/audio.js",
+      "sha256": "9651cd01f5d4a9ae1423004b003ad4be7f3e5eca265e0a6d659af9b4a21dfc4d",
+      "bytes": 7143
+    },
+    {
+      "path": "src/core/engine.js",
+      "sha256": "f905611b9382b5c099a9bdbd72836e874751d618b4d38f0ad5975237ec34a77e",
+      "bytes": 1611
+    },
+    {
+      "path": "src/core/input.js",
+      "sha256": "f079a75b84646fa45a9e984d4aa565a40201b273077c62d23215b2da35d46c24",
+      "bytes": 2125
+    },
+    {
+      "path": "src/core/save.js",
+      "sha256": "8c7f92f3cfc401a5cd089b468b768fe39dc0100049bb07901d3c53db4fe6a461",
+      "bytes": 1089
+    },
+    {
+      "path": "src/core/utils.js",
+      "sha256": "9b681b16ef5d5218f619363001dfc7fc53a738c7cdd306d6539e3dd3f5160276",
+      "bytes": 2590
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "cb662bb19674e8bb8256daf7999055cc29db047a25f5580a6c722947faa4940c",
+      "bytes": 434
+    },
+    {
+      "path": "src/sim/clock.js",
+      "sha256": "c6b9ca5f462b31e5fe0d436ddb1aa9697a910ff74401a5e53c2bfad630b190be",
+      "bytes": 2719
+    },
+    {
+      "path": "src/sim/dialogue.js",
+      "sha256": "6feb96187692518696187409fbc5f5047765bc087386f3f3b452bcb51d9e7a97",
+      "bytes": 7555
+    },
+    {
+      "path": "src/sim/events.js",
+      "sha256": "2dfcc70b0301c693a3b07f620c57aba9922c21ec94748afb5e78c0325207c197",
+      "bytes": 9883
+    },
+    {
+      "path": "src/sim/game.js",
+      "sha256": "8860873d0b6b4e11fb989a71d8319f62b6539810e1e264ee7d78ec1a6af76971",
+      "bytes": 39856
+    },
+    {
+      "path": "src/sim/items.js",
+      "sha256": "405570d6b185c850e71aadd8efe9213ec85b96668e94ac707d7bbbd7a449273f",
+      "bytes": 7185
+    },
+    {
+      "path": "src/sim/npc.js",
+      "sha256": "fdbfa32b70ef2f2cfd6ba694fdad1322b2b84676db7026e74af6e20b81d538cc",
+      "bytes": 19131
+    },
+    {
+      "path": "src/sim/player.js",
+      "sha256": "b9485583cc774985e73e9f4815713450c0b131989beaa489f2bcedb2fa60b7ae",
+      "bytes": 6019
+    },
+    {
+      "path": "src/sim/weather.js",
+      "sha256": "f32137857ce68f2bc79b9c968ccd2791657f94b6b87f555dc0f3cca7cb6d50bd",
+      "bytes": 3538
+    },
+    {
+      "path": "src/ui/style.css",
+      "sha256": "64f5fc5beb214a5e0821e1dbebf13f95f20edb588107657b791ea23c7d9208fe",
+      "bytes": 10891
+    },
+    {
+      "path": "src/ui/ui.js",
+      "sha256": "e8b7e20569dd46e8695094e87c5569ec38d9b71a4784d7160fe49758dba544d3",
+      "bytes": 22377
+    },
+    {
+      "path": "src/world/buildings.js",
+      "sha256": "975f95864bd2ac48cff6b0f69e7c28299e462e6b7d500c5236f384684a753e60",
+      "bytes": 19062
+    },
+    {
+      "path": "src/world/characters.js",
+      "sha256": "393c507a2460801c43a8ecfe0586914298bd63362ff3e0d5c81e42b8048e56f0",
+      "bytes": 8027
+    },
+    {
+      "path": "src/world/interiors.js",
+      "sha256": "937f5592787a07484c88abc1a6228794f8aa4bb9d6ac0c868deaadd8c32b5157",
+      "bytes": 21662
+    },
+    {
+      "path": "src/world/layout.js",
+      "sha256": "38250a70ab39e0127415434f855b8e2bb1cb20ab284734cd369067540e2ec3ab",
+      "bytes": 13372
+    },
+    {
+      "path": "src/world/materials.js",
+      "sha256": "eabdbffa96fc412c9b82a181e2be3de733013d3d1c5c06dc9f1f3e98bf41a257",
+      "bytes": 13367
+    },
+    {
+      "path": "src/world/palette.js",
+      "sha256": "27253df3e36a971ed910f9a495df8840d55da60e2d4f074d0ab4c4c3a61567de",
+      "bytes": 1621
+    },
+    {
+      "path": "src/world/props.js",
+      "sha256": "c8cfc7cfb6734fca48bc06c5fd0e39feabb7beae80229c377601c444b47d7ba7",
+      "bytes": 17906
+    },
+    {
+      "path": "src/world/sky.js",
+      "sha256": "4a095395cfd2505d552346113b596c79585a3cf6674a4683c4727faf4bff5136",
+      "bytes": 7391
+    },
+    {
+      "path": "src/world/terrain.js",
+      "sha256": "455b0b5b06be6b04b806c9dfe78bf5d2f9ccdfa0478bad95d856fe1141fda2b8",
+      "bytes": 11319
+    },
+    {
+      "path": "src/world/town.js",
+      "sha256": "5728b9f9e3abe7beb7eac4a63d045b792089b7f75fdf64b99add9c56dbff99a2",
+      "bytes": 27235
+    },
+    {
+      "path": "tests/events.test.mjs",
+      "sha256": "ce988b349d0d28b98933a640a9eba3b663b7b8e212e8b33e7cc1c21bad2492ba",
+      "bytes": 7241
+    },
+    {
+      "path": "tests/shots/01_title.png",
+      "sha256": "d16fad20170ad85bac180d5ac2e7d886d2427cfa160551ec5f0d6856eba34836",
+      "bytes": 109889
+    },
+    {
+      "path": "tests/shots/02_town_morning.png",
+      "sha256": "c6027962813ddae411313ea43b6c1792fe524bee2dec1fb18255b1743426e06a",
+      "bytes": 684820
+    },
+    {
+      "path": "tests/shots/03_walk.png",
+      "sha256": "d0adb9eb7426c5309ed64b5ece6e1895ec6595ffdb523b4d2da605719b6198a4",
+      "bytes": 565004
+    },
+    {
+      "path": "tests/shots/04_day.png",
+      "sha256": "6f2aa50154bec4730b09f3befe1312b263a3c2b5527f8ce1d23d7dd174867aa1",
+      "bytes": 579277
+    },
+    {
+      "path": "tests/shots/05_shotengai.png",
+      "sha256": "e23744ebd3eb66dc02ccad64c08cde79f560ad87d111a8f5a47220b3067cbe19",
+      "bytes": 580646
+    },
+    {
+      "path": "tests/shots/06_dialogue.png",
+      "sha256": "cdbce9194d115b6296520c7f1cb8737f747eef7466f32d6b2409590303d311a3",
+      "bytes": 581138
+    },
+    {
+      "path": "tests/shots/07_dialogue_chat.png",
+      "sha256": "6d24851ad45d4f58e2b013618873b89a204dbf14e92d7c9e412e902abc2d6610",
+      "bytes": 581701
+    },
+    {
+      "path": "tests/shots/08_interior.png",
+      "sha256": "e27e59065a0c170169259a63722188ba862c3ffc70af88fe2ae3d9363ce6a614",
+      "bytes": 436224
+    },
+    {
+      "path": "tests/shots/09_shop.png",
+      "sha256": "3b48d5135cd88ce3e3d6fa2c224be0c7f361a7ea6462d942e169e8749f149d01",
+      "bytes": 418977
+    },
+    {
+      "path": "tests/shots/10_shop_buy.png",
+      "sha256": "61e319917c0ba18e4944b9dedae98af0e70574060f8184a5d8de3bdd41bcb196",
+      "bytes": 421271
+    },
+    {
+      "path": "tests/shots/11_map.png",
+      "sha256": "7b3bf0c70aec6804edb8d2d24277dbc204241dd8b4ceb8d7e5629104c3383b19",
+      "bytes": 137783
+    },
+    {
+      "path": "tests/shots/11b_inventory.png",
+      "sha256": "bbbaa3145a10afea6aedb2d2c671038df0f65260e2f2fabd2c65fac50517b503",
+      "bytes": 472207
+    },
+    {
+      "path": "tests/shots/11c_goals.png",
+      "sha256": "c67f5eef67b661c1c90690dbc3686ad3c2884b4ca98fcf8ac75907aa65643ee0",
+      "bytes": 431956
+    },
+    {
+      "path": "tests/shots/11d_sit.png",
+      "sha256": "7e6b9c56e9406cf9403a700285c5505bf31b1fa78e1bcc013a65e131993895f1",
+      "bytes": 406950
+    },
+    {
+      "path": "tests/shots/12_night.png",
+      "sha256": "3f23dd048b46a0f7569c086d6200d57c85f030c5229fdb04bc50383eacc91258",
+      "bytes": 348088
+    },
+    {
+      "path": "tests/shots/13_rain.png",
+      "sha256": "7a074461650031623df3ce7787a7e639e36fe79767aae71f1ffabdedefdfa7d1",
+      "bytes": 405201
+    },
+    {
+      "path": "tests/shots/14_festival.png",
+      "sha256": "ee92fb860a042f82e44dfcf51fc342c029287b0c4b4cc7977da179362a7dab84",
+      "bytes": 697014
+    },
+    {
+      "path": "tests/shots/15_loaded.png",
+      "sha256": "4bf2e52789a72afa548cfcee89f11d43c432fc591678a3815b1b53b503636b7f",
+      "bytes": 477190
+    },
+    {
+      "path": "tests/shots/16_interior2.png",
+      "sha256": "f79b7ca03c489326f3c1c279fae012be65f2e10fa902637770c1b64b6846aa70",
+      "bytes": 234564
+    },
+    {
+      "path": "tests/shots/20_shotengai.png",
+      "sha256": "83535d868c76c5d1c1b6a04396b85a60023fb78055b05800c731e1b1352c3907",
+      "bytes": 580128
+    },
+    {
+      "path": "tests/shots/21_shrine.png",
+      "sha256": "14060ea405d8574fa433e787d65f7c4b71e0f4f2ff9bdf915cc7f039df1265f1",
+      "bytes": 679862
+    },
+    {
+      "path": "tests/shots/22_station.png",
+      "sha256": "d6f0cb441dd479a7648db88d70f60542cdaf9c4807d56ab960b571c93f1f6d1d",
+      "bytes": 669253
+    },
+    {
+      "path": "tests/shots/23_park.png",
+      "sha256": "076dc10f694647243be2f0d5b10db5471f9f32aae0f8d14194b7189d73953951",
+      "bytes": 809581
+    },
+    {
+      "path": "tests/shots/24_bridge.png",
+      "sha256": "497e41a3ac95cafb99aa1ecb0933f413bb2125a4c8780fcd65a0aa05677a81c5",
+      "bytes": 619165
+    },
+    {
+      "path": "tests/shots/25_dusk.png",
+      "sha256": "0862b595773a1433e3bedabbd4fcc597a0290b51518d7a3307894b72ee9ff424",
+      "bytes": 606812
+    },
+    {
+      "path": "tests/shots/26_paddy.png",
+      "sha256": "5e3cf448c03913c8887dcf79708cfa606a0f080b5c81468123886be25aeed5aa",
+      "bytes": 650617
+    },
+    {
+      "path": "tests/shots/27_residential.png",
+      "sha256": "ede05aa27416d44ac46b400c2f8134493b0564062b3b7e0425d5d094b5a557c4",
+      "bytes": 705315
+    },
+    {
+      "path": "tests/showcase.mjs",
+      "sha256": "d68e111999a22adb07cf051661a4490d26d0c08f444b62c0721d905c0d22db44",
+      "bytes": 2937
+    },
+    {
+      "path": "tests/sim.test.mjs",
+      "sha256": "823e9ac212a5bf6ab130b6e47d00d959b4b32bfda81a4b51cb9a1fbbd1f8c343",
+      "bytes": 5891
+    },
+    {
+      "path": "tests/smoke.mjs",
+      "sha256": "d36e9f4555c824895811cfacdec12fdd11fdff21b086c9ba3d1e150426673071",
+      "bytes": 12537
+    },
+    {
+      "path": "vendor/three/addons/utils/BufferGeometryUtils.js",
+      "sha256": "9be041e96308775d00e2695cc607645b9a9b64fd7c0e759dd8f7c00a8d92becb",
+      "bytes": 31906
+    },
+    {
+      "path": "vendor/three/three.module.js",
+      "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495",
+      "bytes": 1272972
+    }
+  ]
+}

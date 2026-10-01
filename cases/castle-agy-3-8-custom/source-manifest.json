@@ -1,0 +1,90 @@
+{
+  "sha256": "501a5e3a2a59ef498a0e4d88e329f8e63aca39c1a7cd716f5ca84ce04aba72f8",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "0129366fcb29246a39dae2cf86248da95a32783687832709d09a35e890a7b6da",
+      "bytes": 308
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d334829df5cee59862f3cb5afb53eed123eb4efeedec4737fbcfb2c71e5a19d6",
+      "bytes": 44373
+    },
+    {
+      "path": "package.json",
+      "sha256": "09631d2baf0241de94cebdd752a15d996fc3bc2009536db1b9db63816f1bfd6c",
+      "bytes": 305
+    },
+    {
+      "path": "src/audio.js",
+      "sha256": "8644af84adecba3592b641f0e0a2508906066e6cda19fb5f813c1e2bb4333404",
+      "bytes": 6142
+    },
+    {
+      "path": "src/base.js",
+      "sha256": "d289169f5a606c00dd0a1fde401fb306d88523e5f06f60856c0a0586badb8a6b",
+      "bytes": 13644
+    },
+    {
+      "path": "src/castle.js",
+      "sha256": "93a32965e40f555fcdb8fe05ff229a16ac4608394199797a3091ad5eef381700",
+      "bytes": 16895
+    },
+    {
+      "path": "src/constants.js",
+      "sha256": "34144f460d80ee7709d637d28ae76d5f10b2517096dd8a3aa04fa705e7aede56",
+      "bytes": 1669
+    },
+    {
+      "path": "src/farmland.js",
+      "sha256": "1c02b0efa32d71bbf5e758da0383789a9cbae5d6674d58f26d874e5a090b1553",
+      "bytes": 21096
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "c0ad8a1d4e4557d60267b597b042864973461c8717d090b3636526dca91ecb02",
+      "bytes": 4635
+    },
+    {
+      "path": "src/materials.js",
+      "sha256": "8d248ff84bd6eb7937b983295eeb097737683caaa7831c12c9d23d6448365762",
+      "bytes": 6536
+    },
+    {
+      "path": "src/pixelCharacters.js",
+      "sha256": "4e0a6453c88d2cdf5271076460daf39c7985c2212b68eb29aaf918fe41eb94f9",
+      "bytes": 17998
+    },
+    {
+      "path": "src/postprocessing.js",
+      "sha256": "5ad25fe2712b4276412fcbc5213528f39ec23edaf558c7ccadeab0b7064523ba",
+      "bytes": 3482
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "74d0e18abf560f3a037a1381b88d0cd7390965cfd626d3c31e8a6201090abe8f",
+      "bytes": 5266
+    },
+    {
+      "path": "src/ui.js",
+      "sha256": "1c78678f3047c0268dc37c79d557a698fd0780d25f00386b3fd1288fc1a822fa",
+      "bytes": 9675
+    },
+    {
+      "path": "src/village.js",
+      "sha256": "0b3ec65cdc36badcce3730d5be54fb3706eb47eb806c1a6d38c4c120c8e01728",
+      "bytes": 25992
+    },
+    {
+      "path": "src/weather.js",
+      "sha256": "07c57fc2fc9f95a66ebbe480f01aac16a64c7aad4048e55e419c0b8ca4fe48c3",
+      "bytes": 16375
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "02bc2a58413cd7e6655eba6afb2e7e9ea752a075972c74e3e8ff15ed7b5c5508",
+      "bytes": 107
+    }
+  ]
+}

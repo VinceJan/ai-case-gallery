@@ -1,0 +1,7 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {cases,caseUrl,prompt,url} from '../lib/catalog.mjs';
+const grouped=new Map();for(const c of cases.filter(c=>c.promptHash)){const key=c.promptHash;if(!grouped.has(key))grouped.set(key,{record:c,runs:[],text:await prompt(c)});grouped.get(key).runs.push(c);}
+const topics=[...new Set(cases.map(c=>c.topicLabel))];
+---
+<Layout title="提示词档案 · 造物集"><div class="page"><p class="eyebrow">THE STARTING POINT</p><h1 class="page-title">世界从这里开始。</h1><p class="page-lead">这里保存实际使用的提示词原文。同一份文本只展示一次，每次运行仍保留自己的引用。<br/>“详细版”“简洁版”是描述，文本指纹才用于判断是否相同。</p><div class="prompt-list">{topics.map(topic=><section class="prompt-group"><h2>{topic}</h2>{[...grouped.values()].filter(g=>g.record.topicLabel===topic).map(g=><article class="prompt-row"><div><h3>{g.record.promptVariant} <small> / {g.text.length.toLocaleString()} 字符</small></h3><p>{g.text.slice(0,150)}{g.text.length>150?'…':''}</p></div><div><p>{g.runs.length} 次运行使用此文本</p>{g.runs.map(c=><p><a href={caseUrl(c)}>{c.model} · {c.harness} ↗</a></p>)}<small>SHA-256: {g.record.promptHash.slice(0,16)}</small></div><details class="prompt-detail"><summary>查看原文</summary><pre class="prompt-text">{g.text}</pre><a class="prompt-download" href={url('generated/prompts/'+g.record.id+'.md')} download>下载原文 ↓</a></details></article>)}</section>)}</div></div></Layout>

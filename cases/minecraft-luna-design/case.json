@@ -1,0 +1,25 @@
+{
+  "id": "minecraft-luna-design",
+  "title": "方块世界 · 设计阶段",
+  "topic": "minecraft",
+  "topicLabel": "浏览器方块世界",
+  "model": "gpt-6-luna",
+  "harness": "Codex",
+  "modelEvidence": "归档“创建浏览器版 Minecraft”的 turn_context 与结束记录",
+  "date": "2026-09-23",
+  "promptVariant": "原始提示词",
+  "promptHash": "b6eb02557ec61b4f55841b132659b1bc28862c03e576017d8bb479991d3af98d",
+  "description": "记录一次停留在设计阶段的运行，保留任务与实际交付边界。",
+  "notes": [
+    "这次运行没有生成游戏源码，不能在线游玩。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放。",
+  "adapter": "materials",
+  "project": ".",
+  "entry": "index.html",
+  "status": "materials",
+  "cover": null,
+  "gallery": [],
+  "verification": null,
+  "sourceFingerprint": "c1400106d8db0b254c9c9ccd63dc5abf99c4058b533e9231bf8ae2c03ac517e6"
+}

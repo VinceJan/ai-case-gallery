@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10222b" />
+    <title>Solstice — A Voxel World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-D2dy9-jV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BH9dpRag.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="world" aria-label="Interactive voxel world"></canvas>
+      <div class="vignette" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <header class="hud topbar">
+        <div class="brand"><span class="brand-mark">✳</span><span>SOLSTICE<span class="brand-dot">.</span></span></div>
+        <div class="topbar-right"><span class="world-tag"><i></i> WORLD 01 <b>·</b> EXPLORATION</span><button id="menu-button" class="round-button" aria-label="Open menu">☰</button></div>
+      </header>
+
+      <div class="hud world-info">
+        <div class="info-eyebrow">YOUR WORLD, YOUR WAY</div>
+        <div id="biome-label" class="info-title">The Quiet Wilds</div>
+        <div id="coords" class="info-coords">X 0 · Y 0 · Z 0</div>
+      </div>
+
+      <div class="hud right-info"><span id="time-icon">☀</span><span id="time-label">GOLDEN HOUR</span><span class="divider"></span><span id="fps">60 FPS</span></div>
+      <div id="crosshair" class="crosshair" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <div id="block-hint" class="block-hint hud">Grass Block</div>
+
+      <div class="hud bottom-hud">
+        <div class="controls-hint"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> MOVE</span><span><kbd>SPACE</kbd> JUMP</span><span><kbd>SHIFT</kbd> SPRINT</span></div>
+        <div id="hotbar" class="hotbar" aria-label="Block selection"></div>
+        <div class="actions-hint"><span><span class="mouse-icon left"></span> BREAK</span><span><span class="mouse-icon right"></span> PLACE</span><span><kbd>1–8</kbd> SELECT</span></div>
+      </div>
+
+      <div id="landing" class="landing visible">
+        <div class="landing-glow"></div>
+        <div class="landing-content">
+          <div class="kicker"><span class="kicker-line"></span> AN OPEN WORLD TO MAKE YOUR OWN <span class="kicker-line"></span></div>
+          <h1>Find your <em>somewhere.</em></h1>
+          <p>A small world with endless possibilities. Wander sunlit forests, shape the land beneath your feet, and make something entirely yours.</p>
+          <button id="play-button" class="primary-button"><span>ENTER THE WORLD</span><span class="button-arrow">↗</span></button>
+          <div class="landing-meta"><span>✦ PROCEDURAL WORLD</span><span>✦ CINEMATIC LIGHTING</span><span>✦ YOUR CREATION, SAVED</span></div>
+        </div>
+        <div class="landing-bottom"><span>01 / DISCOVER</span><span>SCROLL THROUGH A WORLD OF POSSIBILITIES</span><span>EST. 2026</span></div>
+      </div>
+
+      <div id="pause" class="pause-screen" aria-hidden="true">
+        <div class="pause-card">
+          <div class="pause-eyebrow">A MOMENT TO BREATHE</div>
+          <h2>World paused<span>.</span></h2>
+          <p>The world will be here when you return.</p>
+          <button id="resume-button" class="primary-button"><span>KEEP EXPLORING</span><span class="button-arrow">↗</span></button>
+          <div class="setting"><div><strong>Time of day</strong><small>Move the sun across the sky</small></div><input id="time-slider" type="range" min="0.27" max="0.74" step="0.001" value="0.43" aria-label="Time of day" /></div>
+          <div class="setting"><div><strong>Beautiful lighting</strong><small>Dynamic sunlight and soft shadows</small></div><button id="shader-toggle" class="switch active" role="switch" aria-checked="true" aria-label="Beautiful lighting"><span></span></button></div>
+          <button id="reset-button" class="text-button">Reset world edits</button>
+        </div>
+      </div>
+      <div id="toast" class="toast" role="status"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "sha256": "713bcc2cda1812da3744adbde82ac2a7255ed9cc17e7e469da1cd52a9d7aa2cd",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-CjiDOksS.js",
+      "sha256": "fff4863bf4febcfb5bb0e0227ab3b20f3787e349590ad7f45a95d85574ace08e",
+      "bytes": 708718
+    },
+    {
+      "path": "index.html",
+      "sha256": "459c8d0ca4ef193011e5261ecc0bf76e3064058111430bdcb7882b29ac2760c7",
+      "bytes": 2051
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "mode": "desktop",
+  "state": "overview",
+  "requestedState": "overview",
+  "appliedState": "overview",
+  "runId": "pass-ov",
+  "seed": null,
+  "screenshotPath": "artifacts\\pass-ov\\desktop-overview.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 245,
+    "colorBuckets": 154,
+    "metrics": {
+      "colorBuckets": 238,
+      "colorEntropyBits": 4.44,
+      "edgeDensity": 0.213,
+      "luminance": {
+        "mean": 154.3,
+        "p5": 74.3,
+        "p95": 207.4,
+        "contrast": 133.1
+      },
+      "dominantColorShare": 0.209,
+      "nonBackgroundShare": 0.791
+    },
+    "renderBudget": {
+      "tier": "desktop",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 494,
+          "limit": 300,
+          "ok": false
+        },
+        {
+          "metric": "triangles",
+          "actual": 20136,
+          "limit": 750000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": null,
+          "limit": 300,
+          "ok": null
+        },
+        {
+          "metric": "textures",
+          "actual": null,
+          "limit": 60,
+          "ok": null
+        }
+      ],
+      "withinBudget": false
+    },
+    "diagnostics": {
+      "frame": 60,
+      "elapsed": -0.24559999999403948,
+      "fps": 0,
+      "time": {
+        "day": 1,
+        "hour": 8,
+        "minute": 29.705280000007154
+      },
+      "weather": "clear",
+      "player": {
+        "sx": 4,
+        "sz": 4,
+        "money": 1500
+      },
+      "npcs": 12,
+      "trains": 2,
+      "renderer": {
+        "calls": 494,
+        "triangles": 20136
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

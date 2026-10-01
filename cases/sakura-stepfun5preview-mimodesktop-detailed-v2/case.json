@@ -1,0 +1,25 @@
+{
+  "id": "sakura-stepfun5preview-mimodesktop-detailed-v2",
+  "title": "樱花小镇 · Stepfun 5 Preview",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Stepfun 5 Preview",
+  "harness": "MiMo Desktop",
+  "modelEvidence": "目录命名；完整模型 ID 与当时配置未全部记录",
+  "date": null,
+  "promptVariant": "详细版 v2",
+  "promptHash": "00d138cb0fc84917f30a5c1d0479d80f3273b6f6d65d565ae2fc8ea1677811b2",
+  "description": "同一小镇任务在不同模型、harness 与提示词条件下的生成结果。",
+  "notes": [
+    "原目录只有提示词，没有找到生成项目。"
+  ],
+  "controls": "按场景内说明操作；通常为 WASD 移动、鼠标转向、E 交互。",
+  "adapter": "materials",
+  "project": ".",
+  "entry": "index.html",
+  "status": "materials",
+  "cover": null,
+  "gallery": [],
+  "verification": null,
+  "sourceFingerprint": "b848de039545e83100d6df43fef8aefbe6b6a98564bf45eef03dbeaeb5fda911"
+}

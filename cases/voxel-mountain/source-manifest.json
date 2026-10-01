@@ -1,0 +1,65 @@
+{
+  "sha256": "0403923bfc64e4300b6ba863d51b745a71842b5242d887520d7c62590d66f454",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "3a3bcf768c25d0483b1e4b81f5a2879def4f8160c994929ae3a997511dbd84ae",
+      "bytes": 30
+    },
+    {
+      "path": "PROMPT.md",
+      "sha256": "4c49555e0c57c1fbdedbc9dda609e26a56b68dd09f24a23079d773f4662ec881",
+      "bytes": 1022
+    },
+    {
+      "path": "README.md",
+      "sha256": "eb8f2adc33fbc47aa00fefc50279021506e5bf2f486dd5205db5ee33229bba0a",
+      "bytes": 734
+    },
+    {
+      "path": "index.html",
+      "sha256": "a4c87d3e706749e9a4cc157b118806bcc43cdd10869f7001f0abad40d46f6ed2",
+      "bytes": 2391
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "29491f527964c30c55a2c68ffb0bd002394181c8c112131867fbfe795f423801",
+      "bytes": 25902
+    },
+    {
+      "path": "package.json",
+      "sha256": "d32c63839ab4d9a04e7a110f63c98545ff7bc1f779948325d9c093f98ca95c46",
+      "bytes": 295
+    },
+    {
+      "path": "src/clouds.js",
+      "sha256": "604cfcd567a478d06c3438eddb34aeb546f12259fa93d259e34ee2e7fbc8a609",
+      "bytes": 2479
+    },
+    {
+      "path": "src/forest.js",
+      "sha256": "d41fc60037aa46884b4843f38d4350e2f4ceced08b0d60835a0c7752b0609aff",
+      "bytes": 3022
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "7a3f63a75243a93d20594e46609a1e7cc6cdba23cd1183a40812c1165403b1da",
+      "bytes": 4878
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "538eb7dbd837d48dae50416a92d24acde5e6faf0545333f3d4e7cad162b0652e",
+      "bytes": 6532
+    },
+    {
+      "path": "src/terrain.js",
+      "sha256": "f7a2003e36eddcba0e74cb5944a0183ddea74424d240a92fff25bd623f46e646",
+      "bytes": 6418
+    },
+    {
+      "path": "src/water.js",
+      "sha256": "0d17370a3b0a90d07082c4a9b2c7a2666d2acff62f33cb80bd3a454f27f5c660",
+      "bytes": 6177
+    }
+  ]
+}

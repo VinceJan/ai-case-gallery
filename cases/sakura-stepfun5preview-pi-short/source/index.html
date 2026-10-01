@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>樱花小镇 Sakura Town</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./src/ui/style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.js",
+    "three/addons/": "./vendor/three/addons/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="app">
+  <canvas id="game-canvas"></canvas>
+
+  <!-- 加载 / 标题画面 -->
+  <div id="title-screen" class="screen">
+    <div class="title-box">
+      <div class="title-sakura">🌸</div>
+      <h1>樱花小镇</h1>
+      <div class="subtitle">Sakura Town &mdash; 晚春的小镇生活</div>
+      <div class="title-buttons">
+        <button id="btn-new-game" class="btn primary">新的开始</button>
+        <button id="btn-continue" class="btn">读取自动存档</button>
+        <button id="btn-help" class="btn">操作说明</button>
+      </div>
+      <div class="title-hint">晚春四月，樱花盛开。在这座紧凑的小镇里，认识邻居、逛街购物、参加祭典，度过慢悠悠的日子。</div>
+    </div>
+  </div>
+
+  <!-- 加载进度 -->
+  <div id="loading-screen" class="screen hidden">
+    <div class="loading-box">
+      <div class="loading-title">正在生成小镇&hellip;</div>
+      <div class="loading-bar"><div id="loading-fill"></div></div>
+      <div id="loading-text" class="loading-text">播种樱花树</div>
+    </div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <div id="hud-topleft">
+      <div id="clock-box">
+        <span id="clock-date">4月8日</span>
+        <span id="clock-time">08:00</span>
+        <span id="clock-weather">☀</span>
+      </div>
+      <div id="money-box">¥ <span id="money">0</span></div>
+      <div id="speed-box">速度 <span id="speed">1x</span></div>
+    </div>
+    <div id="hud-topright">
+      <div id="toasts"></div>
+    </div>
+    <div id="hud-bottomleft">
+      <div id="controls-hint">WASD 移动 · Shift 奔跑 · E 互动 · 拖动鼠标转视角 · 滚轮缩放 · Tab 背包 · M 地图 · Esc 菜单</div>
+      <div id="stamina-box"><div id="stamina-fill"></div></div>
+    </div>
+    <div id="hud-center">
+      <div id="interact-prompt" class="hidden"></div>
+      <div id="subtitle-bar" class="hidden"></div>
+    </div>
+    <div id="minimap-box">
+      <canvas id="minimap" width="220" height="220"></canvas>
+      <div id="minimap-label">樱花小镇</div>
+    </div>
+  </div>
+
+  <!-- 对话 -->
+  <div id="dialogue-screen" class="panel-screen hidden">
+    <div id="dialogue-box">
+      <div id="dialogue-name">田中花子</div>
+      <div id="dialogue-text"></div>
+      <div id="dialogue-choices"></div>
+    </div>
+  </div>
+
+  <!-- 商店 / 背包 / 地图 / 菜单等面板 -->
+  <div id="panel-screen" class="panel-screen hidden">
+    <div id="panel-box">
+      <div id="panel-title">标题</div>
+      <div id="panel-body"></div>
+      <div id="panel-footer"></div>
+    </div>
+  </div>
+
+  <!-- 大地图 -->
+  <div id="map-screen" class="screen hidden">
+    <div class="map-box">
+      <canvas id="bigmap" width="760" height="760"></canvas>
+      <div class="map-caption">按 M 关闭 · 蓝点=你 · 彩点=镇民 · ★=事件目标</div>
+    </div>
+  </div>
+
+  <!-- 操作说明 -->
+  <div id="help-screen" class="screen hidden">
+    <div class="help-box">
+      <h2>操作说明</h2>
+      <table>
+        <tr><td>W A S D / 方向键</td><td>移动</td></tr>
+        <tr><td>Shift</td><td>奔跑（消耗体力）</td></tr>
+        <tr><td>E / 回车</td><td>互动（交谈·进门·购物·就坐…）</td></tr>
+        <tr><td>鼠标拖动</td><td>旋转视角</td></tr>
+        <tr><td>滚轮</td><td>缩放</td></tr>
+        <tr><td>Tab / I</td><td>背包</td></tr>
+        <tr><td>M</td><td>小镇地图</td></tr>
+        <tr><td>1 / 2 / 3</td><td>时间流速 1x / 2x / 4x</td></tr>
+        <tr><td>空格</td><td>小跳</td></tr>
+        <tr><td>Esc</td><td>菜单（保存/读取/设置）</td></tr>
+      </table>
+      <button id="btn-help-close" class="btn primary">返回</button>
+    </div>
+  </div>
+
+  <div id="vignette"></div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

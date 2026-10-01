@@ -1,0 +1,18 @@
+{
+  "url": "http://127.0.0.1:5173",
+  "mode": "desktop",
+  "state": null,
+  "requestedState": "active-play",
+  "appliedState": null,
+  "runId": "pass-2",
+  "seed": null,
+  "screenshotPath": null,
+  "gpu": null,
+  "result": {
+    "ok": false,
+    "reason": "capture-failed",
+    "error": "page.waitForSelector: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas') to be visible\u001b[22m\n\u001b[2m    23 × locator resolved to 2 elements. Proceeding with the first one: <canvas width=\"640\" height=\"420\" id=\"map-canvas\"></canvas>\u001b[22m\n"
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

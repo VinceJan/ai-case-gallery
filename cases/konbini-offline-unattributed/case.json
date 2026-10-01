@@ -1,0 +1,36 @@
+{
+  "id": "konbini-offline-unattributed",
+  "title": "雨夜街角 · 离线作品",
+  "topic": "konbini",
+  "topicLabel": "雨夜便利店",
+  "model": "模型未确认",
+  "harness": "Harness 未确认",
+  "modelEvidence": "未找到记录",
+  "date": null,
+  "promptVariant": "原始提示词",
+  "promptHash": null,
+  "description": "已有单文件离线作品与封面，保留其完整展示内容。",
+  "notes": [
+    "已检查相邻源码、压缩包和可匹配会话，暂未找到能确认该文件模型的记录。",
+    "不把相邻 konbini-corner 的模型归属直接套用到这份独立产物。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "rainy-konbini-corner.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "584637c76280efa19a6da87bd3e9774b2db6f23fb7c3da02b0c5add0d15111b6",
+  "buildError": null,
+  "demoFingerprint": "ae1f3c326877bc1608c1d2d2af931bece14435d38b2c8ca0822afcdeccbdb9b8"
+}

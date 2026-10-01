@@ -1,0 +1,20 @@
+{
+  "sha256": "4f73790f3a4e16d9fdfd6504bf9583609823172ae740765d2cbc9dc3574843d7",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-C7y6PnMg.js",
+      "sha256": "da7f93f45f560d27801ea12f52f3c82ec7024443750f658e44c4f085ef4f903f",
+      "bytes": 673883
+    },
+    {
+      "path": "index.html",
+      "sha256": "b539210cb84494494a8f4e6962f22f1026bb58c7ab5840fa0b6d30cc31ba4aaf",
+      "bytes": 2096
+    }
+  ]
+}

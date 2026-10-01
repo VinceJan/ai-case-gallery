@@ -1,0 +1,38 @@
+{
+  "id": "sakura-bunnyalpha-pi-short-v2",
+  "title": "樱花小镇 · Space Bunny Alpha",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Space Bunny Alpha",
+  "harness": "Pi",
+  "modelEvidence": "目录命名；完整模型 ID 与当时配置未全部记录",
+  "date": null,
+  "promptVariant": "简洁版 v2",
+  "promptHash": "758b19af0e0c0d77482b11d39114d91af6fee3bd7b43b20805c552fa0a5ef8b9",
+  "description": "同一小镇任务在不同模型、harness 与提示词条件下的生成结果。",
+  "notes": [
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "按场景内说明操作；通常为 WASD 移动、鼠标转向、E 交互。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp",
+    "view-3.webp",
+    "view-4.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "2d0b8554bbd75b04d1b614db609dbaf4803dc8059e0b723516ebcec0852e9bf8",
+  "buildError": null,
+  "demoFingerprint": "0840eb3d83325e9645059ff4522ecc164d582ad8f246d77df6116e1fcf926f5f"
+}

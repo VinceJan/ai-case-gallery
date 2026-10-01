@@ -1,0 +1,105 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "mode": "desktop",
+  "state": "rain",
+  "requestedState": "rain",
+  "appliedState": "rain",
+  "runId": "pass-rain",
+  "seed": null,
+  "screenshotPath": "artifacts\\pass-rain\\desktop-rain.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 244,
+    "colorBuckets": 163,
+    "metrics": {
+      "colorBuckets": 215,
+      "colorEntropyBits": 4.65,
+      "edgeDensity": 0.206,
+      "luminance": {
+        "mean": 125.5,
+        "p5": 46.5,
+        "p95": 181,
+        "contrast": 134.6
+      },
+      "dominantColorShare": 0.21,
+      "nonBackgroundShare": 0.79
+    },
+    "renderBudget": {
+      "tier": "desktop",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 790,
+          "limit": 300,
+          "ok": false
+        },
+        {
+          "metric": "triangles",
+          "actual": 33666,
+          "limit": 750000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": null,
+          "limit": 300,
+          "ok": null
+        },
+        {
+          "metric": "textures",
+          "actual": null,
+          "limit": 60,
+          "ok": null
+        }
+      ],
+      "withinBudget": false
+    },
+    "diagnostics": {
+      "frame": 64,
+      "elapsed": -0.2854000000059605,
+      "fps": 0,
+      "time": {
+        "hour": 14,
+        "minute": 0,
+        "day": 2
+      },
+      "weather": "rain",
+      "player": {
+        "sx": -6,
+        "sz": 6,
+        "money": 1500
+      },
+      "camera": {
+        "x": -13,
+        "y": 2.955952380952381,
+        "z": 6
+      },
+      "npcs": 12,
+      "trains": 2,
+      "renderer": {
+        "calls": 790,
+        "triangles": 33666
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

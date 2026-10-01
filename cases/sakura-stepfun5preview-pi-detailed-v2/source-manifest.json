@@ -1,0 +1,195 @@
+{
+  "sha256": "66492b4bc912619d594961f63dac7782a4bfbded8622ed76344e0ecf85ef9de7",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "addcbdb52276345360e2d7067fe5bd4163c8a6da3ddf717e1576384cd35f6e53",
+      "bytes": 4135
+    },
+    {
+      "path": "index.html",
+      "sha256": "221fe70f26773ba450e569b2e8f646122553f6928cbc6a22f3f1e67fb7ea50a7",
+      "bytes": 4452
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "ede236cdc4351a19b1d837fd4fe1b59efb0b46df68995cc79bd5a2bfcec58488",
+      "bytes": 35943
+    },
+    {
+      "path": "package.json",
+      "sha256": "5d3799210a0ac43418dba5dbf3d078c2dd14f6efdadf0d97ccf683b81d7202d6",
+      "bytes": 364
+    },
+    {
+      "path": "sakura_town_detailed_v2.md",
+      "sha256": "00d138cb0fc84917f30a5c1d0479d80f3273b6f6d65d565ae2fc8ea1677811b2",
+      "bytes": 16235
+    },
+    {
+      "path": "src/core/Audio.js",
+      "sha256": "efc261ae3680b773b98874d7968472ae90b2a20573bd9e5fd9242c9f0a053d0d",
+      "bytes": 8110
+    },
+    {
+      "path": "src/core/Game.js",
+      "sha256": "77491ef8b6b808543228d50796df364e7dd2185cc6e4eded92f5e6fd412e3b4b",
+      "bytes": 10761
+    },
+    {
+      "path": "src/core/Input.js",
+      "sha256": "a92d4ac8dc68fb85437a460c45cf045546e356bb72a1e6d2854458c7edba6433",
+      "bytes": 2660
+    },
+    {
+      "path": "src/core/Materials.js",
+      "sha256": "93e2a6de9f610c18c98d4c5cb870c23fb7d2e12f1a2164ede9a3a84421310419",
+      "bytes": 4305
+    },
+    {
+      "path": "src/core/Save.js",
+      "sha256": "5391b4fdc84f6f0b713e43d87ed34d522eb914c7581d375605e4e19b4c394793",
+      "bytes": 2062
+    },
+    {
+      "path": "src/core/Sky.js",
+      "sha256": "4e4fb1018a426fdd2999dfc98f2911377db6bc01b7c08650359fcb8519705c70",
+      "bytes": 5730
+    },
+    {
+      "path": "src/core/Utils.js",
+      "sha256": "b4244677675921c9a1dc29ced378106f1546fe67463af5f89463745aa7ee1f66",
+      "bytes": 12868
+    },
+    {
+      "path": "src/data/items.js",
+      "sha256": "fcb80a380862050149bd2f585042e2e90abb8852f6e1276ff3dba998c174b28a",
+      "bytes": 534
+    },
+    {
+      "path": "src/data/npcs.js",
+      "sha256": "9360bc243acd946cb8f663ec1f217d86c3cefc36243e1084bd71ab5f8bebbaa2",
+      "bytes": 15888
+    },
+    {
+      "path": "src/data/quests.js",
+      "sha256": "de6a919753e01bcc1506c52e3a0534dcf6dea85599828bcb70eb8db3d4d94801",
+      "bytes": 5561
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "ac64e191496c53e2e8d33b0c275aca19ee72d51d811a63e8b46354fa414b4d0f",
+      "bytes": 375
+    },
+    {
+      "path": "src/npc/NPC.js",
+      "sha256": "b5519272d9d2fb2695b2bf925551cc96c1880dfc8fde313600af2e2ea8cea097",
+      "bytes": 7217
+    },
+    {
+      "path": "src/npc/NPCManager.js",
+      "sha256": "d02947162ab435255ff63fdeab87585e872e1a0700dc82308237899c6e69f9b1",
+      "bytes": 5624
+    },
+    {
+      "path": "src/player/Player.js",
+      "sha256": "8222d080565c1844ada3b5ebff1e63f6929e5690c0c1ba5f953611e9fb94d818",
+      "bytes": 12996
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "1e1110fad3edde1875b646ce8801c7b0443519ee018305fbb351484b9482406b",
+      "bytes": 11127
+    },
+    {
+      "path": "src/systems/EventSystem.js",
+      "sha256": "9404c7158278268f5386503d5af855743614007ad6aeded496627130a8de49a9",
+      "bytes": 3200
+    },
+    {
+      "path": "src/systems/QuestSystem.js",
+      "sha256": "4320e50c874f687c5daf2419e59076a607ba5aec33cefe51780c31815b0ff109",
+      "bytes": 5344
+    },
+    {
+      "path": "src/systems/TimeSystem.js",
+      "sha256": "eb2cf38b72f484c04f359bde7cbbca7c9f567e1b476868102fd71e62a6c4aad8",
+      "bytes": 7205
+    },
+    {
+      "path": "src/systems/WeatherSystem.js",
+      "sha256": "76fb335944c2020d4130749978fec394355ff33aed1ae4ca6b67ab76da1179d4",
+      "bytes": 3131
+    },
+    {
+      "path": "src/ui/UI.js",
+      "sha256": "2af0b375cca79f527839e296a0d98fb318a2e963259d6eae00167d24ac1cbd7a",
+      "bytes": 15516
+    },
+    {
+      "path": "src/world/Buildings.js",
+      "sha256": "c33fc328f214344d6186ebade156983d0214edb9f01d648647b4c2a46c63d05f",
+      "bytes": 23236
+    },
+    {
+      "path": "src/world/Layout.js",
+      "sha256": "5357f6a1e46fa61b5d78a4e8038e7a27292eb5d8d316413ee736fa4ebedf4e01",
+      "bytes": 4963
+    },
+    {
+      "path": "src/world/Props.js",
+      "sha256": "652a902009f25861dc0845a50a4475feda8a96b2f6a8e22d986a4bd094309942",
+      "bytes": 8927
+    },
+    {
+      "path": "src/world/Public.js",
+      "sha256": "f6b2367955c3bcf6c9f54dc0a4f45c96262c60dca0e5fb434e296a33cc7134c4",
+      "bytes": 7863
+    },
+    {
+      "path": "src/world/Railway.js",
+      "sha256": "01ed8575180e2e48375aab4bb89601363699f396163e80e8e5083c6eecbaddc9",
+      "bytes": 14856
+    },
+    {
+      "path": "src/world/Residential.js",
+      "sha256": "0a5de6b7eabad782a148af0244890b995a540d96428ca215ab30ff6bdc6bc6da",
+      "bytes": 17016
+    },
+    {
+      "path": "src/world/ShopStreet.js",
+      "sha256": "4980a86dd4e86dc2836a73498ec30db03e40b30588e358f5158cd94e29a042d7",
+      "bytes": 21304
+    },
+    {
+      "path": "src/world/ShrinePark.js",
+      "sha256": "218e9ea320f1b2b4b8f984665b0927e9777a61ce2cf946cab2ca005d8f4d4239",
+      "bytes": 13837
+    },
+    {
+      "path": "src/world/Station.js",
+      "sha256": "582bf89bb40f1c3ec33ae0666189bbe79981df58dfdd6f72ba9ada9a0d22ba60",
+      "bytes": 14070
+    },
+    {
+      "path": "src/world/Terrain.js",
+      "sha256": "9b749edaa2fc2187dd0ed6618e8e8a5c4535c194f88c034899da51bd25913aee",
+      "bytes": 7778
+    },
+    {
+      "path": "src/world/Vegetation.js",
+      "sha256": "0af328f37a65e53fcb0b31f7551a9d219338b2227b26302ac850723b397b6938",
+      "bytes": 8265
+    },
+    {
+      "path": "src/world/World.js",
+      "sha256": "3e56bc9c40fc12024786c599be876466df9e626cb2b0580d0294b629a97aa3d5",
+      "bytes": 10177
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "ff36f4f73d9803e1570ae85422fa21399d69757c31dd889322e0d9a620b44582",
+      "bytes": 183
+    }
+  ]
+}

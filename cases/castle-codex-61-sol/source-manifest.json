@@ -1,0 +1,85 @@
+{
+  "sha256": "ab0e102f70186cf42311b20597d6a9561b92600082e4c72a3cfb8bd44dd35595",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "build.mjs",
+      "sha256": "aae96cec4091ab89aef195bfdd8d0f13e1b32c8ffd82ae9d054c083f4bdf66fa",
+      "bytes": 591
+    },
+    {
+      "path": "index.html",
+      "sha256": "4694b5d28a571c0ccd2ef683176eb805aee614a7fbe319f05b67f34695c5bec7",
+      "bytes": 761773
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "96dbe4180c40c6b1369b872355c5647abc28793dbf58e2b0cf959b1f979b835f",
+      "bytes": 15018
+    },
+    {
+      "path": "package.json",
+      "sha256": "f1e497758177790a633cd5f803c00535a4985c8c7de9b05a96f3ee2fc4f38cdf",
+      "bytes": 226
+    },
+    {
+      "path": "preview.png",
+      "sha256": "ef36fecf4bdfa6dbadb3416877198b59af14adfbcbe6e241d35887dff00e887b",
+      "bytes": 461869
+    },
+    {
+      "path": "scene.png",
+      "sha256": "1e62cc98eff4791910df97a333742b833d2f44e89046758f99fe3e74d3a0aab1",
+      "bytes": 439874
+    },
+    {
+      "path": "src/castle.js",
+      "sha256": "d68fef6089c9e804da17c5ea52752258500e87a6cb516c02e912250ddbe7a379",
+      "bytes": 5753
+    },
+    {
+      "path": "src/characters.js",
+      "sha256": "7c1328f8bac1d2dbb7d7d3a2dba344513a05f8a7875a5cdf736fdfd45482ea59",
+      "bytes": 4813
+    },
+    {
+      "path": "src/core.js",
+      "sha256": "255678999397d760e6b105c7c4546f1bcaa2ed430d7fc50e544cb4c9ee2517fe",
+      "bytes": 4111
+    },
+    {
+      "path": "src/land.js",
+      "sha256": "4b4be023361d8392433c4fb6defa67ff920c577930c585ad5488e3d0b294226a",
+      "bytes": 5981
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "1e7fd8812c9693ef243b67cb40f4089848b9ccd2d0850a06c585d8aabcb9fd9d",
+      "bytes": 6880
+    },
+    {
+      "path": "src/shell.html",
+      "sha256": "ee6409acea952ac1bd9d56bb969ddd198bc85db628f47f85a7f35097b9ae92c4",
+      "bytes": 8517
+    },
+    {
+      "path": "src/village.js",
+      "sha256": "3eae7e5eeb3e8eb9be81ea949a308f16475678b01ba4c420d77d19f72b5c55d3",
+      "bytes": 5500
+    },
+    {
+      "path": "src/weather.js",
+      "sha256": "1b6b3b999bdaabc736ae28ea0700ec1212208f771443664fc2760837f6848d79",
+      "bytes": 4726
+    },
+    {
+      "path": "使用说明.md",
+      "sha256": "5d76cca6e066909cfb455e896dfe8c34f4ab3b62482bb42589c533f9b9e267a4",
+      "bytes": 1421
+    }
+  ]
+}

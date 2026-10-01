@@ -1,0 +1,18 @@
+{
+  "name": "sakura-town",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "《樱花小镇》Sakura Town - a cel-shaded 3D Japanese town life sim built with Three.js + Vite",
+  "scripts": {
+    "dev": "vite --port 5373 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --port 5373 --strictPort"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.11"
+  }
+}

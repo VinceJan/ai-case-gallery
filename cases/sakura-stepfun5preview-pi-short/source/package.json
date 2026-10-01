@@ -1,0 +1,18 @@
+{
+  "name": "sakura-town",
+  "version": "1.0.0",
+  "description": "樱花小镇 Sakura Town — 紧凑闭环的日式乡镇生活模拟游戏（浏览器 3D，代码生成世界）",
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node tests/sim.test.mjs",
+    "test:smoke": "node tests/smoke.mjs",
+    "test:events": "node tests/events.test.mjs",
+    "showcase": "node tests/showcase.mjs",
+    "test:all": "node tests/sim.test.mjs && node tests/smoke.mjs && node tests/events.test.mjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^24.0.0"
+  }
+}

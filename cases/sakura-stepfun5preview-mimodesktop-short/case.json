@@ -1,0 +1,38 @@
+{
+  "id": "sakura-stepfun5preview-mimodesktop-short",
+  "title": "樱花小镇 · Stepfun 5 Preview",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Stepfun 5 Preview",
+  "harness": "MiMo Desktop",
+  "modelEvidence": "目录命名；完整模型 ID 与当时配置未全部记录",
+  "date": null,
+  "promptVariant": "简洁版",
+  "promptHash": "f0295a42a92c1c2cd3bd03ea05ecb59c4e9cee3ffca212159bf7202256c667d8",
+  "description": "同一小镇任务在不同模型、harness 与提示词条件下的生成结果。",
+  "notes": [
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "按场景内说明操作；通常为 WASD 移动、鼠标转向、E 交互。",
+  "adapter": "vite",
+  "project": "sakura-town",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp",
+    "view-3.webp",
+    "view-4.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，页面无脚本异常，已检查实际场景画面。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "c78a88be44d6fc72adce2626bdee8c67b645e12edc1f3bc57d2e0c0c10046219",
+  "buildError": null,
+  "demoFingerprint": "baf4d64acc7a624dc42aa1e8d46aa90f4c0aa8b456393765beb4c5791c6e298a"
+}

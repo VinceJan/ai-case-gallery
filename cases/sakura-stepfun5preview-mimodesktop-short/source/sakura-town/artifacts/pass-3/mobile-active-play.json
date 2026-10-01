@@ -1,0 +1,126 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "mode": "mobile",
+  "state": "active-play",
+  "requestedState": "active-play",
+  "appliedState": "active-play",
+  "runId": "pass-3",
+  "seed": 42,
+  "screenshotPath": "artifacts\\pass-3\\mobile-active-play.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 664
+    },
+    "drawingBuffer": {
+      "width": 780,
+      "height": 1328
+    },
+    "alphaPixels": 4097,
+    "variance": 237,
+    "colorBuckets": 91,
+    "metrics": {
+      "colorBuckets": 119,
+      "colorEntropyBits": 2.85,
+      "edgeDensity": 0.124,
+      "luminance": {
+        "mean": 146.4,
+        "p5": 38,
+        "p95": 180,
+        "contrast": 142
+      },
+      "dominantColorShare": 0.417,
+      "nonBackgroundShare": 0.583
+    },
+    "renderBudget": {
+      "tier": "mobile",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 29,
+          "limit": 150,
+          "ok": true
+        },
+        {
+          "metric": "triangles",
+          "actual": 32514,
+          "limit": 300000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": 51,
+          "limit": 200,
+          "ok": true
+        },
+        {
+          "metric": "textures",
+          "actual": 8,
+          "limit": 40,
+          "ok": true
+        }
+      ],
+      "withinBudget": true
+    },
+    "diagnostics": {
+      "frame": 140,
+      "elapsed": 0,
+      "uiMode": "play",
+      "day": 1,
+      "minutes": 630,
+      "weather": "clear",
+      "money": 800,
+      "indoor": null,
+      "player": {
+        "position": {
+          "x": -18,
+          "y": 0,
+          "z": 16.8
+        },
+        "speed": 0
+      },
+      "camera": {
+        "x": -18,
+        "y": 4.5148567681867435,
+        "z": 20.37,
+        "fov": 48,
+        "far": 320
+      },
+      "npcs": {
+        "total": 14,
+        "outdoor": 0
+      },
+      "quests": {
+        "active": 0,
+        "done": 0
+      },
+      "questTarget": null,
+      "festival": false,
+      "renderer": {
+        "calls": 29,
+        "triangles": 32514,
+        "geometries": 51,
+        "textures": 8
+      },
+      "canvas": {
+        "clientWidth": 390,
+        "clientHeight": 664,
+        "width": 780,
+        "height": 1328,
+        "dpr": 2
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}

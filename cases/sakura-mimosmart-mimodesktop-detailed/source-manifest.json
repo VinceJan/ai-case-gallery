@@ -1,0 +1,515 @@
+{
+  "sha256": "d63a2e50c8080f8beee9e4a6bcdcd8f8ce33cb4231d2a849874c287c9196ab23",
+  "files": [
+    {
+      "path": "sakura-town/README.md",
+      "sha256": "7b40585a81ca3455f386b118319302ec4e38493d8faa034aaa5c6021a9979080",
+      "bytes": 3430
+    },
+    {
+      "path": "sakura-town/artifacts/debug/cafe.png",
+      "sha256": "769ec7b6e3da390ef28133ba4f52784b0f9faa93838bedee33dfab30563d25d1",
+      "bytes": 275275
+    },
+    {
+      "path": "sakura-town/artifacts/debug/final-spawn.png",
+      "sha256": "e798c5032a5c15f9f8060d8a4e8d68ca5b1b4595147bdec26837b4e8283ff201",
+      "bytes": 253679
+    },
+    {
+      "path": "sakura-town/artifacts/debug/final-town.png",
+      "sha256": "d789681f7ba06d7ca22e088c9a2e5859933f5998ec5c991e80e7f40f6f6a536c",
+      "bytes": 442277
+    },
+    {
+      "path": "sakura-town/artifacts/debug/fix-cafe.png",
+      "sha256": "66a513f9d6ac719ce91575572d39f231446ee93378557daa6c38cbe3bd142aa8",
+      "bytes": 394326
+    },
+    {
+      "path": "sakura-town/artifacts/debug/fix-houses.png",
+      "sha256": "b7730670d357f1b758e24797aa496e08b8ce97d9b37dd76786bb50bd40c55b3f",
+      "bytes": 359292
+    },
+    {
+      "path": "sakura-town/artifacts/debug/fix-konbini.png",
+      "sha256": "59ba407ae401ee27db444b3199cfd27ceaf04f5e36b82372256138124d073e3a",
+      "bytes": 313871
+    },
+    {
+      "path": "sakura-town/artifacts/debug/fix-plaza.png",
+      "sha256": "7310006af9289956eeb93a29bd44ea79746146922940093f67a4645d82af3fc7",
+      "bytes": 172925
+    },
+    {
+      "path": "sakura-town/artifacts/debug/fix-shops.png",
+      "sha256": "c149bfffc8fcb82fa80f2e128732e01ec6a9308e3b4fa68dd359a6dec5c3df9f",
+      "bytes": 270484
+    },
+    {
+      "path": "sakura-town/artifacts/debug/house-close.png",
+      "sha256": "8698cb3931496b874ba097a047bc1fdec09340d732ee1aeb4c4cbf98c377e4ce",
+      "bytes": 310209
+    },
+    {
+      "path": "sakura-town/artifacts/debug/moved.png",
+      "sha256": "8d97fa72ec5870fefcf4791933f9e7ee81be0cef0dc2981b553419015d622eaa",
+      "bytes": 255732
+    },
+    {
+      "path": "sakura-town/artifacts/debug/overview.png",
+      "sha256": "72fc2a00db4c4314e3d357eb460b06ec1091e9f3886adb1456320c6f563730de",
+      "bytes": 271991
+    },
+    {
+      "path": "sakura-town/artifacts/debug/r_fix-plaza.jpg",
+      "sha256": "2447e73f76790979273bf1fe491a9d7bfb5bbaca90f3bf93fa079050faf05e8c",
+      "bytes": 73837
+    },
+    {
+      "path": "sakura-town/artifacts/debug/r_house-close.jpg",
+      "sha256": "e5a3dc0de7954671cc62be152022e14c2807d24ad84b1b8410681479214491d5",
+      "bytes": 67978
+    },
+    {
+      "path": "sakura-town/artifacts/debug/r_topdown.jpg",
+      "sha256": "1e7502d76ef05ab2cfa3140aa8378ba180a7e83bed8ad484765efc5ca8cf0aa3",
+      "bytes": 138532
+    },
+    {
+      "path": "sakura-town/artifacts/debug/small_cafe.jpg",
+      "sha256": "225e0949fde0656ff51e57017257bc14debff6738c532c379e0cec78885f9fc1",
+      "bytes": 69013
+    },
+    {
+      "path": "sakura-town/artifacts/debug/small_overview.jpg",
+      "sha256": "f6f25a628f03cd5d38b808ec42700077dabf7784911818a990d3cb736306d8ee",
+      "bytes": 76565
+    },
+    {
+      "path": "sakura-town/artifacts/debug/small_station.jpg",
+      "sha256": "a381badc88214d87c3fbe2b113ffd4b444111522728ed15d36f0584459fd0444",
+      "bytes": 43002
+    },
+    {
+      "path": "sakura-town/artifacts/debug/small_west.jpg",
+      "sha256": "61d6db5a6a9dab19e1fd44e4e8d62b0ab225e46a2f38f150980263198e967750",
+      "bytes": 71561
+    },
+    {
+      "path": "sakura-town/artifacts/debug/station.png",
+      "sha256": "23729da66110eb778a3b44086483ae3dfdeed9d88a1283c7519ea0a99da4c07e",
+      "bytes": 126369
+    },
+    {
+      "path": "sakura-town/artifacts/debug/stuck.png",
+      "sha256": "9911c1fc7bdd6122df5151658885286705c6bf089dae9c0b8dd8a63b9af85b20",
+      "bytes": 46130
+    },
+    {
+      "path": "sakura-town/artifacts/debug/topdown.png",
+      "sha256": "db8372209c7cb10c61f4032d97b7bb5f4477bc2ccf31fbcec2493bc64da189f5",
+      "bytes": 504165
+    },
+    {
+      "path": "sakura-town/artifacts/debug/view_cafe.png",
+      "sha256": "7e317ac166cb21a5717746cbac8528dfd7bcfbb3c3e975a668b339f1bbab4b34",
+      "bytes": 269223
+    },
+    {
+      "path": "sakura-town/artifacts/debug/view_overview.png",
+      "sha256": "5af8f0dc8d619639d04cd98c5db235625514b74a8650a8f600387e65e85f9946",
+      "bytes": 267979
+    },
+    {
+      "path": "sakura-town/artifacts/debug/view_station.png",
+      "sha256": "1e409ba1efd2fb70fe090ca5930355cffe9372a2e1db8f8ac076e2243622f7d3",
+      "bytes": 124765
+    },
+    {
+      "path": "sakura-town/artifacts/debug/view_west.png",
+      "sha256": "6911c52c32d15e56ae3360b55cf296112c2c27fbb2aef8a35d0d670b7bdfc196",
+      "bytes": 302478
+    },
+    {
+      "path": "sakura-town/artifacts/debug/west.png",
+      "sha256": "41a34aa6c58abb0a891c5ea693c9a5db62ad5d327319401af02e3711215a898f",
+      "bytes": 309731
+    },
+    {
+      "path": "sakura-town/artifacts/final-evidence.md",
+      "sha256": "383b5968b0be28c1bb589282de2d93f97e2a349ffb51b88f1890d8f994a5cb3b",
+      "bytes": 2760
+    },
+    {
+      "path": "sakura-town/artifacts/final/day.png",
+      "sha256": "aca299250e0f6358ac0fd58e4c24a6ada2239d2f89a0d6c17561bb75d5e45d24",
+      "bytes": 206774
+    },
+    {
+      "path": "sakura-town/artifacts/final/desktop-active-play.json",
+      "sha256": "f786fc20e80f1525d1ea3fe5668a87463c10d6668cbbdd6813b880ce1e5b4c1a",
+      "bytes": 1447
+    },
+    {
+      "path": "sakura-town/artifacts/final/desktop-active-play.png",
+      "sha256": "eb718d93d8c3e40ea45349df98d6919adc799004fff98f5ba55c510189658b11",
+      "bytes": 50953
+    },
+    {
+      "path": "sakura-town/artifacts/final/hero-day.png",
+      "sha256": "00b7c4618c93eab18a4b57a56919da7b955b910246995eed281a91b71f80a639",
+      "bytes": 195218
+    },
+    {
+      "path": "sakura-town/artifacts/final/hero-night.png",
+      "sha256": "7a40c685a3c0d87a20e8f60b39946bd4d90a3ef3e38e1f51ff07ac27a94420a5",
+      "bytes": 239949
+    },
+    {
+      "path": "sakura-town/artifacts/final/night.png",
+      "sha256": "7df617f782d0db2bff42367d4a7d293f18aafb6ff8fdd80b1383bc1050db91d3",
+      "bytes": 236324
+    },
+    {
+      "path": "sakura-town/artifacts/final/park.png",
+      "sha256": "b835bf18e5441540f24879a0312f2fb6af22e0d5f1d012cb35d8470e8029301c",
+      "bytes": 307074
+    },
+    {
+      "path": "sakura-town/artifacts/game-progress.md",
+      "sha256": "ee323067978d82deaae4c247a8f00e7d60a004f330c22733f9ed3ee8127df9e8",
+      "bytes": 1701
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/bright1.png",
+      "sha256": "10f8cb92ca17c9c2a91c75318a1760decf4da152766bf263f41a2dd7f04b6d4b",
+      "bytes": 187002
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/bright2.png",
+      "sha256": "6a037523f6cfb27e7c165e74f2fe431da8570b8c8678ccea3a2ced64191781ff",
+      "bytes": 259591
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/debug.png",
+      "sha256": "9ff8a31a07e55abc8592de9dc9c2875aa0d03249acada4d6cef92c23f88710fd",
+      "bytes": 62241
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/desktop-active-play.json",
+      "sha256": "78bdf6a983da410eeb76cd27c428dfd5ce720bc5b9fb2ad324e327c752d049bd",
+      "bytes": 713
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/fix1.png",
+      "sha256": "7bbbc4aeb411d07c375ab7b5f4699aa02701f3aba8dd018fb6fa764693490e7f",
+      "bytes": 116923
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/fix2.png",
+      "sha256": "e8960853818add8dc2cbeef92cbb0cf69afef48d50f5d97156a48e8c144fb9c5",
+      "bytes": 37048
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/game-moved.png",
+      "sha256": "3473ac26ba8c65000408ff12c4507072f6b8ae8d96cb07dd6c372d51ace45c51",
+      "bytes": 57173
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/game.png",
+      "sha256": "655381253d8d3af8e708ad898cafb50f7e400450aad5304745ab726e2dce5ba0",
+      "bytes": 57072
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/game_copy.png",
+      "sha256": "85f79bae5c6d8a6f52f28824f9ec6a0b2e434f777755d161bc2a08483abdd2b3",
+      "bytes": 58794
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/light1.png",
+      "sha256": "3446054b9995669f08becfed98c0702a295fbd84a6ad3f0dd14b782c58927c21",
+      "bytes": 137677
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/light2.png",
+      "sha256": "242ef68692c43071d3dbc037d469f8dfba0f1592ed23b675d5cd60f0e4d2be86",
+      "bytes": 42138
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/light3.png",
+      "sha256": "26dd844207a6de7fab85dda970c8067a379812420e0308ae681d00c01cad720c",
+      "bytes": 123527
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/look1.png",
+      "sha256": "e5256aff0a7594ea30aa4f380d5ea435d00a0a60bedce4330e3e5dd7371ca564",
+      "bytes": 94297
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/look2.png",
+      "sha256": "89bfe2e9a0b6577c01dd5f03eaae20eb28dec0d76503b438e7f19f06eb095a3d",
+      "bytes": 68210
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/morning.png",
+      "sha256": "d6ebbef6df6fed6e1503830379043e86316797448f55dae7d0a8554dc63f2dff",
+      "bytes": 318430
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/noon.png",
+      "sha256": "34af2a11c866faf4a2acb85cef6a6536c7504d723f7f08b2bc85a16e62160fa5",
+      "bytes": 189437
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/noon2.png",
+      "sha256": "0c998d226e2f0052343ef1620a7f239b1e84f19fe5bf2cfff5e8cef8465d5e05",
+      "bytes": 214857
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/noon3.png",
+      "sha256": "e794ced7ef05e0f0eab2ac4e85bbec4292bf6c7c5b8052343d8e9f7eceec0dea",
+      "bytes": 235795
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/open1.png",
+      "sha256": "9ff53d1da8808fb057617030f93947726552291fbd7b52c8af65329afa3fad30",
+      "bytes": 167714
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/open2.png",
+      "sha256": "2ec74ffb6b5909f9022af140742076160904c020b8977ae46851bf911c33f843",
+      "bytes": 168659
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/open3.png",
+      "sha256": "f7e2793e3178226ad2e20658c3ff57b9028dd18f82c4180cd0ae6b8ad0557293",
+      "bytes": 229544
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/open4.png",
+      "sha256": "db01b29847173c887498a7fdf15380be9921e935fa951c1648242c7e09779958",
+      "bytes": 182327
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/sky.png",
+      "sha256": "4e074f2431972d7c8072886eb5d0f4e5aa2c2e07772053760d6c083b1eedac76",
+      "bytes": 133424
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/startview.png",
+      "sha256": "945d06cd582e25fdd651f18719dd39cd1c6cd176993fb7fb510b9d0a07f7d499",
+      "bytes": 39269
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/view_debug.png",
+      "sha256": "9ff8a31a07e55abc8592de9dc9c2875aa0d03249acada4d6cef92c23f88710fd",
+      "bytes": 62241
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/view_game.png",
+      "sha256": "655381253d8d3af8e708ad898cafb50f7e400450aad5304745ab726e2dce5ba0",
+      "bytes": 57072
+    },
+    {
+      "path": "sakura-town/artifacts/pass-1/view_moved.png",
+      "sha256": "3473ac26ba8c65000408ff12c4507072f6b8ae8d96cb07dd6c372d51ace45c51",
+      "bytes": 57173
+    },
+    {
+      "path": "sakura-town/artifacts/pass-2/desktop-active-play.json",
+      "sha256": "82008cf3f0d17a140104f999298b1aa7934feded9590da14d6f530dfcfa93792",
+      "bytes": 625
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/desktop-active-play.json",
+      "sha256": "0260a82fb8f6f2fdac6d28dfc9220e86c1b91211b027e797bab1c4e1eb61d75a",
+      "bytes": 1449
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/desktop-active-play.png",
+      "sha256": "eb718d93d8c3e40ea45349df98d6919adc799004fff98f5ba55c510189658b11",
+      "bytes": 50953
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/map.png",
+      "sha256": "b71c117d0a06060b8ca9d68b361cdfd9734006c5f95712e9d29e38bc45e9c8aa",
+      "bytes": 215747
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/mobile.png",
+      "sha256": "f0aeafbfb75d6f71c69727058b997f35dc7490d02421ac71890bb9d2c6e190b4",
+      "bytes": 110639
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/night.png",
+      "sha256": "b14306f3f977078071487204db7149af2270f525295320b462315d08a2899fb9",
+      "bytes": 227179
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/night2.png",
+      "sha256": "2a0f901adaf8389a24bb577bfa0f58f89d7b32b0213ec735c5c50e960f46a279",
+      "bytes": 92664
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/town1.png",
+      "sha256": "851105d4037bf079da1ee5c8467359550ff287848e74e38bcf89c9d5ecb26d93",
+      "bytes": 189778
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/town2.png",
+      "sha256": "a6f107795165431e39e7c622afa0c766dc032f103e949712a8edab6e0f24f286",
+      "bytes": 93175
+    },
+    {
+      "path": "sakura-town/artifacts/pass-3/town3.png",
+      "sha256": "fd1a6e96959e1a62635260eabfbafd99d00d9c4b75cd61b83fc2436b78b788f6",
+      "bytes": 293564
+    },
+    {
+      "path": "sakura-town/index.html",
+      "sha256": "88dc6da1b11fb701e9779b8c310f82663ce0d942e71c7165dae8dade62197c0b",
+      "bytes": 13873
+    },
+    {
+      "path": "sakura-town/package-lock.json",
+      "sha256": "33ccbe5fa9118690b4c7dbe49bef464abc4ce4d2cdd1a86910b0b0192e064702",
+      "bytes": 37860
+    },
+    {
+      "path": "sakura-town/package.json",
+      "sha256": "a82c663d0d97d4bf830d19d5f84987630f7ec66e6ec6012fc7e95aea13f2372e",
+      "bytes": 430
+    },
+    {
+      "path": "sakura-town/src/buildings/Interiors.js",
+      "sha256": "62952909f8b2e8ad4898613cef4e73b0c4d54cbf31bfbc9f834498763a495aa0",
+      "bytes": 9959
+    },
+    {
+      "path": "sakura-town/src/buildings/factory.js",
+      "sha256": "2f1a84e1217dade584b281801212dc8933119d13945d199481428b756c6aa556",
+      "bytes": 25543
+    },
+    {
+      "path": "sakura-town/src/core/EventBus.js",
+      "sha256": "ffdebc163047e67f732b03cbab80ded08a73a0d2f891e5f549e87e2551043f0d",
+      "bytes": 809
+    },
+    {
+      "path": "sakura-town/src/core/Game.js",
+      "sha256": "98818fe399da42f063021c5ad2b1d87ef7a58cf1577cf31baa48bb877a273862",
+      "bytes": 28160
+    },
+    {
+      "path": "sakura-town/src/core/SaveSystem.js",
+      "sha256": "4816942dc3291a3d97174d84f1f8267b5fe8cff8d6c186bf486fec4d12abc14a",
+      "bytes": 1589
+    },
+    {
+      "path": "sakura-town/src/core/TimeSystem.js",
+      "sha256": "066bdb30b287d51633ad1c85bd509b27cee29b3fdc5fe7c2ef49d950e84b488a",
+      "bytes": 3030
+    },
+    {
+      "path": "sakura-town/src/core/WeatherSystem.js",
+      "sha256": "3515343ecafe5e460f85c3d54c6650f48ceede3f51e596f87c2b6df9887d2b7f",
+      "bytes": 3405
+    },
+    {
+      "path": "sakura-town/src/entities/NPC.js",
+      "sha256": "b7575d2bc177d74c052375ffa42a2f6b9ac698c1ae173fc14c04b345d6d22d9f",
+      "bytes": 15757
+    },
+    {
+      "path": "sakura-town/src/entities/Player.js",
+      "sha256": "430269f2898a052104da61c03d82fa0af1649b7b6a1b63ae949616b357bf72bb",
+      "bytes": 8884
+    },
+    {
+      "path": "sakura-town/src/entities/Train.js",
+      "sha256": "019743587c880b45d075721533edb2da5d9b8bc301ed859382b692c100c81ebb",
+      "bytes": 5460
+    },
+    {
+      "path": "sakura-town/src/main.js",
+      "sha256": "a4648aec18ce407428c32eb6223939d7b5f39e5a9bc5b0c2472bd6435662bb0b",
+      "bytes": 2253
+    },
+    {
+      "path": "sakura-town/src/systems/Audio.js",
+      "sha256": "0981425bc8e7ba6e603ac690aaf073eef43dc1c0bb60976b57b5b5cb7287854f",
+      "bytes": 4590
+    },
+    {
+      "path": "sakura-town/src/systems/Dialogue.js",
+      "sha256": "8a9bebcc33fd16ca8e862e3499fcf01e75580ffaa7837e5b10fff3d1ea0a0e8a",
+      "bytes": 4002
+    },
+    {
+      "path": "sakura-town/src/systems/Events.js",
+      "sha256": "874f9b13eff74e5d2dfc88c35edd945da1729667a11a74e50d1f3a85dc3a8019",
+      "bytes": 4656
+    },
+    {
+      "path": "sakura-town/src/systems/Interaction.js",
+      "sha256": "26dd12ffdb21232bad9cc6e46f1c8d38c99a2b4d8bac3c2ff04d09292694fee4",
+      "bytes": 4722
+    },
+    {
+      "path": "sakura-town/src/systems/Quests.js",
+      "sha256": "012eef20e215f16cd45e32dc93f5af9880e33112d56f034d7d35a7cd703d303e",
+      "bytes": 4858
+    },
+    {
+      "path": "sakura-town/src/ui/UI.js",
+      "sha256": "df3e2d5df6838e5854108c742ff9ca0bc5357f17057afc82eb07bc94149065dd",
+      "bytes": 8511
+    },
+    {
+      "path": "sakura-town/src/utils/materials.js",
+      "sha256": "774bcbfdfecb5fcb88a291f90d4f2840eaa59493f9db848c01d2e33e4a353433",
+      "bytes": 10474
+    },
+    {
+      "path": "sakura-town/src/world/Particles.js",
+      "sha256": "870419fb80660ba6a1e32b73b33a99920cb285a639c0a750fd018496018fc81c",
+      "bytes": 3553
+    },
+    {
+      "path": "sakura-town/src/world/Planet.js",
+      "sha256": "fff0dd11b37e3b1ca322fb105c0ffd6ac9869834ceee5c3204dc210b79e305bf",
+      "bytes": 3826
+    },
+    {
+      "path": "sakura-town/src/world/Railway.js",
+      "sha256": "407ff5a35a13547cbf8da483943611ff2f5e881d087d57d579b1c1699f23f06d",
+      "bytes": 8459
+    },
+    {
+      "path": "sakura-town/src/world/Roads.js",
+      "sha256": "2d0cd59337e45a44c66d73501613e9902aa20a7e678317a87351f0607b2d3407",
+      "bytes": 11619
+    },
+    {
+      "path": "sakura-town/src/world/Vegetation.js",
+      "sha256": "8034792677a884d9aad0b45b022781923214dd05be9dfba9dfce8f278acb7b09",
+      "bytes": 8610
+    },
+    {
+      "path": "sakura-town/src/world/WorldState.js",
+      "sha256": "0945cbeeea013271b6651d78cbe1121b437738b5bf295ebed6c3080cb2acfb2a",
+      "bytes": 2974
+    },
+    {
+      "path": "sakura-town/vite.config.js",
+      "sha256": "f07b63c5341bfbd84c7f47ab73e512c710d92617d63cd628fff083c405c315ad",
+      "bytes": 314
+    },
+    {
+      "path": "sakura_town_detailed.md",
+      "sha256": "26dbc3c6b9c95fd2fb3fe9f90ae0997721e5903dbae6632f9f5f008ac1764f84",
+      "bytes": 22913
+    }
+  ]
+}

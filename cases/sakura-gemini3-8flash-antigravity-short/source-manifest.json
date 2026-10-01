@@ -1,0 +1,180 @@
+{
+  "sha256": "b065952219f5b18870fdfa9e6521ce6ed7c731fd6ef74822f1f5563d443a847f",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "02ad2be8f0500d52736c1770650b99808c44f1633323a52336f2536cb864ba92",
+      "bytes": 7679
+    },
+    {
+      "path": "index.html",
+      "sha256": "2aca80f251ca7d83e0617970be27448b2c4b4769affc012c3fa147847b47a9b6",
+      "bytes": 2815
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5069b5d4b73667b390af92eae366baee73e304efb3d6c505134570a42fef8aa1",
+      "bytes": 40790
+    },
+    {
+      "path": "package.json",
+      "sha256": "be963d2e2a7dc9e695f0bab74cabc97522f447a1ea91e0df3400ce107ba64014",
+      "bytes": 337
+    },
+    {
+      "path": "sakura_town_short.md",
+      "sha256": "f0295a42a92c1c2cd3bd03ea05ecb59c4e9cee3ffca212159bf7202256c667d8",
+      "bytes": 880
+    },
+    {
+      "path": "src/buildings/CafeKomorebi.ts",
+      "sha256": "35edf2b2ebe5a337d8b331d000ca4b1c8413f965054856b23b852eb0ba41e809",
+      "bytes": 7677
+    },
+    {
+      "path": "src/buildings/PlayerHouse.ts",
+      "sha256": "09b3a38755d9ed981acd52c30587590cd3fe3fd303d6bc4cdc8dc7d3e36dce91",
+      "bytes": 8169
+    },
+    {
+      "path": "src/buildings/RailwayCrossing.ts",
+      "sha256": "3e1e925fbc881c538c2f815e83a42e415026a2573f6feb0a441990fcd25ef8b9",
+      "bytes": 5433
+    },
+    {
+      "path": "src/buildings/SakuraMart.ts",
+      "sha256": "5d61dade9bf4f1d2d0dd643be7073ac2fc931303cb6473b38d52107c914dac4f",
+      "bytes": 8536
+    },
+    {
+      "path": "src/buildings/SakuraShrine.ts",
+      "sha256": "076f0b4598857c98dc8ff5d6747cf8eb40fe7abed9d4f1a3436aa1f876bc8f2b",
+      "bytes": 11314
+    },
+    {
+      "path": "src/buildings/SakuraStation.ts",
+      "sha256": "fab39f7e4288398dee2dcd13808a5ab7c8e24839bf6159fa462ac30cecad3d9f",
+      "bytes": 7188
+    },
+    {
+      "path": "src/buildings/TownSchool.ts",
+      "sha256": "43d3823357d71442fafa13ecc838eeac383da55fa588bc2f0b65246cf28fd1a8",
+      "bytes": 5179
+    },
+    {
+      "path": "src/characters/AvatarGenerator.ts",
+      "sha256": "d97569f944188033dd4385f2215a462e653a5ed185026f52bff075874814aa82",
+      "bytes": 8592
+    },
+    {
+      "path": "src/characters/NPCSystem.ts",
+      "sha256": "d4d09286b6c64130726cc64b7050f72320456b872cbbc2fc2aec42e8a0ad8076",
+      "bytes": 15274
+    },
+    {
+      "path": "src/engine/AudioSynthesizer.ts",
+      "sha256": "dbf8af30e7e1b51434c89c581fecedca8cd25305d8650ce315abf49c5e9f2727",
+      "bytes": 13851
+    },
+    {
+      "path": "src/engine/CelShaders.ts",
+      "sha256": "3feda987ec6be76bee8bbeda4a1d469e34d6e4ff6f48502fad33b1138291bedb",
+      "bytes": 5772
+    },
+    {
+      "path": "src/engine/Physics.ts",
+      "sha256": "d358d6761a4c26745ff6eebc4fea35b5ffca7f55b5a43eb0b618239250668dff",
+      "bytes": 3596
+    },
+    {
+      "path": "src/engine/TextureGenerator.ts",
+      "sha256": "52ed7f9000d4d0c8dcfd824b4da559f3a357221890d78a2957d314aebb603751",
+      "bytes": 12054
+    },
+    {
+      "path": "src/gameplay/InteractionManager.ts",
+      "sha256": "0e65b516066de2ebc797b97c975f9df7c979b7a917beb8d3ff15d99610131565",
+      "bytes": 1552
+    },
+    {
+      "path": "src/gameplay/InventorySystem.ts",
+      "sha256": "38c63535d3d6313bb637004e0dad7bbea2fd007d6daa855aff5fc1a7f267a86e",
+      "bytes": 2692
+    },
+    {
+      "path": "src/gameplay/PhotographySystem.ts",
+      "sha256": "c1fca9ed83b93a40a87b19bf34bee02e6bda2a210b03caf7be61c4946b9c6f61",
+      "bytes": 1071
+    },
+    {
+      "path": "src/gameplay/PlayerController.ts",
+      "sha256": "b0073248e34aed251d811f76b0a71bd2ac09c3d1082bd6f825125d02f7adc818",
+      "bytes": 7392
+    },
+    {
+      "path": "src/gameplay/QuestManager.ts",
+      "sha256": "548356e2e856bda7ddc453be6be09a6dc4bc19cf66fc92300e4e48951d9c0c3c",
+      "bytes": 3129
+    },
+    {
+      "path": "src/gameplay/SaveManager.ts",
+      "sha256": "15c65797ee7e711d1a6102cad8a1a40c265fe0b64ab2b70eb7166acd12a3780f",
+      "bytes": 1083
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "1c6a3a96e6194500051d045d221878a0a9efb94e1c824086a6d266e348b09e15",
+      "bytes": 18563
+    },
+    {
+      "path": "src/types.ts",
+      "sha256": "9fbd644fccec7237924fc3360b62d4518d6a2aa977aba32b4fbc0dcc98c5877c",
+      "bytes": 1684
+    },
+    {
+      "path": "src/ui/UIManager.ts",
+      "sha256": "6c65214c82a490fab1fca832a4fc4911e4ca6a4dd8ee18268e7c9c960500dbdc",
+      "bytes": 23204
+    },
+    {
+      "path": "src/vehicles/Bicycle.ts",
+      "sha256": "071e989b404445d44ca78b6fdb2a7c61dcb8c2695fbb29c4e198574c33d9206a",
+      "bytes": 3954
+    },
+    {
+      "path": "src/vehicles/Train.ts",
+      "sha256": "c3f177a3954c10290d547f25ddb4bebe160d995ff05e7cbfffa0ba60e2e7c8d9",
+      "bytes": 11967
+    },
+    {
+      "path": "src/world/FoliageAndProps.ts",
+      "sha256": "e586095b0dbf5ae5da6b76551305afc4c89956518cfba7f68864bfea15d783f3",
+      "bytes": 13371
+    },
+    {
+      "path": "src/world/LightingSky.ts",
+      "sha256": "03a70e18f809d9c8699c1b8f01fed69f66790bcd68f55cea87ae7ae39c4fb0b2",
+      "bytes": 6876
+    },
+    {
+      "path": "src/world/TerrainAndRoads.ts",
+      "sha256": "93a835b1bc9e8f186462fb2d063d7de28d8071bc3d30b799d14b57453ec52fba",
+      "bytes": 12027
+    },
+    {
+      "path": "src/world/Weather.ts",
+      "sha256": "7cbed4d522b58b2c529f0fdc356dd6ad70b9a6698292841ce14cefa78c5c55b6",
+      "bytes": 5980
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "cd4fd87048ffb7fb5cb7aa8709e89bb6ce4deca76bc00a5ce67c0231116d5f6d",
+      "bytes": 487
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "ee27a585c7896810092e908e7e5c70d09f5306310fff345be1e49625427980d8",
+      "bytes": 173
+    }
+  ]
+}

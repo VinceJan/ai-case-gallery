@@ -1,0 +1,90 @@
+{
+  "sha256": "43ebaf0ec95a898ba0e3405d43fbc68c17373f6d6153d3dfd7a63c3037179e38",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "e8bc935ce727f1809c792f4c5d26c5fc75ba2b7df7fc9390c56c8892f6a6007f",
+      "bytes": 26
+    },
+    {
+      "path": "PROMPT.md",
+      "sha256": "b6eb02557ec61b4f55841b132659b1bc28862c03e576017d8bb479991d3af98d",
+      "bytes": 138
+    },
+    {
+      "path": "README.md",
+      "sha256": "c81b1b520e01b5156d76fe7dba010f6bc6f6b33d69d98c3ea8825d0e1790c232",
+      "bytes": 1333
+    },
+    {
+      "path": "index.html",
+      "sha256": "c2a198355df7981e39064010e0a9e53b8e85f039a1f58e896561fd9727af0abd",
+      "bytes": 4291
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "3e97332ed804272299b3f42f2368f797239cc7396543ce15323fe7f6fae5e68d",
+      "bytes": 56303
+    },
+    {
+      "path": "package.json",
+      "sha256": "9243d355657c47933214f8ad218d1ba477f833c7faef45ea58328c46c2f5a7ff",
+      "bytes": 402
+    },
+    {
+      "path": "src/atlas.ts",
+      "sha256": "8467ce35037343a9481ac417c247d27dd7038a93aea4ec32783c7e27c27e8cbb",
+      "bytes": 3872
+    },
+    {
+      "path": "src/atmosphere.ts",
+      "sha256": "f7e474e14b6351aba50922e415da89859ec324a764faea5abc61620ffdf85cad",
+      "bytes": 8540
+    },
+    {
+      "path": "src/foliage.ts",
+      "sha256": "7547ec50a992ba961eb2d014995311bcd19143f24cab501207f25a7364a6a236",
+      "bytes": 5141
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "61846bb711a051d3d5d8856c1e6d3cca0cea98918042728ba528616f8b1b259b",
+      "bytes": 9959
+    },
+    {
+      "path": "src/player.ts",
+      "sha256": "68e858dedc7760783551fee3a7222bbe7fbb35f23bd02f35e3a7d46b15161128",
+      "bytes": 3978
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "bbf43f3f6bf3d5c85f9a99897efc3abe783aec6d32d4e39950be3d7d92e68a57",
+      "bytes": 10114
+    },
+    {
+      "path": "src/terrainMesh.ts",
+      "sha256": "90a66f1fbb449028c1b94c3334584b9d3a213237d17ec7849a756e4460879c40",
+      "bytes": 4735
+    },
+    {
+      "path": "src/world.ts",
+      "sha256": "eae4cd5be40fd271cd01ff3db1d99f190bd820571f363d2184b634a79bc516ba",
+      "bytes": 6053
+    },
+    {
+      "path": "tests/player.test.ts",
+      "sha256": "0dce9b3ba335b0fabb9d38725b811c3ade73655c32605b3de3ddbaaab37283fd",
+      "bytes": 1409
+    },
+    {
+      "path": "tests/world.test.ts",
+      "sha256": "4ea5848ba32152e23b20b21e201ce04473e4f7aa97a80b3b486523c868d98c6f",
+      "bytes": 1533
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "50a1804f97a53a1bea08f5cd0dec2f2d31a62a15086d99bad940946eff96c024",
+      "bytes": 270
+    }
+  ]
+}

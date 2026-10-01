@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>樱花小镇 · Sakura Town</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/ui/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <!-- ============ 加载 / 标题 ============ -->
+      <div id="title-screen" class="screen">
+        <div class="title-bg"></div>
+        <div class="title-inner">
+          <div class="title-kanji">桜 の 町</div>
+          <h1 class="title-main">樱花小镇</h1>
+          <div class="title-sub">SAKURA TOWN &nbsp;·&nbsp; 晚春 · 地方小镇生活记</div>
+          <div id="load-box" class="load-box">
+            <div class="load-label"><span id="load-text">正在搭建小镇…</span><span id="load-pct">0%</span></div>
+            <div class="load-track"><div id="load-bar" class="load-bar"></div></div>
+          </div>
+          <button id="btn-start" class="btn-start" disabled>开 始</button>
+          <div class="title-keys">
+            <span><b>W A S D</b> 移动</span><span><b>Shift</b> 快走</span><span><b>E</b> 互动</span>
+            <span><b>拖动鼠标</b> 转视角</span><span><b>滚轮</b> 远近</span><span><b>J</b> 手帐</span>
+            <span><b>M</b> 地图</span><span><b>Esc</b> 菜单</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ HUD ============ -->
+      <div id="hud" class="hidden">
+        <div id="hud-top">
+          <div class="chip clock-chip">
+            <span id="hud-day">春 · 第1日</span>
+            <span class="sep"></span>
+            <span id="hud-time">07:00</span>
+            <span class="sep"></span>
+            <span id="hud-weather">晴</span>
+          </div>
+          <div class="chip area-chip"><span id="hud-area">车站前</span></div>
+        </div>
+
+        <div id="tracker" class="tracker">
+          <div class="tracker-head">便 笺<span id="tracker-count">0</span></div>
+          <div id="tracker-list" class="tracker-list"></div>
+        </div>
+
+        <div id="hint-prompt" class="prompt hidden"><b id="prompt-key">E</b><span id="prompt-text"></span></div>
+
+        <div id="toast-stack" class="toast-stack"></div>
+
+        <div id="dialogue" class="dialogue hidden">
+          <div class="dlg-portrait"><canvas id="dlg-face" width="160" height="160"></canvas></div>
+          <div class="dlg-body">
+            <div class="dlg-name"><span id="dlg-name"></span><span id="dlg-rel" class="dlg-rel"></span></div>
+            <div class="dlg-text" id="dlg-text"></div>
+            <div class="dlg-next" id="dlg-next">▼ 继续</div>
+          </div>
+        </div>
+
+        <div id="choice-box" class="choice-box hidden"></div>
+      </div>
+
+      <!-- ============ 面板 ============ -->
+      <div id="panel" class="panel hidden">
+        <div class="panel-card">
+          <div class="panel-tabs">
+            <button data-tab="journal" class="active">手帐</button>
+            <button data-tab="map">地图</button>
+            <button data-tab="people">町民</button>
+            <button data-tab="settings">设置</button>
+            <button data-tab="close" class="tab-x">✕</button>
+          </div>
+          <div class="panel-body">
+            <div class="tab-page active" data-page="journal"><div id="journal-content"></div></div>
+            <div class="tab-page" data-page="map">
+              <canvas id="map-canvas" width="720" height="720"></canvas>
+              <div class="map-legend">红点＝便笺目标 · 黄圈＝未发现地点 · 白点＝町民</div>
+            </div>
+            <div class="tab-page" data-page="people"><div id="people-content"></div></div>
+            <div class="tab-page" data-page="settings"><div id="settings-content"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="vignette" class="vignette"></div>
+      <div id="fade" class="fade"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

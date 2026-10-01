@@ -1,0 +1,20 @@
+{
+  "sha256": "181494d6275cbc7bae897e784f529b07fd524cf58367d1529f8ec2df7e6c594a",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-CAXju5rL.js",
+      "sha256": "9ebbce7ee0fb779dae9f73cf84e792265ecc97fa9f6a00e687a9d231edb4e610",
+      "bytes": 608753
+    },
+    {
+      "path": "index.html",
+      "sha256": "43133835ffa1b39e2e21a0fa1bc946731b0b6ff38d9800d9c1dd8ec02b0836ac",
+      "bytes": 1014
+    }
+  ]
+}

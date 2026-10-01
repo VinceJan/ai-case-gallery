@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>樱花小镇 Sakura Town</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- 加载界面 -->
+  <div id="loading" class="overlay">
+    <div class="loading-box">
+      <div class="loading-title">樱花小镇</div>
+      <div class="loading-sub">Sakura Town</div>
+      <div class="loading-bar"><div id="loading-bar-fill"></div></div>
+      <div id="loading-text" class="loading-text">正在盛开…</div>
+    </div>
+  </div>
+
+  <!-- 标题界面 -->
+  <div id="title" class="overlay hidden">
+    <div class="title-box">
+      <div class="title-name">樱花小镇</div>
+      <div class="title-sub">Sakura Town &nbsp;·&nbsp; 晚春樱花季</div>
+      <div class="title-buttons">
+        <button id="btn-new" class="tbtn">新的春假</button>
+        <button id="btn-continue" class="tbtn">继续春假</button>
+        <button id="btn-help" class="tbtn ghost">操作说明</button>
+      </div>
+      <div class="title-hint">WASD 移动 · 鼠标拖动转视角 · E 交互 · Shift 奔跑 · Tab 任务 · M 地图 · Esc 菜单</div>
+    </div>
+  </div>
+
+  <!-- 帮助 -->
+  <div id="help" class="overlay hidden">
+    <div class="panel help-panel">
+      <h2>操作说明</h2>
+      <table class="help-table">
+        <tr><td>W A S D</td><td>移动</td></tr>
+        <tr><td>鼠标左键拖动</td><td>旋转视角</td></tr>
+        <tr><td>鼠标滚轮</td><td>缩放视角</td></tr>
+        <tr><td>Shift</td><td>奔跑</td></tr>
+        <tr><td>E / 空格</td><td>交互 · 对话推进 · 坐下/起身 · 上下车</td></tr>
+        <tr><td>Tab</td><td>任务日志</td></tr>
+        <tr><td>M</td><td>展开/收起小地图</td></tr>
+        <tr><td>T</td><td>时间加速（看昼夜变化）</td></tr>
+        <tr><td>R</td><td>切换下雨（天气增强项）</td></tr>
+        <tr><td>Esc</td><td>暂停菜单（保存 / 读取 / 音量）</td></tr>
+      </table>
+      <div class="help-tip">小镇生活提示：留意公民馆与车站的公告板；和便利店的店员、咖啡店老板、学校里的孩子们说说话；傍晚的神社可能有事情发生。</div>
+      <button id="btn-help-close" class="tbtn">返回</button>
+    </div>
+  </div>
+
+  <!-- HUD -->
+  <div id="hud" class="hidden">
+    <div id="danger-vignette"></div>
+    <div id="clock-box">
+      <div id="clock-time">08:00</div>
+      <div id="clock-info">第 1 天 · 晴 · 晚春</div>
+    </div>
+
+    <div id="quest-tracker"></div>
+
+    <div id="toasts"></div>
+
+    <div id="minimap-box">
+      <canvas id="minimap" width="200" height="200"></canvas>
+      <div id="minimap-label">樱花小镇</div>
+    </div>
+
+    <div id="status-box">
+      <div id="coins">￥0</div>
+      <div id="items"></div>
+    </div>
+
+    <div id="prompt" class="hidden">
+      <span id="prompt-key">E</span><span id="prompt-text"></span>
+    </div>
+
+    <div id="location-banner" class="hidden"></div>
+  </div>
+
+  <!-- 对话 -->
+  <div id="dialogue" class="hidden">
+    <div id="dialogue-name"></div>
+    <div id="dialogue-text"></div>
+    <div id="dialogue-choices"></div>
+    <div id="dialogue-next">▼</div>
+  </div>
+
+  <!-- 任务日志 -->
+  <div id="questlog" class="overlay hidden">
+    <div class="panel questlog-panel">
+      <h2>任务日志</h2>
+      <div id="questlog-active"></div>
+      <h3>已完成</h3>
+      <div id="questlog-done"></div>
+      <div class="questlog-foot">Tab / Esc 关闭</div>
+    </div>
+  </div>
+
+  <!-- 暂停菜单 -->
+  <div id="pause" class="overlay hidden">
+    <div class="panel pause-panel">
+      <h2>暂停</h2>
+      <div class="pause-row"><label>主音量</label><input id="vol-master" type="range" min="0" max="100" value="80"></div>
+      <div class="pause-row"><label>时间流速</label><input id="vol-time" type="range" min="0" max="60" value="10"></div>
+      <div class="pause-buttons">
+        <button id="btn-save" class="tbtn">保存进度</button>
+        <button id="btn-load" class="tbtn">读取进度</button>
+        <button id="btn-resume" class="tbtn">返回游戏</button>
+        <button id="btn-quit" class="tbtn ghost">回到标题</button>
+      </div>
+      <div class="pause-foot">Esc 返回游戏</div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

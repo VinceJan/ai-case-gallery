@@ -1,0 +1,100 @@
+{
+  "url": "http://127.0.0.1:5188",
+  "mode": "desktop",
+  "state": "active-play",
+  "requestedState": "active-play",
+  "appliedState": "active-play",
+  "runId": "pass-5",
+  "seed": null,
+  "screenshotPath": "artifacts\\pass-5\\desktop-active-play.png",
+  "gpu": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 Laptop GPU (0x000028E0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (NVIDIA)",
+    "softwareRendered": false
+  },
+  "result": {
+    "ok": true,
+    "reason": "nonblank",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720
+    },
+    "drawingBuffer": {
+      "width": 1280,
+      "height": 720
+    },
+    "alphaPixels": 4096,
+    "variance": 245,
+    "colorBuckets": 203,
+    "metrics": {
+      "colorBuckets": 268,
+      "colorEntropyBits": 5.02,
+      "edgeDensity": 0.231,
+      "luminance": {
+        "mean": 149.3,
+        "p5": 31,
+        "p95": 207.4,
+        "contrast": 176.4
+      },
+      "dominantColorShare": 0.175,
+      "nonBackgroundShare": 0.825
+    },
+    "renderBudget": {
+      "tier": "desktop",
+      "note": "starting-point budget; adjust per game and document overrides",
+      "rows": [
+        {
+          "metric": "calls",
+          "actual": 632,
+          "limit": 300,
+          "ok": false
+        },
+        {
+          "metric": "triangles",
+          "actual": 29386,
+          "limit": 750000,
+          "ok": true
+        },
+        {
+          "metric": "geometries",
+          "actual": null,
+          "limit": 300,
+          "ok": null
+        },
+        {
+          "metric": "textures",
+          "actual": null,
+          "limit": 60,
+          "ok": null
+        }
+      ],
+      "withinBudget": false
+    },
+    "diagnostics": {
+      "frame": 66,
+      "elapsed": -0.2335000000044703,
+      "fps": 0,
+      "time": {
+        "day": 1,
+        "hour": 8,
+        "minute": 29.719799999994635
+      },
+      "weather": "clear",
+      "player": {
+        "sx": 4,
+        "sz": 4,
+        "money": 1500
+      },
+      "npcs": 12,
+      "trains": 2,
+      "renderer": {
+        "calls": 632,
+        "triangles": 29386
+      }
+    }
+  },
+  "consoleErrors": [],
+  "pageErrors": []
+}
