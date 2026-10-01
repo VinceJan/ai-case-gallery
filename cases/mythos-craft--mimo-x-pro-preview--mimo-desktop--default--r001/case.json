@@ -1,0 +1,61 @@
+{
+  "id": "mythos-craft--mimo-x-pro-preview--mimo-desktop--default--r001",
+  "title": "神话境界 · MiMo X Pro Preview · MiMo Desktop",
+  "topic": "mythos-craft",
+  "topicLabel": "神话境界",
+  "model": "MiMo X Pro Preview",
+  "harness": "MiMo Desktop",
+  "modelEvidence": "Nagi Bench PR #60 的模型注册文件及产物路径",
+  "date": "2026-09-09",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "e97ffefb1ce593d594c5dd9c0f81a1c605d14f64cbf05f361a38f79b6d819c4b",
+  "description": "单个 HTML 文件，一次生成一款《我的世界》式的可玩 3D 体素世界。",
+  "notes": [
+    "在 MiMo Desktop 中使用 MiMo X Pro Preview（默认思考档位）一次生成，未修改。产出为单 HTML 体素世界：Perlin 噪声地形、第一人称操控、方块破坏/放置，以及内置神话建筑与地形内容。",
+    "从用户已关闭、未合并的 PR #60 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "mythos-craft.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:35:22.186Z",
+      "summary": "点击开始层后已进入方块世界，树木、地形、人物阴影与工具栏可见，执行移动，无脚本异常"
+    }
+  },
+  "sourceFingerprint": "0c984a65377b3b16fdc9a8bc117b884c5810fbd5060a3137b0004ff88e7f73c3",
+  "serial": 1,
+  "variant": "default",
+  "effort": "Default",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/60",
+    "commit": "11e508e5b5ebea642b58e4fed64255529ffbf2f5",
+    "paths": [
+      "outputs/mimo-x-pro-preview/mimo-desktop-default/mythos-craft.html"
+    ],
+    "modelRegistry": "models/mimo-x-pro-preview.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/11e508e5b5ebea642b58e4fed64255529ffbf2f5/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": {
+    "selector": "#click-start"
+  },
+  "buildError": null,
+  "demoFingerprint": "e7a65f622123d90d6615c83e3eeabcecac21c649ab2a0cc229f6f56e9b7d9685",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

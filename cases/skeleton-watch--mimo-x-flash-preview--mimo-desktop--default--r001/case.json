@@ -1,0 +1,59 @@
+{
+  "id": "skeleton-watch--mimo-x-flash-preview--mimo-desktop--default--r001",
+  "title": "镂空机械表 · MiMo X Flash Preview · MiMo Desktop",
+  "topic": "skeleton-watch",
+  "topicLabel": "镂空机械表",
+  "model": "MiMo X Flash Preview",
+  "harness": "MiMo Desktop",
+  "modelEvidence": "Nagi Bench PR #59 的模型注册文件及产物路径",
+  "date": "2026-09-09",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "4c8f5e9bdbbb106eac0c66e63f4cb9234b7c2c9d2686d7f479b77f755d37053c",
+  "description": "单个 HTML 文件，一次生成一只可旋转、可爆炸视图的 3D 镂空机械腕表，机芯全可见。",
+  "notes": [
+    "在 MiMo Desktop 中使用 MiMo X Flash Preview（默认思考档位）一次生成，未修改。产出为可交互 3D 镂空机械表：可见机芯、金属与蓝宝石材质、指针刻度、旋转/爆炸视图与零件信息面板，Three.js CDN 单 HTML。",
+    "从用户已关闭、未合并的 PR #59 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "skeleton-watch.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:19.302Z",
+      "summary": "已查看实际 3D 机械表、齿轮/机芯和操作面板；未停在加载画面。"
+    }
+  },
+  "sourceFingerprint": "d6b8313f444f1b5a567f82ab7ea869cb31ba05ec7999d6f9902e37ddf49261a4",
+  "serial": 1,
+  "variant": "default",
+  "effort": "Default",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/59",
+    "commit": "848d5d22f86079adad49fb4f8b4cacc0db3b8a5e",
+    "paths": [
+      "outputs/mimo-x-flash-preview/mimo-desktop-default/skeleton-watch.html"
+    ],
+    "modelRegistry": "models/mimo-x-flash-preview.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/848d5d22f86079adad49fb4f8b4cacc0db3b8a5e/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "7e5e45774e41c7a19d68ea1f0a816aa84c6c3572b63fd51784a07ef0715c815b",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

@@ -1,0 +1,15 @@
+{
+  "sha256": "7651513ab988e3581ddfd8cf1d85ac911087fa8b10aaf685204bc54dd39b50fb",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "86e51bcc6916f563bf931eb1acb5ee89971ff585c8ca6827970242eed7ee2e86",
+      "bytes": 1320
+    },
+    {
+      "path": "mythos-craft.html",
+      "sha256": "1fd3096829ef42b065d5adbd5c844ed4e49dded62a5dc76e1a9a56abe8018469",
+      "bytes": 49900
+    }
+  ]
+}

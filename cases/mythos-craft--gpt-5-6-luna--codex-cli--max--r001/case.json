@@ -1,0 +1,59 @@
+{
+  "id": "mythos-craft--gpt-5-6-luna--codex-cli--max--r001",
+  "title": "神话境界 · GPT-5.6 Luna · Codex CLI",
+  "topic": "mythos-craft",
+  "topicLabel": "神话境界",
+  "model": "GPT-5.6 Luna",
+  "harness": "Codex CLI",
+  "modelEvidence": "Nagi Bench PR #53 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "e97ffefb1ce593d594c5dd9c0f81a1c605d14f64cbf05f361a38f79b6d819c4b",
+  "description": "单个 HTML 文件，一次生成一款《我的世界》式的可玩 3D 体素世界。",
+  "notes": [
+    "GPT-5.6-Luna（max 思考档位）在 Codex CLI 0.153.0 中用仓库标准中文提示词一次生成的可玩《我的世界》式体素世界，未经人工修改。裸 Harness 运行（隔离 CODEX_HOME、空工作目录），耗时约 9 分钟。",
+    "从用户已关闭、未合并的 PR #53 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "mythos-craft.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.758Z",
+      "summary": "已查看进入后的真实场景截图：程序化方块地形、建筑或植被及交互 HUD 可见；浏览器已执行进入与移动操作。"
+    }
+  },
+  "sourceFingerprint": "684bbe2f51b8a499671c39a6236a6a5a09ff102bfadecf15716f6d8741243ea0",
+  "serial": 1,
+  "variant": "max",
+  "effort": "max",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+    "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+    "paths": [
+      "outputs/gpt-5-6-luna/codex-cli-max/mythos-craft.html"
+    ],
+    "modelRegistry": "models/gpt-5-6-luna-codex-cli-max.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/c408203bdfbb9f02abec4a38dfb28589275b27d3/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "c61dbf9f72bbcb67bc4e5edc6fb9ca63b851c120be5302ad3c25cac4872f377e",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

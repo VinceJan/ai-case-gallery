@@ -1,0 +1,20 @@
+{
+  "sha256": "7ab383bdc30da92e630d96e49eac1e1bf44045a76209ce2f235495b9f1de768b",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "artifact.svg",
+      "sha256": "186d0aebf190fb1027724886e98e29087f822be8cddbffd7df4a962edb35474e",
+      "bytes": 13112
+    },
+    {
+      "path": "index.html",
+      "sha256": "223a4e1f2114e69d4051fc31dcb83890354790b2aff9a5228f6fea8f1e74184c",
+      "bytes": 389
+    }
+  ]
+}

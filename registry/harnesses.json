@@ -1,0 +1,17 @@
+{
+  "antigravity": {
+    "label": "Antigravity"
+  },
+  "codex-cli": {
+    "label": "Codex CLI"
+  },
+  "pi": {
+    "label": "Pi"
+  },
+  "mimo-desktop": {
+    "label": "MiMo Desktop"
+  },
+  "zcode": {
+    "label": "ZCode"
+  }
+}

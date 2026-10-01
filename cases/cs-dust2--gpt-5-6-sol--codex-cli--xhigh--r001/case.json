@@ -1,0 +1,76 @@
+{
+  "id": "cs-dust2--gpt-5-6-sol--codex-cli--xhigh--r001",
+  "title": "CS Dust2 5v5 · GPT-5.6 Sol · Codex CLI",
+  "topic": "cs-dust2",
+  "topicLabel": "CS Dust2 5v5",
+  "model": "GPT-5.6 Sol",
+  "harness": "Codex CLI",
+  "modelEvidence": "Nagi Bench PR #53 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "ef605af64af83a4869743c59a794d4ee9960c163d9178ee0f8f37791fc1eb264",
+  "description": "React + three.js 从零手写的 3D 第一人称射击原型，复刻 Dust2 的 5v5 对战。",
+  "notes": [
+    "GPT-5.6-Sol(xhigh 思考档位)在 Codex CLI 中用仓库标准中文提示词一次生成的 Dust2 多文件 React 项目，未经人工修改。裸 Harness 运行。",
+    "从用户已关闭、未合并的 PR #53 恢复；不表示被上游收录。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.547Z",
+      "summary": "已查看实际第一人称地图、武器/角色与回合 HUD；进入战场后场景可渲染。"
+    }
+  },
+  "sourceFingerprint": "271393c69def1d51143f74f72424ea1f4ab800af192747cfa8ce7d9267556fce",
+  "serial": 1,
+  "variant": "xhigh",
+  "effort": "xhigh",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+    "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+    "paths": [
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/README.md",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/index.html",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/package-lock.json",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/package.json",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/App.tsx",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/Game.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/audio.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/character.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/map.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/types.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/game/weapons.ts",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/index.css",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/src/main.tsx",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/tsconfig.app.json",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/tsconfig.json",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/tsconfig.node.json",
+      "outputs/gpt-5-6-sol/codex-cli-xhigh/cs-dust2/vite.config.ts"
+    ],
+    "modelRegistry": "models/gpt-5-6-sol-codex-cli-xhigh.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/c408203bdfbb9f02abec4a38dfb28589275b27d3/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "d64ebfcc8137a031709cb2d3cdb8fedb16b0e5bee4c9063cecce2c3fb0cf1f25",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

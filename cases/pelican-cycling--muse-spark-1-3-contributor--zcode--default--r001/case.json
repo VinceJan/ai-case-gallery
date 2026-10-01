@@ -1,0 +1,59 @@
+{
+  "id": "pelican-cycling--muse-spark-1-3-contributor--zcode--default--r001",
+  "title": "鹈鹕海边骑行 · Muse Spark 1.3 Contributor · ZCode",
+  "topic": "pelican-cycling",
+  "topicLabel": "鹈鹕海边骑行",
+  "model": "Muse Spark 1.3 Contributor",
+  "harness": "ZCode",
+  "modelEvidence": "Nagi Bench PR #55 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "a610e5bc5daa6ec4b752136517d3abef09831a28fc7c29a67c56de407d23add2",
+  "description": "经典 SVG 测评题：让模型用代码「画」出一只骑自行车的鹈鹕。",
+  "notes": [
+    "Muse Spark 1.3 Contributor（默认思考档位）在 ZCode 中一次生成的海边鹈鹕骑行 SVG（pelican-cycling SVG），未经人工修改。",
+    "从用户已关闭、未合并的 PR #55 恢复；不表示被上游收录。"
+  ],
+  "controls": "浏览器直接渲染原始 SVG 作品。",
+  "adapter": "svg",
+  "project": ".",
+  "entry": "pelican-cycling.svg",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:19.202Z",
+      "summary": "已检查原始 SVG 在浏览器中的完整画面：鹈鹕、自行车与海边环境；无 XML 解析错误。"
+    }
+  },
+  "sourceFingerprint": "52739cb6e04c99e944affb50ba0d449c92d21c209291e9bfb050713cd6ac7e49",
+  "serial": 1,
+  "variant": "default",
+  "effort": "Default",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/55",
+    "commit": "5719d5ccdcb19d14421eab9d2045e96097a06ac4",
+    "paths": [
+      "outputs/muse-spark-1-3/zcode-default/pelican-cycling.svg"
+    ],
+    "modelRegistry": "models/muse-spark-1-3-zcode-default.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/5719d5ccdcb19d14421eab9d2045e96097a06ac4/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "6690d3e805249a2c24fc02f2dd71f4d92d67d5c2943a6769b2f11b8f804adb6b",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

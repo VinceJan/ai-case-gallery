@@ -10,12 +10,14 @@
     "import": "node scripts/import-case.mjs",
     "rebuild": "node scripts/build-demo.mjs",
     "check": "node scripts/check.mjs",
+    "test": "node --test scripts/intake.test.mjs",
     "verify:browser": "node scripts/verify-browser.mjs"
   },
   "dependencies": {
     "astro": "7.3.5",
     "esbuild": "0.25.10",
-    "sharp": "0.35.5"
+    "sharp": "0.35.5",
+    "three": "0.161.0"
   },
   "devDependencies": {
     "playwright": "1.63.0"

@@ -1,66 +1,29 @@
 # 造物集 · AI Case Gallery
 
-收录 AI 模型配合不同 harness 在实际任务中的作品。保存原始提示词、生成条件、源码、截图和可在线体验的静态产物。
+[在线作品集](https://vincejan.github.io/ai-case-gallery/) · [维护流程](docs/maintenance.md) · [命名规范](docs/naming.md)
 
-[在线作品集](https://vincejan.github.io/ai-case-gallery/) · [公开仓库](https://github.com/VinceJan/ai-case-gallery)
+只收藏能在浏览器中真正展示的成品。每条保存模型/Harness 依据、提示词来源、可恢复源码、实际截图、发布版与文件指纹。
 
-## 日常使用
+固定维护项目：`E:\tmp\ai-case-gallery`。以后把新作品路径和模型、Harness、题目、提示词交给 Agent，按 [AGENTS.md](AGENTS.md) 与 [项目 Skill](.agents/skills/maintain-gallery/SKILL.md) 完成收录和发布。使用普通文件与 Git，不需要上传账号或后台服务。
 
-本地跑完测试后，收录到仓库，再自动发布。网站用于浏览和分享，上传由本地脚本完成。
+流程：导入本地候选 → 独立构建 → 浏览器加载 → 实际画面和必要交互复核 → 收录 → 推送 → 公网与云端恢复校验。设计阶段和失败候选留本地待处理区，不进入网站。具体命令见维护文档。
 
-```powershell
-./Publish-Cases.ps1 -Path 'E:\tmp\my-case' -Model '实际模型标识' -Harness 'Pi' -Topic 'konbini' -Prompt 'prompt.md'
-```
+案例标题：`题目 · 模型 · Harness`。稳定目录：`题目--模型--harness--版本--r001`。版本和运行序号区分同模型的重复测试；旧详情与作品入口保留跳转。
 
-`-Topic` 可用 `sakura-town`、`castle`、`konbini`、`mountain`、`minecraft`，其他类型用 `other`。模型和 harness 不知道可以留空，页面会显示“未记录”。使用 `-LocalOnly` 只收录和预览，不推送。
-
-脚本自动创建新的运行 ID、过滤依赖和缓存、保存提示词、构建展示版、浏览器检查、核对文件指纹、推送、等待发布并核对云端材料，成功后清理本次临时构建依赖。原目录始终保留。发布后请打开新案例，确认真实画面和操作再清理；原始素材、提示词或辅助文件若不在项目目录，需要一起提供才能收录。
-
-## 本地预览与重新构建
-
-需要 Node.js 24、npm、Git、已登录的 GitHub CLI。首次使用：
+本地预览（Node 24、npm、Git，验证使用本机 Edge；发布需要登录 gh）：
 
 ```powershell
+cd E:\tmp\ai-case-gallery
 npm ci
+npm run check
 npm run build
 npm run preview
 ```
 
-每个案例的 `source` 是可恢复源码；`demo` 是已生成的展示版。新案例在本地独立构建，站点更新不会重复安装全部历史案例的依赖。
+`source/` 不保存依赖和 .git；依赖由 package.json 和锁文件重新安装。`demo/` 保存独立静态发布版。站点更新直接使用已验证 demo，不重新安装全部案例依赖。支持 Vite、JS 打包、单文件 HTML、静态目录与原始 SVG。
 
-```powershell
-npm run rebuild -- 案例ID --force
-npm run check
-npm run build
-```
+GitHub Actions 是推送后的自动检查和发布流程，GitHub Pages 是托管这些网页的地方。本站两者已配置完成。已收录并验收的变更可以运行 `./Publish-Cases.ps1` 发布；候选的人工复核由 Agent 完成。
 
-当前支持 Vite、单文件 HTML、静态目录、带 `build` 脚本的项目，以及可打包的 JS 模块项目。未知类型可先作为材料收录，再增加必要适配。
+原测试目录不会自动删除。发布后先确认云端源码、提示词和素材齐全、可以取回，再按用户要求清理；日常临时构建依赖用 clean-work 脚本移除。
 
-`npm run verify:browser` 使用本机 Edge 执行场景加载和截图检查；先启动 `npm run preview -- --port 4321`。这项检查不等同于完整玩法验收。运行记录中的历史检查与当前验证分别呈现。
-
-## 保存与清理
-
-GitHub Pages 保存的是网站展示内容；仓库同时保存源码、锁文件、提示词与有用素材。仅确认网页打开不够，需要核对云端材料能恢复。
-
-```powershell
-node scripts/verify-cloud.mjs --commit 实际提交SHA
-```
-
-依赖目录、Git 数据、环境变量文件、日志、缓存、已有重复构建目录和重复压缩包不导入。单文件离线作品的 HTML 本身会保留。源文件和展示文件都附有 SHA-256 校验清单；同步过的锁文件会保留原始版本并在案例页注明。案例快照提交时显式包含已收录文件，防止原项目的 `.gitignore` 把截图等证据排除；发布前另查全部收录文件是否进入 Git 提交。
-
-## 部署
-
-向 `main` 推送后，GitHub Actions 校验案例文件并生成静态网站，发布到 GitHub Pages。第一次需要在仓库设置中启用 Pages，Source 选择 GitHub Actions。
-
-不需要服务器、数据库或账号系统。后续想改域名或迁移托管，源码和内容仍是普通文件。
-
-## 记录规则
-
-- 每次运行独立保存，不覆盖原始产出。
-- 按提示词全文指纹分辨版本，不依据文件名假设文本相同。
-- 模型归属优先使用会话记录，目录命名作为较弱依据；没有记录就标为未知。
-- “构建通过”“已验证展示”“仅有材料”分别记录，不用自动状态代替作品质量评价。
-- 从归档补回的源码注明恢复来源，重新构建和验证后才提供体验入口。
-- 不公开完整私人对话或模型凭据，只保存相关任务原文和必要归属说明。
-
-站点自有代码使用 MIT 许可证；案例项目保留原有许可证和第三方声明，不把站点许可证自动套用到全部素材。
+组织方式参考 [Nagi Bench](https://github.com/nagi-studio/nagi-bench)，恢复自关闭 PR 的作品记录原始提交与来源。标准任务/注册数据遵循 CC-BY-4.0，许可保留于 licenses/NAGI-DATA.txt；站点代码采用 MIT，案例沿用各自原有许可。本次恢复 PR 的标准任务原文已由用户确认使用。

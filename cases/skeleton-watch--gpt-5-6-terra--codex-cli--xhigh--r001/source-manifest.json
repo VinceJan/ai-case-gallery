@@ -1,0 +1,15 @@
+{
+  "sha256": "ded02a1be69f504d6e6bcbe2d14717a164f6786486a719454991e09a7bf6c771",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "7678dc03f3d43385e8e014a9c12f6b48ce93ab03f8d2ce9e5571a2cfdb0da83c",
+      "bytes": 4455
+    },
+    {
+      "path": "skeleton-watch.html",
+      "sha256": "45d9fc4798b6a3795dc950450750ea3cfeeec754fa49cb902df7e24af430d95a",
+      "bytes": 32508
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "pelican-cycling--muse-spark-1-3-contributor--pi--xhigh--r001",
+  "title": "鹈鹕海边骑行 · Muse Spark 1.3 Contributor · Pi",
+  "topic": "pelican-cycling",
+  "topicLabel": "鹈鹕海边骑行",
+  "model": "Muse Spark 1.3 Contributor",
+  "harness": "Pi",
+  "modelEvidence": "Nagi Bench PR #53 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "a610e5bc5daa6ec4b752136517d3abef09831a28fc7c29a67c56de407d23add2",
+  "description": "经典 SVG 测评题：让模型用代码「画」出一只骑自行车的鹈鹕。",
+  "notes": [
+    "Muse Spark 1.3（xhigh 思考档位）在 PI 中用仓库标准中文提示词一次生成的海边骑自行车鹈鹕 SVG，未经人工修改。",
+    "从用户已关闭、未合并的 PR #53 恢复；不表示被上游收录。"
+  ],
+  "controls": "浏览器直接渲染原始 SVG 作品。",
+  "adapter": "svg",
+  "project": ".",
+  "entry": "pelican-cycling.svg",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:19.179Z",
+      "summary": "已检查原始 SVG 在浏览器中的完整画面：鹈鹕、自行车与海边环境；无 XML 解析错误。"
+    }
+  },
+  "sourceFingerprint": "dd3eb558cec50335f8e38d1fe76977ddf93c61486d3f45c5a611d962a57dce4b",
+  "serial": 1,
+  "variant": "xhigh",
+  "effort": "xhigh",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+    "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+    "paths": [
+      "outputs/muse-spark-1-3/pi-xhigh/pelican-cycling.svg"
+    ],
+    "modelRegistry": "models/muse-spark-1-3-pi-xhigh.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/c408203bdfbb9f02abec4a38dfb28589275b27d3/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "2a65d6d13eadf48612b2289c63e149137e3d7cef607b99892c92eb14a2eadfeb",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

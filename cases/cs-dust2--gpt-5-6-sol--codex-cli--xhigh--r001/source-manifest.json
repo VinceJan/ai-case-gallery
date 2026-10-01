@@ -1,0 +1,95 @@
+{
+  "sha256": "271393c69def1d51143f74f72424ea1f4ab800af192747cfa8ce7d9267556fce",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "497e7e1bc5571b22ca4dc41b7cd34299da6fb760dc649de4eaf5af531dfe936f",
+      "bytes": 1237
+    },
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "7f2258bb42531f31b91779bf6a2da05722ebe7afff5a4749a2e23e5f78285880",
+      "bytes": 4470
+    },
+    {
+      "path": "index.html",
+      "sha256": "4890fbde20daa2d654ba577ef1194259c99044749fb2a51750d1ddaa4c0f6bec",
+      "bytes": 637
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "2ef36e15e45bb1229fca105f4cd0b8320e473eb387909e23fddfcaa77aeaaf5f",
+      "bytes": 66468
+    },
+    {
+      "path": "package.json",
+      "sha256": "9540ddbc8b4664e44e62c2ed05f6a9b5f45822c748016babf5ee1d397fe742b3",
+      "bytes": 545
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "31932100ece9c26c862049ba0fd96793366b8754e83e94b0a9ea42cb36bf268a",
+      "bytes": 9821
+    },
+    {
+      "path": "src/game/Game.ts",
+      "sha256": "db291032b481e1fd2f22ff6b606db3f836fe2d81ccb37e5b2350537885aa5881",
+      "bytes": 33192
+    },
+    {
+      "path": "src/game/audio.ts",
+      "sha256": "08b825480a317c9ca4d33a9117fb276ff631e04136f94b7fdc48e4542914629a",
+      "bytes": 2808
+    },
+    {
+      "path": "src/game/character.ts",
+      "sha256": "0c7544d7cddf4a4ca875817e903bd87f063fba01b41c9de3133347a33f9529a0",
+      "bytes": 8209
+    },
+    {
+      "path": "src/game/map.ts",
+      "sha256": "f828c1f59e6b159e8d34855d2eaf15d01230cd16059036643de49ed88af28619",
+      "bytes": 10531
+    },
+    {
+      "path": "src/game/types.ts",
+      "sha256": "412a5678896f9176e518047fdbb52ce4fd31b0bf9ab438e4eea78d624932e77c",
+      "bytes": 2788
+    },
+    {
+      "path": "src/game/weapons.ts",
+      "sha256": "e2a848f6b397ae1336cfb0bb11c523c8a4e75abce76b542e81d38c8aeb95a0f0",
+      "bytes": 2953
+    },
+    {
+      "path": "src/index.css",
+      "sha256": "0c6010a61266ca8b839f6197b4d4e18471e692d1d799522dde2deaee8e5f154c",
+      "bytes": 13154
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "5f49dce6e6cc4b5d678cf529ef892af0ab7dfa6afb300b11ad559224019b8b05",
+      "bytes": 232
+    },
+    {
+      "path": "tsconfig.app.json",
+      "sha256": "7b66cd77e0ba374a8b24f75c57f2c4756fbc9148d0c2a40f5ae94ae19ffbe41c",
+      "bytes": 532
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+      "bytes": 119
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "f49ef24e097144fecc29f677361cb45b2019e1bcc0dba54bab083760f7df6200",
+      "bytes": 213
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "65c5eb764af55404eb923b6db553f276ad3c2f07e156e88c1e247bd5287bb1fe",
+      "bytes": 159
+    }
+  ]
+}

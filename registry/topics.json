@@ -1,0 +1,32 @@
+{
+  "sakura-town": {
+    "label": "樱花小镇"
+  },
+  "castle": {
+    "label": "城堡与农田"
+  },
+  "konbini": {
+    "label": "雨夜便利店"
+  },
+  "mountain": {
+    "label": "体素山川"
+  },
+  "minecraft": {
+    "label": "浏览器方块世界"
+  },
+  "mythos-craft": {
+    "label": "神话方块世界"
+  },
+  "pelican-cycling": {
+    "label": "鹈鹕海边骑行"
+  },
+  "skeleton-watch": {
+    "label": "镂空机械表"
+  },
+  "cs-dust2": {
+    "label": "Dust2 射击场"
+  },
+  "beihai-meteorite": {
+    "label": "北海陨石短片"
+  }
+}

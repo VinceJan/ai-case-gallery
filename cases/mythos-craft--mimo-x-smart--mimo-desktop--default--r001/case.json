@@ -1,0 +1,59 @@
+{
+  "id": "mythos-craft--mimo-x-smart--mimo-desktop--default--r001",
+  "title": "神话境界 · MiMo X Smart · MiMo Desktop",
+  "topic": "mythos-craft",
+  "topicLabel": "神话境界",
+  "model": "MiMo X Smart",
+  "harness": "MiMo Desktop",
+  "modelEvidence": "Nagi Bench PR #61 的模型注册文件及产物路径",
+  "date": "2026-09-09",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "e97ffefb1ce593d594c5dd9c0f81a1c605d14f64cbf05f361a38f79b6d819c4b",
+  "description": "单个 HTML 文件，一次生成一款《我的世界》式的可玩 3D 体素世界。",
+  "notes": [
+    "在 MiMo Desktop 中使用 Smart 模式（MiMo X Flash 与 MiMo X Pro 混合路由，默认思考档位）一次生成，未修改。产出为单 HTML 体素世界：Perlin 噪声地形、第一人称 WASD 与鼠标环视、方块破坏/放置，以及内置神话幻想建筑与地形。",
+    "从用户已关闭、未合并的 PR #61 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "mythos-craft.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.903Z",
+      "summary": "已查看进入后的真实场景截图：程序化方块地形、建筑或植被及交互 HUD 可见；浏览器已执行进入与移动操作。"
+    }
+  },
+  "sourceFingerprint": "b9d471869f012e8f2949a9f69ff897c3380d6bd4f6bd89305f7453bf3f1292d3",
+  "serial": 1,
+  "variant": "default",
+  "effort": "Default",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/61",
+    "commit": "6b122aaa2cd3ae39db70e5bcb4cffc97a8893866",
+    "paths": [
+      "outputs/mimo-x-smart/mimo-desktop-default/mythos-craft.html"
+    ],
+    "modelRegistry": "models/mimo-x-smart.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/6b122aaa2cd3ae39db70e5bcb4cffc97a8893866/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "5ffb3cc654ea5653e25323dcbc8ea462bc4cd057750a94f51cf85f18c39efad3",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

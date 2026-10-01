@@ -1,0 +1,56 @@
+{
+  "label": "GPT-5.6-Sol",
+  "vendor": "OpenAI",
+  "harness": "Codex CLI",
+  "effort": "xhigh",
+  "artifactDir": "gpt-5-6-sol/codex-cli-xhigh",
+  "order": 29.2,
+  "runs": {
+    "turf-war": {
+      "note": {
+        "zh": "GPT-5.6-Sol(xhigh 思考档位)在 Codex CLI 中用仓库标准中文提示词(仅按案例规则填写文末【本次运行】占位符)一次生成的圈地智能体,未经人工修改。按案例规则,策略文件不公开、仅注册运行,由维护者亲自执行。自命名「蚀界」。",
+        "en": "One-shot Turf War agent by GPT-5.6-Sol (xhigh effort) in Codex CLI from the repository's canonical Chinese prompt (only the [This run] placeholders filled per case rules), with no human edits. Per case rules the policy file is unpublished; this entry registers the maintainer-executed run. Self-named \"蚀界\"."
+      },
+      "contributor": "Nagi-ovo",
+      "agentName": "蚀界"
+    },
+    "beihai-meteorite": {
+      "note": {
+        "zh": "GPT-5.6-Sol（xhigh 思考档位）在 Codex CLI 0.146.0 中一次生成的程序化体素电影《尘世之重》，模型源码未经修改，耗时 24 分 18 秒。裸 Harness 运行，严格隔离，使用题目固定的离线 Three.js 与电影播放器资源。原交付的自写单文件内联步骤因 JavaScript replacement token 展开发生打包损坏；公开版本仅从同次运行保留的有效 Vite assets 重建 dist/index.html 引用层，并通过带审计记录的 delivery-only repair 发布，原远端对象和本地归档均保留。Chrome 实测可启动播放并推进时间轴。",
+        "en": "A one-shot procedural voxel film, The Weight of Dust, by GPT-5.6-Sol (xhigh effort) in Codex CLI 0.146.0, with model-authored source unchanged, completed in 24 minutes 18 seconds. It ran on the bare, strictly isolated harness with the case's pinned offline Three.js and cinematic-player resources. The authored single-file inliner corrupted the original package through JavaScript replacement-token expansion; the public delivery only reconstructs the dist/index.html reference layer from the same run's retained valid Vite assets through the audited delivery-only repair path, preserving both the original remote object and local archives. Real Chrome verification confirmed playback and timeline progression."
+      },
+      "contributor": "Nagi-ovo"
+    },
+    "mythos-craft": {
+      "note": {
+        "zh": "GPT-5.6-Sol（xhigh 思考档位）在 Codex CLI 中用仓库标准中文提示词一次生成的体素世界单 HTML，未经人工修改。首次 harness 调用因沙箱只读零产出（模型未获有效尝试），本次为唯一一次有效一次生成。",
+        "en": "One-shot voxel-world single HTML by GPT-5.6-Sol (xhigh effort) in Codex CLI from the repository's canonical Chinese prompt, unmodified. A first harness invocation failed with zero output (sandbox read-only, no valid model attempt); this is the single effective one-shot generation."
+      },
+      "contributor": "VinceJan"
+    },
+    "pelican-cycling": {
+      "note": {
+        "zh": "GPT-5.6-Sol(xhigh 思考档位)在 Codex CLI 中用仓库标准中文提示词一次生成的海边骑行鹈鹕 SVG，未经人工修改。裸 Harness 运行。",
+        "en": "One-shot seaside pelican-cycling SVG by GPT-5.6-Sol (xhigh effort) in Codex CLI from the repository canonical Chinese prompt, unmodified. Bare harness run.",
+        "contributor": "VinceJan"
+      },
+      "contributor": "VinceJan"
+    },
+    "skeleton-watch": {
+      "note": {
+        "zh": "GPT-5.6-Sol(xhigh 思考档位)在 Codex CLI 中用仓库标准中文提示词一次生成的 3D 镂空机械表单 HTML，未经人工修改。裸 Harness 运行。",
+        "en": "One-shot 3D skeleton-watch single HTML by GPT-5.6-Sol (xhigh effort) in Codex CLI from the repository canonical Chinese prompt, unmodified. Bare harness run.",
+        "contributor": "VinceJan"
+      },
+      "contributor": "VinceJan"
+    },
+    "cs-dust2": {
+      "note": {
+        "zh": "GPT-5.6-Sol(xhigh 思考档位)在 Codex CLI 中用仓库标准中文提示词一次生成的 Dust2 多文件 React 项目，未经人工修改。裸 Harness 运行。",
+        "en": "One-shot Dust2 multi-file React project by GPT-5.6-Sol (xhigh effort) in Codex CLI from the repository canonical Chinese prompt, unmodified. Bare harness run.",
+        "contributor": "VinceJan"
+      },
+      "contributor": "VinceJan"
+    }
+  }
+}

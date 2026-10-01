@@ -1,0 +1,43 @@
+{
+  "id": "konbini--space-bunny-alpha--pi--single-html--r001",
+  "title": "雨夜便利店 · Space Bunny Alpha · Pi",
+  "topic": "konbini",
+  "topicLabel": "雨夜便利店",
+  "model": "Space Bunny Alpha",
+  "harness": "Pi",
+  "modelEvidence": "用户于 2026-10-01 提供归属：Pi + Space Bunny；原始会话尚未独立定位",
+  "date": null,
+  "promptVariant": "单文件版",
+  "promptHash": null,
+  "description": "已有单文件离线作品与封面，保留其完整展示内容。",
+  "notes": [
+    "模型与 Harness 根据用户补充信息归档，未声称已独立找到该单文件的会话。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "rainy-konbini-corner.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "584637c76280efa19a6da87bd3e9774b2db6f23fb7c3da02b0c5add0d15111b6",
+  "buildError": null,
+  "demoFingerprint": "ae1f3c326877bc1608c1d2d2af931bece14435d38b2c8ca0822afcdeccbdb9b8",
+  "originalTitle": "雨夜街角 · 离线作品",
+  "legacyIds": [
+    "konbini-offline-unattributed"
+  ],
+  "variant": "single-html",
+  "exactModelId": "stealth/space-bunny-alpha",
+  "serial": 1,
+  "featuredRank": 2
+}

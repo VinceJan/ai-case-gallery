@@ -1,0 +1,40 @@
+{
+  "sha256": "b849804f04984eb48b15ec4b07f46f547b289ac8245ad74fcd96f0bb87b77557",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a140b59d2be035204dd9e0fb8a0f5f5694dcaea0cf2cd1785f2b18804232ada2",
+      "bytes": 1027
+    },
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "8d19188d3105e40361327238ae5fc6b4f8eddd7bf7225fe28b2e61ab4948c11b",
+      "bytes": 3486
+    },
+    {
+      "path": "index.html",
+      "sha256": "7a98e7c90fe3e2e3e3e5d4b38294ac9652a36e312485342cc2ccd692c38445c2",
+      "bytes": 3566
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f0792e494dda78b85c30ead2bbd217f17b03dfb898c8badf3488c99b9f4fa0d8",
+      "bytes": 571
+    },
+    {
+      "path": "package.json",
+      "sha256": "eb2ee6c2c581217371faafe8624392a9102064114e100e29f190a7447eba8964",
+      "bytes": 280
+    },
+    {
+      "path": "server.js",
+      "sha256": "cb69dd187dcac664895239f64d287e8e6da0d63a59481f3f3f48f9e863ebc65f",
+      "bytes": 752
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "a4f0faffba4ced354ccca11449171266f41502a4c86aca171ada3e70e51e60b2",
+      "bytes": 30898
+    }
+  ]
+}

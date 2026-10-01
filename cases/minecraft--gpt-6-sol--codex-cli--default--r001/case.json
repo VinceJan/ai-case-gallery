@@ -1,0 +1,44 @@
+{
+  "id": "minecraft--gpt-6-sol--codex-cli--default--r001",
+  "title": "浏览器方块世界 · GPT-6 Sol · Codex CLI",
+  "topic": "minecraft",
+  "topicLabel": "浏览器方块世界",
+  "model": "GPT-6 Sol",
+  "harness": "Codex CLI",
+  "modelEvidence": "近十天已归档对话的 turn_context 与代码创建记录",
+  "date": "2026-09-23",
+  "promptVariant": "原始提示词",
+  "promptHash": "b6eb02557ec61b4f55841b132659b1bc28862c03e576017d8bb479991d3af98d",
+  "description": "单人浏览器方块沙盒，包含动态光照、水面与方块编辑。",
+  "notes": [
+    "原目录已不存在，从归档日志中成功执行的代码补丁恢复；依赖锁文件重新生成。",
+    "本站验证恢复后的版本，不把历史检查自动视为当前通过。",
+    "恢复 / 发布时补充了依赖锁文件；原有源码保留。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "点击 ENTER THE WORLD；WASD 移动，空格跳跃，左键挖掘、右键放置，1–8 选择方块。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "43ebaf0ec95a898ba0e3405d43fbc68c17373f6d6153d3dfd7a63c3037179e38",
+  "buildError": null,
+  "demoFingerprint": "9661483aaed43710394e22df736ed60007e0c49a5c03212d62dafcc97af9df78",
+  "originalTitle": "Solstice · 方块世界",
+  "legacyIds": [
+    "minecraft-sol"
+  ],
+  "variant": "default",
+  "serial": 1,
+  "featuredRank": 99
+}

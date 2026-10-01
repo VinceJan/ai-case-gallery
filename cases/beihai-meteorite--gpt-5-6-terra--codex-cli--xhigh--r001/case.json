@@ -1,0 +1,67 @@
+{
+  "id": "beihai-meteorite--gpt-5-6-terra--codex-cli--xhigh--r001",
+  "title": "章北海·陨石子弹 · GPT-5.6 Terra · Codex CLI",
+  "topic": "beihai-meteorite",
+  "topicLabel": "章北海·陨石子弹",
+  "model": "GPT-5.6 Terra",
+  "harness": "Codex CLI",
+  "modelEvidence": "Nagi Bench PR #53 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "2615cc823a750a93f6189b896a6052428611243a08bc169693c1d5eea01a9d25",
+  "description": "致敬 Andrej Karpathy 将《指环王》开篇交给 Agent 改编为长时程 Three.js 影片的实验；这里换用《三体》中章北海狙杀“老航天”的片段，考察模型的叙事取舍、程序化 3D 导演与长时程自我校验能力。",
+  "notes": [
+    "GPT-5.6-Terra(xhigh 思考档位)在 Codex CLI 0.153.0 中用仓库标准中文提示词一次生成的 React 影片工程,未经人工修改。裸 Harness 运行(CODEX_HOME 严格隔离),耗时约 14 分 12 秒。偏差原样保留:src/ 下是 main.js 而非脚手架入口 src/main.tsx,共享脚手架构建将找不到入口。",
+    "从用户已关闭、未合并的 PR #53 恢复；不表示被上游收录。",
+    "恢复 / 发布时补充了依赖锁文件；原有源码保留。",
+    "展示版将 Three.js 与场景模块打包，移除了运行时 CDN 模块依赖。",
+    "展示版将 Three.js 与场景模块打包，移除了运行时 CDN 模块依赖。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "bundle",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.363Z",
+      "summary": "已查看运行时生成的海岸/灯塔/陨石短片画面及播放进度，播放器可启动。"
+    }
+  },
+  "sourceFingerprint": "dbef2179ada3461b02198355ad453338825be0e0dbe24cbe74c0dee122e6254b",
+  "serial": 1,
+  "variant": "xhigh",
+  "effort": "xhigh",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+    "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+    "paths": [
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/README.md",
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/index.html",
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/package.json",
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/server.js",
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/src/main.js",
+      "outputs/gpt-5-6-terra/codex-cli-xhigh/beihai-meteorite/src/style.css"
+    ],
+    "modelRegistry": "models/gpt-5-6-terra-codex-cli-xhigh.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/c408203bdfbb9f02abec4a38dfb28589275b27d3/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "e68c7c94628f9d05f719eacd28e527189213f0437dfa1220fcfea74571636124",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

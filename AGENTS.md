@@ -1,0 +1,16 @@
+# 造物集维护
+
+使用简体中文，结论优先。在用户授权范围内完成收录、验证、发布，不重复询问常规步骤。
+
+先读 `docs/maintenance.md`、`docs/naming.md`。需要新增、恢复或发布案例时使用项目 Skill `.agents/skills/maintain-gallery/SKILL.md`。
+
+- 本项目固定维护路径为 `E:\tmp\ai-case-gallery`；远端为 `VinceJan/ai-case-gallery`。
+- 网站只展示真正可在线运行的成品。设计材料、空白场景、只有菜单、运行失败的候选不得进入 `cases/`。
+- 新候选先导入 `.work/incoming/`，构建、浏览器验证与人工画面复核后才 promote。禁止通过手改状态绕过验收。
+- ID 和标题由 `scripts/naming.mjs` 生成；注册词表在 `registry/`。不要自行拼接旧式名称。
+- 原始作品保存于 `source/`；用于展示的路径、依赖打包等适配在 `demo/`。不为通过测试擅自改写作品内容。补锁文件等适配说明写入 notes。
+- 模型、Harness、提示词的证据必须区分：日志、PR 注册数据、用户补充、推测。未找到执行会话时，不把基准标准提示词说成已核对的实际输入。
+- 不公开完整私人对话、密钥或依赖目录。保留第三方许可与 PR/提示词来源。
+- 发布前 `npm run check`、站点构建、实际画面复核；暂存案例时使用 `git add --force -- cases`，再执行 tracked 校验。
+- 推送后检查 Pages 成功、在线版本和云端文件指纹。只能清理本项目 `.work/build` 的临时依赖；原测试目录删除需用户明确指令且先确认恢复材料齐全。
+- 不修改全局 Git/Codex 配置，不额外建立后台服务、数据库或上传账号系统。

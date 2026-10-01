@@ -1,0 +1,45 @@
+{
+  "sha256": "dbef2179ada3461b02198355ad453338825be0e0dbe24cbe74c0dee122e6254b",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "9a11afad0e1d16c6a00290ab3fcd2c01afc0e46b263f5d3c317abf4aa97075d5",
+      "bytes": 947
+    },
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "7678dc03f3d43385e8e014a9c12f6b48ce93ab03f8d2ce9e5571a2cfdb0da83c",
+      "bytes": 4455
+    },
+    {
+      "path": "index.html",
+      "sha256": "1daf928df3269c11e9de59831c03a70448545315b86c181dcea9dc36143d740a",
+      "bytes": 1625
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "fc55721bdafcdc426f177b86044c40ed9df27c873d595447bafde027f46b17f6",
+      "bytes": 558
+    },
+    {
+      "path": "package.json",
+      "sha256": "8a7a7c9f21a470d5e449a3de47ee74972289052705b5489d6b230d169d83cb5a",
+      "bytes": 306
+    },
+    {
+      "path": "server.js",
+      "sha256": "d0a6fab9343a91aea35d26526effd31f2a54a0d0c25e31dac6972341d3c13494",
+      "bytes": 985
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "30307c41fccb1ff9414992bd87d8905e80e18511711fe5ca43a1f117fb8e662d",
+      "bytes": 29956
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "7d91ea9024fd00046df28d343c5dc4b1dcd859bde665efb1aeaf8a4de26ed570",
+      "bytes": 4101
+    }
+  ]
+}

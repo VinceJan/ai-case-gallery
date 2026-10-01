@@ -1,0 +1,112 @@
+[
+  {
+    "old": "castle-agy-3-8",
+    "id": "castle--gemini-3-8-flash--antigravity--default--r001",
+    "title": "城堡与农田 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "castle-agy-3-8-custom",
+    "id": "castle--gemini-3-8-flash--antigravity--custom--r001",
+    "title": "城堡与农田 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "castle-codex-61-sol",
+    "id": "castle--gpt-6-1-sol--codex-cli--default--r001",
+    "title": "城堡与农田 · GPT-6.1 Sol · Codex CLI"
+  },
+  {
+    "old": "castle-pi-6-1sol",
+    "id": "castle--gpt-6-1-sol--pi--default--r001",
+    "title": "城堡与农田 · GPT-6.1 Sol · Pi"
+  },
+  {
+    "old": "castle-pi-spacebunny",
+    "id": "castle--space-bunny-alpha--pi--default--r001",
+    "title": "城堡与农田 · Space Bunny Alpha · Pi"
+  },
+  {
+    "old": "konbini-offline-unattributed",
+    "id": "konbini--space-bunny-alpha--pi--single-html--r001",
+    "title": "雨夜便利店 · Space Bunny Alpha · Pi"
+  },
+  {
+    "old": "konbini-space-bunny-pi",
+    "id": "konbini--space-bunny-alpha--pi--default--r001",
+    "title": "雨夜便利店 · Space Bunny Alpha · Pi"
+  },
+  {
+    "old": "minecraft-luna-design",
+    "removed": true,
+    "reason": "未形成可在线运行的成品"
+  },
+  {
+    "old": "minecraft-sol",
+    "id": "minecraft--gpt-6-sol--codex-cli--default--r001",
+    "title": "浏览器方块世界 · GPT-6 Sol · Codex CLI"
+  },
+  {
+    "old": "sakura-bunnyalpha-pi-detailed-v2",
+    "id": "sakura-town--space-bunny-alpha--pi--detailed-v2--r001",
+    "title": "樱花小镇 · Space Bunny Alpha · Pi"
+  },
+  {
+    "old": "sakura-bunnyalpha-pi-short-v2",
+    "id": "sakura-town--space-bunny-alpha--pi--short-v2--r001",
+    "title": "樱花小镇 · Space Bunny Alpha · Pi"
+  },
+  {
+    "old": "sakura-gemini3-8flash-antigravity-detailed",
+    "id": "sakura-town--gemini-3-8-flash--antigravity--detailed--r001",
+    "title": "樱花小镇 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "sakura-gemini3-8flash-antigravity-short",
+    "id": "sakura-town--gemini-3-8-flash--antigravity--short--r001",
+    "title": "樱花小镇 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "sakura-mimo2-6pro-mimodesktop-detailed",
+    "id": "sakura-town--mimo-2-6-pro--mimo-desktop--detailed--r001",
+    "title": "樱花小镇 · MiMo 2.6 Pro · MiMo Desktop"
+  },
+  {
+    "old": "sakura-mimosmart-mimodesktop-detailed",
+    "id": "sakura-town--mimo-smart--mimo-desktop--detailed--r001",
+    "title": "樱花小镇 · MiMo Smart · MiMo Desktop"
+  },
+  {
+    "old": "sakura-stepfun5preview-mimodesktop-detailed-v2",
+    "removed": true,
+    "reason": "未形成可在线运行的成品"
+  },
+  {
+    "old": "sakura-stepfun5preview-mimodesktop-short",
+    "id": "sakura-town--stepfun-5-preview--mimo-desktop--short--r001",
+    "title": "樱花小镇 · Stepfun 5 Preview · MiMo Desktop"
+  },
+  {
+    "old": "sakura-stepfun5preview-pi-detailed-v2",
+    "id": "sakura-town--stepfun-5-preview--pi--detailed-v2--r001",
+    "title": "樱花小镇 · Stepfun 5 Preview · Pi"
+  },
+  {
+    "old": "sakura-stepfun5preview-pi-short",
+    "id": "sakura-town--stepfun-5-preview--pi--short--r001",
+    "title": "樱花小镇 · Stepfun 5 Preview · Pi"
+  },
+  {
+    "old": "store-agy-default",
+    "id": "konbini--gemini-3-8-flash--antigravity--default--r001",
+    "title": "雨夜便利店 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "store-custom",
+    "id": "konbini--gemini-3-8-flash--antigravity--custom--r001",
+    "title": "雨夜便利店 · Gemini 3.8 Flash · Antigravity"
+  },
+  {
+    "old": "voxel-mountain",
+    "id": "mountain--gpt-6-luna--codex-cli--default--r001",
+    "title": "体素山川 · GPT-6 Luna · Codex CLI"
+  }
+]

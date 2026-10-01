@@ -1,0 +1,68 @@
+{
+  "id": "cs-dust2--gpt-5-6-luna--codex-cli--max--r001",
+  "title": "CS Dust2 5v5 · GPT-5.6 Luna · Codex CLI",
+  "topic": "cs-dust2",
+  "topicLabel": "CS Dust2 5v5",
+  "model": "GPT-5.6 Luna",
+  "harness": "Codex CLI",
+  "modelEvidence": "Nagi Bench PR #53 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "ef605af64af83a4869743c59a794d4ee9960c163d9178ee0f8f37791fc1eb264",
+  "description": "React + three.js 从零手写的 3D 第一人称射击原型，复刻 Dust2 的 5v5 对战。",
+  "notes": [
+    "GPT-5.6-Luna（max 思考档位）在 Codex CLI 0.153.0 中用仓库标准中文提示词一次生成的 Dust2 风格 FPS 网页游戏（React 工程），未经人工修改。裸 Harness 运行（隔离 CODEX_HOME、空工作目录），耗时约 37 分钟。",
+    "从用户已关闭、未合并的 PR #53 恢复；不表示被上游收录。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.503Z",
+      "summary": "已查看实际第一人称地图、武器/角色与回合 HUD；进入战场后场景可渲染。"
+    }
+  },
+  "sourceFingerprint": "e65ad5254517533a09e64274eee2b555ae5cc29d7f3ddd8da23ef71366b6be82",
+  "serial": 1,
+  "variant": "max",
+  "effort": "max",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+    "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+    "paths": [
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/README.md",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/index.html",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/package-lock.json",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/package.json",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/src/App.tsx",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/src/main.tsx",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/src/styles.css",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/tsconfig.json",
+      "outputs/gpt-5-6-luna/codex-cli-max/cs-dust2/vite.config.ts"
+    ],
+    "modelRegistry": "models/gpt-5-6-luna-codex-cli-max.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/c408203bdfbb9f02abec4a38dfb28589275b27d3/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "fc28520755147b345675b053dc023e752e80c94a16a5cb9520cc4eb72a4c023a",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

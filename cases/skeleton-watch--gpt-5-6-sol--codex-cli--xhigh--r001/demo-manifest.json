@@ -1,0 +1,15 @@
+{
+  "sha256": "2b6fb33c6549e4da80384fc3073533646731fda4be042320865e0f6a86a5809f",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "index.html",
+      "sha256": "b8c577a6f44dda46e91c2eb226b9940d26a4a8fa7310324ef2f9f810ede3ddc0",
+      "bytes": 34678
+    }
+  ]
+}

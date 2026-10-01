@@ -1,0 +1,55 @@
+{
+  "sha256": "08d25385c60538648865e3c7505544876639596955893c297ccaad08ad09657b",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a0c29d87609da562aafc4d5e260237e4fe8a4c7154188127420aa6150dbc3e02",
+      "bytes": 639
+    },
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "7678dc03f3d43385e8e014a9c12f6b48ce93ab03f8d2ce9e5571a2cfdb0da83c",
+      "bytes": 4455
+    },
+    {
+      "path": "index.html",
+      "sha256": "025c5f047890c8e3c12b0ea75feb4edf8fd18800b5b66c4d3fc8109981563215",
+      "bytes": 282
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "5922cb9395563786f4f7940ec50db6d98d7677a58307f80a7ed3cfcc4ee0d312",
+      "bytes": 65939
+    },
+    {
+      "path": "package.json",
+      "sha256": "5ef10a83312799122331a1c3c200b9ff5fa005c2ee523ff7a4e475a68d13ea61",
+      "bytes": 462
+    },
+    {
+      "path": "src/game.ts",
+      "sha256": "eef5876553b21200b6572772d2315a066a0175d6347780fe92c827eab1a9cd12",
+      "bytes": 40282
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "9e6c966906f8763f0d1198c1c4e4cef8fb5825f0fbd3ee7181ecb7d4433ec5db",
+      "bytes": 3938
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "18ea49ad8a4f1fbf180331c7c5e55891bb5cec047ae6e19ab0097d8924591b6e",
+      "bytes": 5493
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "c725c046741ec3abf7acf65b092cba2710ba5626cf45cfba112e10a4c90cb1e5",
+      "bytes": 463
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "a71a00c929b3f3d76ba0240d7329a3373f634e2818c78a4ec01f68df1c4daab5",
+      "bytes": 161
+    }
+  ]
+}

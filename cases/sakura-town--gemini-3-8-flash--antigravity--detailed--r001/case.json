@@ -1,0 +1,42 @@
+{
+  "id": "sakura-town--gemini-3-8-flash--antigravity--detailed--r001",
+  "title": "樱花小镇 · Gemini 3.8 Flash · Antigravity",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Gemini 3.8 Flash",
+  "harness": "Antigravity",
+  "modelEvidence": "目录命名；完整模型 ID 与当时配置未全部记录",
+  "date": null,
+  "promptVariant": "详细版",
+  "promptHash": "26dbc3c6b9c95fd2fb3fe9f90ae0997721e5903dbae6632f9f5f008ac1764f84",
+  "description": "同一小镇任务在不同模型、harness 与提示词条件下的生成结果。",
+  "notes": [
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "按场景内说明操作；通常为 WASD 移动、鼠标转向、E 交互。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "cdcd9e7c2bed9280f2c130aa840abc02914d045f8db79bcb852cc2f099d32f14",
+  "buildError": null,
+  "demoFingerprint": "713bcc2cda1812da3744adbde82ac2a7255ed9cc17e7e469da1cd52a9d7aa2cd",
+  "originalTitle": "樱花小镇 · Gemini 3.8 Flash",
+  "legacyIds": [
+    "sakura-gemini3-8flash-antigravity-detailed"
+  ],
+  "variant": "detailed",
+  "serial": 1,
+  "featuredRank": 99
+}

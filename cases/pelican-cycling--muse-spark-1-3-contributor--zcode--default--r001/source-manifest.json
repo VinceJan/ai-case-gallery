@@ -1,0 +1,15 @@
+{
+  "sha256": "52739cb6e04c99e944affb50ba0d449c92d21c209291e9bfb050713cd6ac7e49",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "86e51bcc6916f563bf931eb1acb5ee89971ff585c8ca6827970242eed7ee2e86",
+      "bytes": 1320
+    },
+    {
+      "path": "pelican-cycling.svg",
+      "sha256": "883f3a670a54fed637f6081f4a9c1a8bd83683964abf51c731062d35aa611c4b",
+      "bytes": 17120
+    }
+  ]
+}

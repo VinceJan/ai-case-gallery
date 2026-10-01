@@ -1,0 +1,70 @@
+{
+  "sha256": "f8505c5230f5e1170185f1bf53128cfca441349333695ac749976eb5aab4b82a",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "89d8b70386cfc4012524e99de6e5da20bf3f5238947944f0387feee2f06bbedf",
+      "bytes": 2400
+    },
+    {
+      "path": "index.html",
+      "sha256": "d6f4280f942dc9c34a2538a716d17eda03495a15806c500be3b46da2a0bfca23",
+      "bytes": 318
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "06aede73c051ab980f23ffb51088a25389505b56489fad645f6caae5246ec4fc",
+      "bytes": 61801
+    },
+    {
+      "path": "package.json",
+      "sha256": "2e8519dadb0e4a9f7087a87e883fee10c14efc5e57ce2fbb7b5037045912391d",
+      "bytes": 477
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "f739e2e1554fc140daa4e61d417926f0c3582a0c0ad1c45d7453ef28c25e192e",
+      "bytes": 3885
+    },
+    {
+      "path": "src/film/cues.ts",
+      "sha256": "3e07fbfdf8e7d1f419db66c820dbd30a441f32be1e4e69c806a0334db41746de",
+      "bytes": 3523
+    },
+    {
+      "path": "src/film/director.ts",
+      "sha256": "79d6c1f60117e6d45979cfb23ec128f296f751bb9aac5185844c75b4f7c57f94",
+      "bytes": 13399
+    },
+    {
+      "path": "src/film/sound.ts",
+      "sha256": "8ff8a74cda80f07f4a92c122777ac85b300527a9ab47360ff161a5cd3ef43e9e",
+      "bytes": 4589
+    },
+    {
+      "path": "src/film/voxel.ts",
+      "sha256": "f86c0ba3c3a599471be85079e722e1585e7c599c9e0e7a6bb983703b3c63201d",
+      "bytes": 4852
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "792e014644562900a97b636a70dbcafaca69e05f62016e4d2904a15969485270",
+      "bytes": 251
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "cc51f00b485074b15f2ff3d8e4952c3c83321072ec2961ff230b4117af800fc8",
+      "bytes": 1701
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "83672d2660de080f79e2f9db04811760bc2b1ae475c3c6da33662e6b0de5a94c",
+      "bytes": 510
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "60cab046c8fa41233cba4db42d3e15b1802198e8027a334065db7eb888c292a4",
+      "bytes": 162
+    }
+  ]
+}

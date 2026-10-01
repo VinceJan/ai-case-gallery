@@ -1,0 +1,59 @@
+{
+  "id": "skeleton-watch--muse-spark-1-3-contributor--zcode--default--r001",
+  "title": "镂空机械表 · Muse Spark 1.3 Contributor · ZCode",
+  "topic": "skeleton-watch",
+  "topicLabel": "镂空机械表",
+  "model": "Muse Spark 1.3 Contributor",
+  "harness": "ZCode",
+  "modelEvidence": "Nagi Bench PR #55 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "4c8f5e9bdbbb106eac0c66e63f4cb9234b7c2c9d2686d7f479b77f755d37053c",
+  "description": "单个 HTML 文件，一次生成一只可旋转、可爆炸视图的 3D 镂空机械腕表，机芯全可见。",
+  "notes": [
+    "Muse Spark 1.3 Contributor（默认思考档位）在 ZCode 中一次生成的镂空机械表单 HTML（skeleton-watch single HTML），未经人工修改。",
+    "从用户已关闭、未合并的 PR #55 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "skeleton-watch.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:19.400Z",
+      "summary": "已查看实际 3D 机械表、齿轮/机芯和操作面板；未停在加载画面。"
+    }
+  },
+  "sourceFingerprint": "f9d69f688c429a437c0ee56046d4cc6d5cdba98122fb0fffb8b632c057b515ff",
+  "serial": 1,
+  "variant": "default",
+  "effort": "Default",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/55",
+    "commit": "5719d5ccdcb19d14421eab9d2045e96097a06ac4",
+    "paths": [
+      "outputs/muse-spark-1-3/zcode-default/skeleton-watch.html"
+    ],
+    "modelRegistry": "models/muse-spark-1-3-zcode-default.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/5719d5ccdcb19d14421eab9d2045e96097a06ac4/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "5e8c588dc887faadab2073f6a83362dbb94d5dd69d7dc18489d1697684042e14",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

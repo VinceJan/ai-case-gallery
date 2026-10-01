@@ -1,0 +1,59 @@
+{
+  "id": "mythos-craft--gpt-5-6-sol--pi--xhigh--r001",
+  "title": "神话境界 · GPT-5.6 Sol · Pi",
+  "topic": "mythos-craft",
+  "topicLabel": "神话境界",
+  "model": "GPT-5.6 Sol",
+  "harness": "Pi",
+  "modelEvidence": "Nagi Bench PR #54 的模型注册文件及产物路径",
+  "date": "2026-09-03",
+  "promptVariant": "Nagi Bench 标准中文提示词",
+  "promptHash": "e97ffefb1ce593d594c5dd9c0f81a1c605d14f64cbf05f361a38f79b6d819c4b",
+  "description": "单个 HTML 文件，一次生成一款《我的世界》式的可玩 3D 体素世界。",
+  "notes": [
+    "GPT-5.6-Sol（xhigh 思考档位）在 PI 中用仓库标准中文提示词一次生成的可玩神话幻想体素世界单 HTML，未经人工修改，耗时约 3 分钟。",
+    "从用户已关闭、未合并的 PR #54 恢复；不表示被上游收录。"
+  ],
+  "controls": "按作品内的提示操作。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "mythos-craft.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": [],
+    "manualReview": {
+      "date": "2026-10-01T15:34:18.834Z",
+      "summary": "已查看进入后的真实场景截图：程序化方块地形、建筑或植被及交互 HUD 可见；浏览器已执行进入与移动操作。"
+    }
+  },
+  "sourceFingerprint": "b35aeed4a836be1ba7baa04b5b7f0573fa97a0112df90f8987e69a5e0d4b9833",
+  "serial": 1,
+  "variant": "xhigh",
+  "effort": "xhigh",
+  "provenance": {
+    "kind": "github-pr",
+    "url": "https://github.com/nagi-studio/nagi-bench/pull/54",
+    "commit": "a53eb03f0b86b31a7c1b757527242771f2f2b565",
+    "paths": [
+      "outputs/gpt-5-6-sol/pi-xhigh/mythos-craft.html"
+    ],
+    "modelRegistry": "models/gpt-5-6-sol-pi-xhigh.json",
+    "contributor": "VinceJan"
+  },
+  "promptSource": {
+    "url": "https://github.com/nagi-studio/nagi-bench/blob/a53eb03f0b86b31a7c1b757527242771f2f2b565/cases.json",
+    "license": "CC-BY-4.0"
+  },
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "7c4ca55fb8d379bc51268b19e477bcda15e5e20a3d30e737029d8bcf1b8a47ce",
+  "promptEvidence": "用户于 2026-10-01 确认这些 PR 使用的就是 Nagi 标准任务原文"
+}

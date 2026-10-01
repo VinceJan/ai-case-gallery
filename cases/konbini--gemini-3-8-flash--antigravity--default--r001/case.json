@@ -1,0 +1,45 @@
+{
+  "id": "konbini--gemini-3-8-flash--antigravity--default--r001",
+  "title": "雨夜便利店 · Gemini 3.8 Flash · Antigravity",
+  "topic": "konbini",
+  "topicLabel": "雨夜便利店",
+  "model": "Gemini 3.8 Flash",
+  "harness": "Antigravity",
+  "modelEvidence": "用户于 2026-10-01 确认原先未记录的两个 Antigravity 产物均使用 Gemini 3.8 Flash",
+  "date": null,
+  "promptVariant": "原始提示词",
+  "promptHash": "a7b58435c356c7bf015ccc1ac89f4da38f92330b3e5ece79ac515fc7156af4be",
+  "description": "明亮的便利店内部与潮湿的雨夜街角。",
+  "notes": [
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "拖拽旋转，滚轮缩放；天气切换以场景内说明为准。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp",
+    "view-1.webp",
+    "view-2.webp",
+    "view-3.webp",
+    "view-4.webp"
+  ],
+  "verification": {
+    "date": "2026-10-01",
+    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "errors": [],
+    "requests": []
+  },
+  "sourceFingerprint": "f5b972c271d71e98d8124d29ff8d2fc05bc4a8a49c9fc1f10afa5167dda468b1",
+  "buildError": null,
+  "demoFingerprint": "2f9200c1d1ee0310c9b0b9f83911bc6cdf9f4166ea8bff28cff0db794d012894",
+  "originalTitle": "雨夜便利店 · 模型未确认 · 默认配置",
+  "legacyIds": [
+    "store-agy-default"
+  ],
+  "variant": "default",
+  "serial": 1,
+  "featuredRank": 99
+}

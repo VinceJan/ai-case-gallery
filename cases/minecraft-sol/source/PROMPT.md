@@ -1,2 +1,0 @@
-Create a playable version of Minecraft in my browser. Add advanced shaders that make it look as real and beautiful as possible. \
-&#x20; 

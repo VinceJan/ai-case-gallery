@@ -1,0 +1,71 @@
+{
+  "prs": [
+    {
+      "number": 53,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/53",
+      "commit": "c408203bdfbb9f02abec4a38dfb28589275b27d3",
+      "recovered": 24,
+      "published": 21
+    },
+    {
+      "number": 54,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/54",
+      "commit": "a53eb03f0b86b31a7c1b757527242771f2f2b565",
+      "recovered": 6,
+      "published": 6
+    },
+    {
+      "number": 55,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/55",
+      "commit": "5719d5ccdcb19d14421eab9d2045e96097a06ac4",
+      "recovered": 5,
+      "published": 4
+    },
+    {
+      "number": 59,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/59",
+      "commit": "848d5d22f86079adad49fb4f8b4cacc0db3b8a5e",
+      "recovered": 2,
+      "published": 2
+    },
+    {
+      "number": 60,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/60",
+      "commit": "11e508e5b5ebea642b58e4fed64255529ffbf2f5",
+      "recovered": 2,
+      "published": 2
+    },
+    {
+      "number": 61,
+      "url": "https://github.com/nagi-studio/nagi-bench/pull/61",
+      "commit": "6b122aaa2cd3ae39db70e5bcb4cffc97a8893866",
+      "recovered": 1,
+      "published": 1
+    }
+  ],
+  "recovered": 40,
+  "published": 36,
+  "originalFilesVerified": 123,
+  "excluded": [
+    {
+      "id": "cs-dust2--muse-spark-1-2-contributor--pi--xhigh--r001",
+      "status": "runtime-failed",
+      "reason": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('canvas:visible').first()\u001b[22m\n\u001b[2m    - locator resolved to <canvas width=\"176\" height=\"176\"></canvas>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"zh-CN\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <html lang=\"zh-CN\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    39 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <html lang=\"zh-CN\">…</html> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n"
+    },
+    {
+      "id": "cs-dust2--muse-spark-1-3-contributor--pi--xhigh--r001",
+      "status": "runtime-failed",
+      "reason": "nearestWP is not defined"
+    },
+    {
+      "id": "pelican-cycling--muse-spark-1-2-contributor--zcode--default--r001",
+      "status": "runtime-failed",
+      "reason": "This page contains the following errors:error on line 356 at column 155: Namespace prefix xlink for href on animateTransform is not defined\nBelow is a rendering of the page up to the first error."
+    },
+    {
+      "id": "skeleton-watch--muse-spark-1-2-contributor--pi--xhigh--r001",
+      "status": "runtime-failed",
+      "reason": "THREE.Object3D.add: object not an instance of THREE.Object3D. Vector3"
+    }
+  ]
+}

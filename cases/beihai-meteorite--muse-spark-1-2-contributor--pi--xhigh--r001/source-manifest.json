@@ -1,0 +1,65 @@
+{
+  "sha256": "d5e8a4c2f872c95e9332ee7ba07cdd0d5e42e4a183dc2daf3c5b43d2c70db23e",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "6d35556ded0387ad0f8615f4257aacf18dd533ee3a582074dd80839f4e4dbc37",
+      "bytes": 2581
+    },
+    {
+      "path": "index.html",
+      "sha256": "d6f4280f942dc9c34a2538a716d17eda03495a15806c500be3b46da2a0bfca23",
+      "bytes": 318
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "06aede73c051ab980f23ffb51088a25389505b56489fad645f6caae5246ec4fc",
+      "bytes": 61801
+    },
+    {
+      "path": "package.json",
+      "sha256": "2e8519dadb0e4a9f7087a87e883fee10c14efc5e57ce2fbb7b5037045912391d",
+      "bytes": 477
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "5cb9bd1bc27a81fc5a463eff4921c64e470706afe9b21fb35acfada6d10abf38",
+      "bytes": 20577
+    },
+    {
+      "path": "src/film/cues.ts",
+      "sha256": "3b9a4d28a3ad8b5586c71b5fa477c2b53aff52bf410fbc2e735d604476c2310b",
+      "bytes": 3476
+    },
+    {
+      "path": "src/film/voxel.ts",
+      "sha256": "6de967be78ae5cfd27d1669a8199b06b21b451b4fbff9059989094daf5d08223",
+      "bytes": 4165
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "0b1d326e221a0189004c1a89a7b3aa446e0a4ca6b48315ff5e374bcaed650d08",
+      "bytes": 373
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "37da653e6bb0f4c7c8ac7a26f0899562a4cd5eb2798031fe4f9602754dfa904f",
+      "bytes": 229
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "a0856075d16bfbe4bebf728cc0eb3eec49d2d21f7ff4ffd32097e7c784fc65d1",
+      "bytes": 564
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "9e2abb169ea87b7190613a1d4da57ca608463a453bd4231fa3aeee5e308370dd",
+      "bytes": 213
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "60cab046c8fa41233cba4db42d3e15b1802198e8027a334065db7eb888c292a4",
+      "bytes": 162
+    }
+  ]
+}
