@@ -9,6 +9,7 @@ import {ROOT} from './lib.mjs';
 const run=promisify(execFile);
 
 test('真实导入/构建隔离依赖、保留静态素材，并使旧验收失效',async()=>{
+ await fs.mkdir(path.join(ROOT,'.work'),{recursive:true});
  const base=await fs.mkdtemp(path.join(ROOT,'.work/pipeline-test-'));
  try{
   await fs.mkdir(path.join(base,'registry'));await fs.writeFile(path.join(base,'registry/topics.json'),'{}');await fs.writeFile(path.join(base,'package.json'),'{"private":true}');
