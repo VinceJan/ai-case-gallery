@@ -26,13 +26,39 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "beihai-meteorite--muse-spark-1-3-contributor--pi--xhigh--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 144,
+      "y": 18,
+      "width": 992,
+      "height": 558
+    },
+    "canvasVariation": 21,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "播放"
+    ],
     "errors": [],
     "requests": [],
+    "screenshot": "beihai-meteorite--muse-spark-1-3-contributor--pi--xhigh--r001-live.png",
+    "screenshotHash": "79bcc37bb4fff9775bbcf85772d8f95f13516929513c469329f6c43045785572",
+    "sourceFingerprint": "f8505c5230f5e1170185f1bf53128cfca441349333695ac749976eb5aab4b82a",
+    "demoFingerprint": "a23b11d7406a13213adc1edb3e9533ad0d799ecaa77fe026c602f298dfd5b024",
+    "date": "2026-10-02T22:22:08.692Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
     "manualReview": {
-      "date": "2026-10-01T15:34:18.450Z",
-      "summary": "已查看运行时生成的海岸/灯塔/陨石短片画面及播放进度，播放器可启动。"
+      "date": "2026-10-02T22:54:55.335Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "f8505c5230f5e1170185f1bf53128cfca441349333695ac749976eb5aab4b82a",
+      "demoFingerprint": "a23b11d7406a13213adc1edb3e9533ad0d799ecaa77fe026c602f298dfd5b024"
     }
   },
   "sourceFingerprint": "f8505c5230f5e1170185f1bf53128cfca441349333695ac749976eb5aab4b82a",

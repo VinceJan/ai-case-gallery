@@ -27,10 +27,40 @@
     "view-4.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "sakura-town--space-bunny-alpha--pi--short-v2--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 2,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 50,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "Enter 进入"
+    ],
     "errors": [],
-    "requests": []
+    "requests": [],
+    "screenshot": "sakura-town--space-bunny-alpha--pi--short-v2--r001-live.png",
+    "screenshotHash": "4ade5d06fd1432e77871177b6f7ea5a4b5087c7d038bc6eb75c9fe9cd65fdbd0",
+    "sourceFingerprint": "2d0b8554bbd75b04d1b614db609dbaf4803dc8059e0b723516ebcec0852e9bf8",
+    "demoFingerprint": "0840eb3d83325e9645059ff4522ecc164d582ad8f246d77df6116e1fcf926f5f",
+    "date": "2026-10-02T22:38:21.046Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
+    "manualReview": {
+      "date": "2026-10-02T22:54:55.375Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "2d0b8554bbd75b04d1b614db609dbaf4803dc8059e0b723516ebcec0852e9bf8",
+      "demoFingerprint": "0840eb3d83325e9645059ff4522ecc164d582ad8f246d77df6116e1fcf926f5f"
+    }
   },
   "sourceFingerprint": "2d0b8554bbd75b04d1b614db609dbaf4803dc8059e0b723516ebcec0852e9bf8",
   "buildError": null,

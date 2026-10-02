@@ -24,13 +24,39 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "skeleton-watch--muse-spark-1-3-contributor--zcode--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 78,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "机芯展开"
+    ],
     "errors": [],
     "requests": [],
+    "screenshot": "skeleton-watch--muse-spark-1-3-contributor--zcode--default--r001-live.png",
+    "screenshotHash": "a736c06b875a7953205d90fe97a35a44d026242555adfc71b628603badf34372",
+    "sourceFingerprint": "f9d69f688c429a437c0ee56046d4cc6d5cdba98122fb0fffb8b632c057b515ff",
+    "demoFingerprint": "5e8c588dc887faadab2073f6a83362dbb94d5dd69d7dc18489d1697684042e14",
+    "date": "2026-10-02T22:44:40.705Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
     "manualReview": {
-      "date": "2026-10-01T15:34:19.400Z",
-      "summary": "已查看实际 3D 机械表、齿轮/机芯和操作面板；未停在加载画面。"
+      "date": "2026-10-02T22:54:55.385Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "f9d69f688c429a437c0ee56046d4cc6d5cdba98122fb0fffb8b632c057b515ff",
+      "demoFingerprint": "5e8c588dc887faadab2073f6a83362dbb94d5dd69d7dc18489d1697684042e14"
     }
   },
   "sourceFingerprint": "f9d69f688c429a437c0ee56046d4cc6d5cdba98122fb0fffb8b632c057b515ff",

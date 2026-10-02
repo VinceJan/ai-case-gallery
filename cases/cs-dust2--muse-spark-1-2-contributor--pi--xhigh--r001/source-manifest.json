@@ -1,0 +1,75 @@
+{
+  "sha256": "975fce2ea93ccfeb1e5e1ede62dfe9961102eaf6b5db163494fa21f477c11ef1",
+  "files": [
+    {
+      "path": "REGISTRY-ORIGINAL.json",
+      "sha256": "6d35556ded0387ad0f8615f4257aacf18dd533ee3a582074dd80839f4e4dbc37",
+      "bytes": 2581
+    },
+    {
+      "path": "index.html",
+      "sha256": "f5fa29319ec8b5d04f59dafb1206e73d44fbc24a82783901da7bad8f35d86e03",
+      "bytes": 452
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "91adc06dac5df8d4d4978395113b3e4b54a32a83e343ae0126701b53e7de8778",
+      "bytes": 64329
+    },
+    {
+      "path": "package.json",
+      "sha256": "492e900798bc7d35e5bb7e8ee389d04b5ea37c9c0621c64fc53dc7931bac331f",
+      "bytes": 518
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "d0de69b7d52582d626b8879219d17817b8417f7213e3991c2315cb2362ef9843",
+      "bytes": 35512
+    },
+    {
+      "path": "src/game/audio.ts",
+      "sha256": "aaec6a668d8fcdeaa4bb91f01043fb47e8cd6f367ba1cb449d62dd032c893a1e",
+      "bytes": 2630
+    },
+    {
+      "path": "src/game/map.ts",
+      "sha256": "cd72e96352f7f77c22c8e123d3d82639bf8fdaea915910a9a9d09854c5d32aa2",
+      "bytes": 6841
+    },
+    {
+      "path": "src/game/types.ts",
+      "sha256": "8eed05cd6e2dad2b9e7c5f027a4cfaf49590a9c810a3ae5feb378c8c276c1c05",
+      "bytes": 1008
+    },
+    {
+      "path": "src/game/weapons.ts",
+      "sha256": "92d4ca05dab29e6f3e4188e85eb05305e0e70dec260a81f18eda10f0980e7bde",
+      "bytes": 1364
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "254be1100ede9aca6d5968d84d500e3a4b131dcf5c66d8a77d79df636969fc77",
+      "bytes": 367
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "e79b6f33fe5ed42d8df26d2a36875fae7c22c9ea3b8323d96caa3af19c9370eb",
+      "bytes": 1171
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "c459d738a3a46ca73cbaa80050d445459f8e4e9048d0f5f14e32add79f648dc6",
+      "bytes": 610
+    },
+    {
+      "path": "tsconfig.node.json",
+      "sha256": "9e2abb169ea87b7190613a1d4da57ca608463a453bd4231fa3aeee5e308370dd",
+      "bytes": 213
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "188ec08af36e7572768ba1f228cb1b909ebfe21a8cab23cd0ca62870703ba366",
+      "bytes": 162
+    }
+  ]
+}

@@ -7,8 +7,11 @@ function Invoke-Checked([string]$Command, [string[]]$Arguments) {
     if ($LASTEXITCODE -ne 0) { throw "步骤失败：$Command $($Arguments -join ' ')" }
 }
 try {
-    foreach ($toolName in @('node','npm','git','gh')) { if (-not (Get-Command $toolName -ErrorAction SilentlyContinue)) { throw "缺少工具：$toolName" } }
+    $taskTools = @('node','npm','git')
+    if (-not $LocalOnly) { $taskTools += 'gh' }
+    foreach ($toolName in $taskTools) { if (-not (Get-Command $toolName -ErrorAction SilentlyContinue)) { throw "缺少工具：$toolName" } }
     if (-not (Test-Path -LiteralPath 'node_modules')) { Invoke-Checked 'npm' @('ci') }
+    Invoke-Checked 'npm' @('test')
     Invoke-Checked 'npm' @('run','check')
     Invoke-Checked 'npm' @('run','build')
     if ($LocalOnly) { Write-Host '本地检查与构建通过，可运行 npm run preview。'; return }
@@ -16,8 +19,9 @@ try {
     Invoke-Checked 'git' @('add','--force','--','cases')
     Invoke-Checked 'npm' @('run','check','--','--tracked')
     & git diff --cached --quiet
-    if ($LASTEXITCODE -eq 0) { Write-Host '没有待发布的改动。'; return }
-    Invoke-Checked 'git' @('commit','-m','Update verified gallery cases')
+    $taskDiffCode = $LASTEXITCODE
+    if ($taskDiffCode -eq 1) { Invoke-Checked 'git' @('commit','--quiet','-m','Update verified gallery cases') }
+    elseif ($taskDiffCode -ne 0) { throw '无法检查暂存改动' }
     Invoke-Checked 'git' @('push')
     $publishSha = (& git rev-parse HEAD).Trim()
     Write-Host "已推送 $publishSha；检查自动部署。"

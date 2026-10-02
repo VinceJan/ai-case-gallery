@@ -24,13 +24,41 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "mythos-craft--mimo-x-smart--mimo-desktop--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 10,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 92,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "点击进入世界",
+      "锁定鼠标 / 转向",
+      "W 移动"
+    ],
     "errors": [],
     "requests": [],
+    "screenshot": "mythos-craft--mimo-x-smart--mimo-desktop--default--r001-live.png",
+    "screenshotHash": "1a6d6ad284c344205116d748d6452fe7be93b46418fcec308e7633093647c3a5",
+    "sourceFingerprint": "b9d471869f012e8f2949a9f69ff897c3380d6bd4f6bd89305f7453bf3f1292d3",
+    "demoFingerprint": "5ffb3cc654ea5653e25323dcbc8ea462bc4cd057750a94f51cf85f18c39efad3",
+    "date": "2026-10-02T22:32:15.908Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
     "manualReview": {
-      "date": "2026-10-01T15:34:18.903Z",
-      "summary": "已查看进入后的真实场景截图：程序化方块地形、建筑或植被及交互 HUD 可见；浏览器已执行进入与移动操作。"
+      "date": "2026-10-02T22:54:55.357Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "b9d471869f012e8f2949a9f69ff897c3380d6bd4f6bd89305f7453bf3f1292d3",
+      "demoFingerprint": "5ffb3cc654ea5653e25323dcbc8ea462bc4cd057750a94f51cf85f18c39efad3"
     }
   },
   "sourceFingerprint": "b9d471869f012e8f2949a9f69ff897c3380d6bd4f6bd89305f7453bf3f1292d3",

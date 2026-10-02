@@ -2,10 +2,12 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {CASES,INCOMING,readCandidates,fingerprint} from './lib.mjs';
 import {register,formatId,formatTitle} from './naming.mjs';
+import {assertReady} from './verification.mjs';
 export async function promoteCase(c){
- if(c.status!=='verified'||!c.cover||!c.demoFingerprint||!c.verification?.manualReview)throw Error('必须通过浏览器和画面人工复核才能发布：'+c.id);
+ assertReady(c);
  if(c.id!==formatId(c,c.serial)||c.title!==formatTitle(c))throw Error('命名不符合规范');
  const dir=path.join(INCOMING,c.id);
+ const stored=JSON.parse(await fs.readFile(path.join(dir,'case.json'),'utf8'));assertReady(stored);if(JSON.stringify(stored)!==JSON.stringify(c))throw Error('案例记录已更新，请重新读取后收录');
  for(const kind of ['source','demo'])if((await fingerprint(path.join(dir,kind))).sha256!==c[kind+'Fingerprint'])throw Error(kind+' 指纹不一致');
  await fs.rename(dir,path.join(CASES,c.id));await register(c);console.log('已发布收录 '+c.id);
 }

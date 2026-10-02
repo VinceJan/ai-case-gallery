@@ -24,13 +24,39 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "skeleton-watch--gpt-5-6-terra--codex-cli--xhigh--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 19,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "机芯展开"
+    ],
     "errors": [],
     "requests": [],
+    "screenshot": "skeleton-watch--gpt-5-6-terra--codex-cli--xhigh--r001-live.png",
+    "screenshotHash": "cd5cadad4a1c0624462751c7260b660f75c100b55d3a250a50bb32dbd15c282b",
+    "sourceFingerprint": "ded02a1be69f504d6e6bcbe2d14717a164f6786486a719454991e09a7bf6c771",
+    "demoFingerprint": "c12cf1fd84ee8b899afda80b7ed7efe9194c6a09fdd6d4640b950419154bbecb",
+    "date": "2026-10-02T22:41:27.887Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
     "manualReview": {
-      "date": "2026-10-01T15:34:19.266Z",
-      "summary": "已查看实际 3D 机械表、齿轮/机芯和操作面板；未停在加载画面。"
+      "date": "2026-10-02T22:54:55.381Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "ded02a1be69f504d6e6bcbe2d14717a164f6786486a719454991e09a7bf6c771",
+      "demoFingerprint": "c12cf1fd84ee8b899afda80b7ed7efe9194c6a09fdd6d4640b950419154bbecb"
     }
   },
   "sourceFingerprint": "ded02a1be69f504d6e6bcbe2d14717a164f6786486a719454991e09a7bf6c771",

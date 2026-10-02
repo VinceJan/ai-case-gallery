@@ -1,22 +1,66 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import {cases,url,caseUrl,demoUrl,imageUrl,labels,playable,prompt,repository} from '../../lib/catalog.mjs';
+import {cases,url,caseUrl,demoUrl,imageUrl,prompt,repository} from '../../lib/catalog.mjs';
 export function getStaticPaths(){return cases.flatMap(c=>[c.id,...(c.legacyIds||[])].map(id=>({params:{id},props:{c}})));}
-const {c}=Astro.props;const text=await prompt(c);
+const {c}=Astro.props;
 if(Astro.params.id!==c.id)return Astro.redirect(caseUrl(c),301);
+const text=await prompt(c);
+const images=[...new Set([c.cover,...c.gallery].filter(Boolean))];
+const verificationDate=c.verification?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(c.verification.date)):null;
 ---
 <Layout title={`${c.title} · 造物集`} description={c.description} image={c.cover?imageUrl(c):undefined}>
-<div class="page"><div class="breadcrumb"><a href={url('')}>作品集</a><span>/</span><a href={url('')+'?topic='+c.topic}>{c.topicLabel}</a><span>/</span><span>运行记录</span></div>
-<div class="detail-top"><div><p class="eyebrow">{c.topicLabel} / {c.harness}</p><h1 class="page-title">{c.title}</h1><p class="page-lead">{c.description}</p></div><div class="actions">{playable(c)&&<a class="button dark" href={demoUrl(c)} target="_blank" rel="noopener">独立打开作品 ↗</a>}<a class="button" href={`${repository}/tree/main/cases/${c.id}/source`} target="_blank" rel="noopener">查看源码 ↗</a></div></div>
-{c.cover?<img class="detail-hero" src={imageUrl(c)} alt={c.title+'的实际场景截图'} width="1500" height="900"/>:<div class="detail-hero no-cover"><span>本次运行仅留有材料</span><small>{c.notes[0]||'尚无可展示的画面'}</small></div>}
-<div class="detail-layout"><div class="detail-main"><section class="experience"><h2>走进这个世界</h2>{playable(c)?<><p>{c.controls}</p><p>点击后加载原始作品。桌面浏览器通常能获得更完整的体验。</p><div class="actions"><button class="button dark" id="load-demo" data-src={demoUrl(c)}>在本页体验 ↗</button><a class="button" href={demoUrl(c)} target="_blank" rel="noopener">新窗口打开 ↗</a></div><iframe id="demo-frame" title={c.title+'在线体验'} class="experience-frame" hidden allow="fullscreen; autoplay" allowfullscreen></iframe></>:<div class="frame-placeholder">{c.adapter==='materials'?'本次运行没有可发布的完整作品，已有任务与材料仍然保留。':'当前版本未通过展示验证，保留源码与问题记录供回看。'}</div>}</section>
-<section class="notes"><h2>这次运行的记录</h2>{c.provenance?.url&&<p>恢复来源：<a href={c.provenance.url} target="_blank" rel="noopener">原始 PR ↗</a> · 提交 <code>{c.provenance.commit.slice(0,12)}</code></p>}<ul>{c.notes.map(n=><li>{n}</li>)}</ul>{c.verification&&<p style="margin-top:15px">发布验证：{c.verification.date}。{c.verification.summary}</p>}</section>
-<section class="prompt-section"><div class="prompt-heading"><h2>提示词</h2>{text&&<button class="button" id="copy-prompt">复制原文</button>}</div>{text?<>{c.promptSource&&<p>标准任务原文来源：<a href={c.promptSource.url} target="_blank" rel="noopener">Nagi Bench ↗</a> · {c.promptSource.license}。用户已确认当时使用 Nagi 标准任务原文。</p>}<p class="prompt-preview">{text.slice(0,250)}{text.length>250?'…':''}</p><details class="prompt-detail"><summary>展开完整提示词 · {text.length.toLocaleString()} 字符</summary><pre class="prompt-text" id="prompt-text">{text}</pre></details><a class="prompt-download" href={url('generated/prompts/'+c.id+'.md')} download={c.id+'-prompt.md'}>下载原始提示词 ↓</a><span id="copy-status" class="copy-status" role="status"></span></>:<p>没有找到这份产物实际使用的提示词。这里保留缺失状态，未用相似任务补写。</p>}</section>
-{c.gallery.length>0&&<section class="screenshots"><h2>更多画面</h2><div class="shot-grid">{c.gallery.map((name,i)=><a href={imageUrl(c,name)} target="_blank" rel="noopener"><img src={imageUrl(c,name)} alt={`${c.title} · 画面 ${i+1}`} width="1600" height="1000" loading="lazy"/></a>)}</div></section>}
-</div><aside class="side-panel"><h2>生成条件</h2><dl class="metadata"><div><dt>模型 / 标识</dt><dd>{c.model}</dd></div><div><dt>Harness</dt><dd>{c.harness}</dd></div><div><dt>提示词版本</dt><dd>{c.promptHash?c.promptVariant:'未记录'}</dd></div>{c.effort&&<div><dt>思考强度</dt><dd>{c.effort}</dd></div>}<div><dt>案例编号</dt><dd><code>{c.id}</code></dd></div><div><dt>运行日期</dt><dd>{c.date||'未记录'}</dd></div><div><dt>展示状态</dt><dd>{labels[c.status]}</dd></div><div><dt>模型归属依据</dt><dd>{c.modelEvidence}</dd></div><div><dt>提示词指纹</dt><dd>{c.promptHash?c.promptHash.slice(0,16):'未记录'}</dd></div></dl><p class="side-note">“已验证展示”表示当前发布版本能够加载并显示场景。玩法深度、美术质量和需求完成度仍需具体观察。</p><a class="prompt-download" href={`${repository}/tree/main/cases/${c.id}`} target="_blank" rel="noopener">完整案例材料 ↗</a></aside></div>
-</div>
-<script>
-document.querySelector<HTMLButtonElement>('#load-demo')?.addEventListener('click',function(){const f=document.querySelector<HTMLIFrameElement>('#demo-frame')!;f.src=this.dataset.src!;f.hidden=false;this.hidden=true;f.scrollIntoView({behavior:'smooth',block:'center'});});
-document.querySelector('#copy-prompt')?.addEventListener('click',async()=>{const text=document.querySelector('#prompt-text')?.textContent||'';const status=document.querySelector('#copy-status')!;try{await navigator.clipboard.writeText(text);status.textContent=' 已复制';}catch{status.textContent=' 复制未成功，可展开后选择原文或下载';}});
-</script>
+<article class="work-page">
+  <a class="back-link" href={url('')}>← 作品集</a>
+  <header class="work-heading">
+    <h1>{c.title}</h1>
+    <a class="button dark" href={demoUrl(c)} target="_blank" rel="noopener" aria-label="在新窗口打开作品">打开作品 <span aria-hidden="true">↗</span></a>
+  </header>
+  <iframe id="demo-frame" class="work-player" src={demoUrl(c)} title={c.title} loading="eager" allow="fullscreen; autoplay" allowfullscreen></iframe>
+  <div class="work-appendix">
+    <details class="work-fold" id="prompt-fold">
+      <summary>提示词 <span aria-hidden="true">＋</span></summary>
+      <div class="fold-content">
+        {text?<>
+          <div class="fold-actions"><button class="button" id="copy-prompt">复制原文</button><a class="quiet-link" href={url('generated/prompts/'+c.id+'.md')} download={c.id+'-prompt.md'}>下载原文 ↓</a><span id="copy-status" class="copy-status" role="status"></span></div>
+          {c.promptSource&&<p class="attribution"><a href={c.promptSource.url} target="_blank" rel="noopener">Nagi Bench 标准任务原文 ↗</a> · {c.promptSource.license}</p>}
+          <pre class="prompt-text" id="prompt-text">{text}</pre>
+        </>:<p>提示词未留存。</p>}
+      </div>
+    </details>
+    <details class="work-fold" id="generation-fold">
+      <summary>生成信息 <span aria-hidden="true">＋</span></summary>
+      <div class="fold-content">
+        <dl class="metadata work-facts">
+          <div><dt>模型</dt><dd>{c.model}</dd></div><div><dt>Harness</dt><dd>{c.harness}</dd></div>
+          <div><dt>提示词版本</dt><dd>{c.promptHash?c.promptVariant:'未记录'}</dd></div><div><dt>运行日期</dt><dd>{c.date||'未记录'}</dd></div>
+          {c.effort&&<div><dt>思考强度</dt><dd>{c.effort}</dd></div>}
+          <div><dt>展示状态</dt><dd>已验证展示</dd></div><div><dt>案例编号</dt><dd><code>{c.id}</code></dd></div>
+          <div><dt>模型归属依据</dt><dd>{c.modelEvidence}</dd></div><div><dt>提示词指纹</dt><dd><code>{c.promptHash||'未记录'}</code></dd></div>
+        </dl>
+        <a class="quiet-link" href={`${repository}/tree/main/cases/${c.id}/source`} target="_blank" rel="noopener">查看源码 ↗</a>
+      </div>
+    </details>
+    <details class="work-fold" id="run-fold">
+      <summary>运行记录 <span aria-hidden="true">＋</span></summary>
+      <div class="fold-content">
+        {c.provenance?.url&&<p class="attribution"><a href={c.provenance.url} target="_blank" rel="noopener">原始 PR ↗</a> · <code>{c.provenance.commit.slice(0,12)}</code></p>}
+        <ul>{c.notes.map(n=><li>{n}</li>)}</ul>
+        {c.verification&&<p class="attribution">{verificationDate} · {c.verification.summary}</p>}
+      </div>
+    </details>
+    {images.length>0&&<details class="work-fold" id="images-fold">
+      <summary>更多画面 <span aria-hidden="true">＋</span></summary>
+      <div class="fold-content shot-grid">{images.map((name,i)=><a href={imageUrl(c,name)} target="_blank" rel="noopener"><img src={imageUrl(c,name)} alt={`${c.topicLabel} · 画面 ${i+1}`} width="1600" height="1000" loading="lazy"/></a>)}</div>
+    </details>}
+  </div>
+</article>
 </Layout>
+<script>
+document.querySelector('#copy-prompt')?.addEventListener('click',async()=>{const text=document.querySelector('#prompt-text')?.textContent||'';const status=document.querySelector('#copy-status')!;try{await navigator.clipboard.writeText(text);status.textContent='已复制';}catch{status.textContent='可选择原文或下载';}});
+</script>
+<style>
+.work-page{padding:28px 60px 60px}.back-link{font-size:11px;color:var(--muted);display:inline-block}.back-link:hover{color:var(--green)}.work-heading{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:22px 0}.work-heading h1{font-family:var(--serif);font-size:clamp(23px,2.3vw,34px);font-weight:500;line-height:1.4;letter-spacing:-.025em;max-width:1050px}.work-heading .button{flex-shrink:0;white-space:nowrap}.work-player{display:block;width:100%;height:min(72svh,820px);min-height:540px;border:0;border-radius:var(--radius);background:#101714}.work-appendix{margin-top:28px}.work-fold{border-top:1px solid var(--line)}.work-fold:last-child{border-bottom:1px solid var(--line)}.work-fold>summary{display:flex;justify-content:space-between;align-items:center;list-style:none;cursor:pointer;font-size:12px;padding:19px 0;color:var(--muted)}.work-fold>summary::-webkit-details-marker{display:none}.work-fold>summary:hover,.work-fold[open]>summary{color:var(--ink)}.work-fold>summary span{font-size:18px;font-weight:300;transition:transform .15s}.work-fold[open]>summary span{transform:rotate(45deg)}.fold-content{padding:2px 0 26px;max-width:100%;color:var(--muted);font-size:12px;line-height:1.9;overflow-wrap:anywhere}.fold-content ul{margin:0;padding-left:18px}.fold-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.quiet-link{color:var(--green);font-size:11px;display:inline-block;margin-top:16px}.fold-actions .quiet-link{margin:0}.fold-actions .button{font-size:10px;padding:7px 12px}.attribution{font-size:10px;color:var(--muted);margin:15px 0}.attribution a{color:var(--green)}.work-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px}.work-facts>div{min-width:0}.work-facts code{font-size:10px}.work-appendix .prompt-text{margin-bottom:0}
+@media(max-width:1100px){.work-page{padding-left:35px;padding-right:35px}}
+@media(max-width:780px){.work-page{padding:23px 23px 40px}.work-heading{align-items:flex-start;flex-direction:column;gap:14px;margin:19px 0}.work-heading h1{font-size:23px}.work-heading .button{padding:9px 14px}.work-player{height:66svh;min-height:430px}.work-facts{gap:0 22px}.work-appendix{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){.work-fold>summary span{transition:none}}
+</style>

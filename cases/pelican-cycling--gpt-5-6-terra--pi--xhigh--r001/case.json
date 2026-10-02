@@ -24,13 +24,32 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "pelican-cycling--gpt-5-6-terra--pi--xhigh--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 0,
+    "svg": 1,
+    "canvasSize": null,
+    "canvasVariation": 0,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
     "errors": [],
     "requests": [],
+    "screenshot": "pelican-cycling--gpt-5-6-terra--pi--xhigh--r001-live.png",
+    "screenshotHash": "f0a38e5e16a4bd61dab20fae442882669e5cefa8d84122b05ea9f701e4c15366",
+    "sourceFingerprint": "daab64a857f9dd744bdc9ac05fe45afc805ba4ec28f1673854cefc35af3a0280",
+    "demoFingerprint": "fc3cbed0d98f0d8e910b13d04d8011e4b6012ab9e389c3913c4c24e747fdd7aa",
+    "date": "2026-10-02T22:35:13.976Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查完整 SVG 画面与浏览器渲染。",
     "manualReview": {
-      "date": "2026-10-01T15:34:19.132Z",
-      "summary": "已检查原始 SVG 在浏览器中的完整画面：鹈鹕、自行车与海边环境；无 XML 解析错误。"
+      "date": "2026-10-02T22:54:55.366Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "daab64a857f9dd744bdc9ac05fe45afc805ba4ec28f1673854cefc35af3a0280",
+      "demoFingerprint": "fc3cbed0d98f0d8e910b13d04d8011e4b6012ab9e389c3913c4c24e747fdd7aa"
     }
   },
   "sourceFingerprint": "daab64a857f9dd744bdc9ac05fe45afc805ba4ec28f1673854cefc35af3a0280",

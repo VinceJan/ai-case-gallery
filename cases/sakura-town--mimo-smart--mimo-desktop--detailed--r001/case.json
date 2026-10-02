@@ -27,10 +27,40 @@
     "view-4.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "sakura-town--mimo-smart--mimo-desktop--detailed--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 78,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "进入小镇"
+    ],
     "errors": [],
-    "requests": []
+    "requests": [],
+    "screenshot": "sakura-town--mimo-smart--mimo-desktop--detailed--r001-live.png",
+    "screenshotHash": "3953a6ee90dbf5e5cbd5d360035d446cd95333f4eee2ef2d1360679a28e8b563",
+    "sourceFingerprint": "d63a2e50c8080f8beee9e4a6bcdcd8f8ce33cb4231d2a849874c287c9196ab23",
+    "demoFingerprint": "ed721f8d6e44cde5c511d2d48580bd50855a0f25698f9bad0afc8c43f06395c3",
+    "date": "2026-10-02T22:37:02.349Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
+    "manualReview": {
+      "date": "2026-10-02T22:54:55.373Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "d63a2e50c8080f8beee9e4a6bcdcd8f8ce33cb4231d2a849874c287c9196ab23",
+      "demoFingerprint": "ed721f8d6e44cde5c511d2d48580bd50855a0f25698f9bad0afc8c43f06395c3"
+    }
   },
   "sourceFingerprint": "d63a2e50c8080f8beee9e4a6bcdcd8f8ce33cb4231d2a849874c287c9196ab23",
   "buildError": null,

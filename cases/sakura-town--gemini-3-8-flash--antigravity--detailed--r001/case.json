@@ -24,10 +24,40 @@
     "view-1.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "sakura-town--gemini-3-8-flash--antigravity--detailed--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 2,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 81,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "Click to Enter Town (小町へ入る)"
+    ],
     "errors": [],
-    "requests": []
+    "requests": [],
+    "screenshot": "sakura-town--gemini-3-8-flash--antigravity--detailed--r001-live.png",
+    "screenshotHash": "b96eb3371935dd0a4fa35d7320920914602f7b562e4fe55b47438cfd6faee079",
+    "sourceFingerprint": "cdcd9e7c2bed9280f2c130aa840abc02914d045f8db79bcb852cc2f099d32f14",
+    "demoFingerprint": "713bcc2cda1812da3744adbde82ac2a7255ed9cc17e7e469da1cd52a9d7aa2cd",
+    "date": "2026-10-02T22:35:57.263Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
+    "manualReview": {
+      "date": "2026-10-02T22:54:55.370Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "cdcd9e7c2bed9280f2c130aa840abc02914d045f8db79bcb852cc2f099d32f14",
+      "demoFingerprint": "713bcc2cda1812da3744adbde82ac2a7255ed9cc17e7e469da1cd52a9d7aa2cd"
+    }
   },
   "sourceFingerprint": "cdcd9e7c2bed9280f2c130aa840abc02914d045f8db79bcb852cc2f099d32f14",
   "buildError": null,

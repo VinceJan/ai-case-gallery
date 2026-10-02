@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {ROOT,readCases,readCandidates,writeJson} from './lib.mjs';
+const prior=JSON.parse(await fs.readFile(path.join(ROOT,'registry/recovery.json'),'utf8')),published=await readCases();
+const all=(await readCandidates()).filter(c=>c.provenance?.kind==='github-pr'),kept=new Set(published.map(c=>c.id));
+const shortReason=reason=>/nearestWP/.test(reason)?'原作缺失 nearestWP 导入，运行时出错。':/xlink/.test(reason)?'原 SVG 缺失 xlink 命名空间，浏览器 XML 解析失败。':/Object3D.*Vector3/.test(reason)?'原作将 Vector3 当作 Object3D 添加，运行时报错。':reason.replace(/\u001b\[[0-9;]*m/g,'').split('\n')[0];
+const result={...prior,prs:prior.prs.map(p=>({...p,recovered:all.filter(c=>c.provenance.url===p.url).length,published:published.filter(c=>c.provenance?.url===p.url).length})),recovered:all.length,published:published.filter(c=>c.provenance?.kind==='github-pr').length,updatedAt:new Date().toISOString(),excluded:all.filter(c=>!kept.has(c.id)).map(c=>({id:c.id,status:c.status,reason:shortReason((c.verification?.errors||[]).join('; ')||c.buildError||'未通过验收'),decision:'用户于 2026-10-03 选择保留原作、继续排除'}))};
+await writeJson(path.join(ROOT,'registry/recovery.json'),result);
+await fs.writeFile(path.join(ROOT,'docs/recovery.md'),`# PR 恢复记录\n\n恢复 ${result.recovered} 个候选，收录 ${result.published} 个；另 ${result.excluded.length} 个保留原样、继续排除。原始 PR 文件共 ${result.originalFilesVerified} 个，已按 Git blob SHA 校对；原锁文件有适配时保留原版本。\n\n| 原始 PR | 恢复 | 收录 | 提交 |\n|---|---:|---:|---|\n${result.prs.map(p=>`| [#${p.number}](${p.url}) | ${p.recovered} | ${p.published} | ${p.commit.slice(0,12)} |`).join('\n')}\n\n用户确认使用 Nagi 标准任务原文，文本取自对应提交的 cases.json 并保留 CC-BY-4.0 来源。模型、Harness、思考强度来自 PR 注册数据，PR 均关闭未合并。\n\n2026-10-03 修正浏览器检查选错小地图的问题，重新验证 Muse Spark 1.2 / Pi 的 Dust2 主场景、移动和开火后补收录；原始作品未修改。\n\n按用户选择继续排除：\n\n${result.excluded.map(c=>'- `'+c.id+'`：'+c.reason).join('\n')}\n\n原画廊两个设计/材料阶段记录已删除。单文件便利店根据用户补充归属 Pi + Space Bunny Alpha，保留未独立定位原会话的说明；两个原先模型缺失的 Antigravity 案例归为用户确认的 Gemini 3.8 Flash。\n`);
+console.log('PR 候选 '+result.recovered+'，收录 '+result.published+'，排除 '+result.excluded.length+'。');

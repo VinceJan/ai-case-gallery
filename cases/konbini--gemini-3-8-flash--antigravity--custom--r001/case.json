@@ -25,10 +25,38 @@
     "view-1.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "konbini--gemini-3-8-flash--antigravity--custom--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 75,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
     "errors": [],
-    "requests": []
+    "requests": [],
+    "screenshot": "konbini--gemini-3-8-flash--antigravity--custom--r001-live.png",
+    "screenshotHash": "5c1409ee43d1ef20d9dfb2e49125ca8f306141dc732a11f9f5330e0b17ea8a34",
+    "sourceFingerprint": "e99f6bfe60bc476f060590cabff0838c0e80a709dedfa99c15953a0843e8bdcb",
+    "demoFingerprint": "527618b61fbe04b5e5d73b53c4a5fbccff047d4de45303422118c9621ac0adba",
+    "date": "2026-10-02T22:24:33.595Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查作品加载与实际场景画面。",
+    "manualReview": {
+      "date": "2026-10-02T22:54:55.344Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "e99f6bfe60bc476f060590cabff0838c0e80a709dedfa99c15953a0843e8bdcb",
+      "demoFingerprint": "527618b61fbe04b5e5d73b53c4a5fbccff047d4de45303422118c9621ac0adba"
+    }
   },
   "sourceFingerprint": "e99f6bfe60bc476f060590cabff0838c0e80a709dedfa99c15953a0843e8bdcb",
   "buildError": null,

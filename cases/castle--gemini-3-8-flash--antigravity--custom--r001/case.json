@@ -24,10 +24,38 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "castle--gemini-3-8-flash--antigravity--custom--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 91,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
     "errors": [],
-    "requests": []
+    "requests": [],
+    "screenshot": "castle--gemini-3-8-flash--antigravity--custom--r001-live.png",
+    "screenshotHash": "028d09455594174488d640d46c2672dda80808668d3725d1ca7e68b44a41df62",
+    "sourceFingerprint": "501a5e3a2a59ef498a0e4d88e329f8e63aca39c1a7cd716f5ca84ce04aba72f8",
+    "demoFingerprint": "52a218d1112d9fa09e5980f5e34fdda9142c67bc0dcf023554a66ddf8a3d736b",
+    "date": "2026-10-02T22:22:22.117Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查作品加载与实际场景画面。",
+    "manualReview": {
+      "date": "2026-10-02T22:54:55.336Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "501a5e3a2a59ef498a0e4d88e329f8e63aca39c1a7cd716f5ca84ce04aba72f8",
+      "demoFingerprint": "52a218d1112d9fa09e5980f5e34fdda9142c67bc0dcf023554a66ddf8a3d736b"
+    }
   },
   "sourceFingerprint": "501a5e3a2a59ef498a0e4d88e329f8e63aca39c1a7cd716f5ca84ce04aba72f8",
   "buildError": null,

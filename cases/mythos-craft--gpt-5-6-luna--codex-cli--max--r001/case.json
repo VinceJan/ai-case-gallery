@@ -24,13 +24,41 @@
     "verified-cover.webp"
   ],
   "verification": {
-    "date": "2026-10-01",
-    "summary": "独立发布路径加载成功，无脚本异常；保存实际渲染画面供人工复核。",
+    "id": "mythos-craft--gpt-5-6-luna--codex-cli--max--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 50,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "进入星痕世界  ·  ENTER",
+      "锁定鼠标 / 转向",
+      "W 移动"
+    ],
     "errors": [],
     "requests": [],
+    "screenshot": "mythos-craft--gpt-5-6-luna--codex-cli--max--r001-live.png",
+    "screenshotHash": "cf030f6ac5069d04577941a40456842720e412e5558dfdd1941ef14134034f56",
+    "sourceFingerprint": "684bbe2f51b8a499671c39a6236a6a5a09ff102bfadecf15716f6d8741243ea0",
+    "demoFingerprint": "c61dbf9f72bbcb67bc4e5edc6fb9ca63b851c120be5302ad3c25cac4872f377e",
+    "date": "2026-10-02T22:28:35.456Z",
+    "origin": "https://vincejan.github.io/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已检查实际场景与入口、基础交互。",
     "manualReview": {
-      "date": "2026-10-01T15:34:18.758Z",
-      "summary": "已查看进入后的真实场景截图：程序化方块地形、建筑或植被及交互 HUD 可见；浏览器已执行进入与移动操作。"
+      "date": "2026-10-02T22:54:55.349Z",
+      "summary": "逐图复核实际渲染画面，确认场景或 SVG 完整显示、无开始层遮挡，并核对对应入口和基础操作记录。",
+      "sourceFingerprint": "684bbe2f51b8a499671c39a6236a6a5a09ff102bfadecf15716f6d8741243ea0",
+      "demoFingerprint": "c61dbf9f72bbcb67bc4e5edc6fb9ca63b851c120be5302ad3c25cac4872f377e"
     }
   },
   "sourceFingerprint": "684bbe2f51b8a499671c39a6236a6a5a09ff102bfadecf15716f6d8741243ea0",
