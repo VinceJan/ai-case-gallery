@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {ROOT,writeJson} from './lib.mjs';
 export const slug=value=>String(value||'').normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-export const harnessNames={'pi':'Pi','codex':'Codex CLI','codex-cli':'Codex CLI','antigravity':'Antigravity','mimo-desktop':'MiMo Desktop','mimodesktop':'MiMo Desktop','zcode':'ZCode'};
+export const harnessNames={'pi':'Pi','codex':'Codex CLI','codex-cli':'Codex CLI','antigravity':'Antigravity','mimo-desktop':'MiMo Desktop','mimodesktop':'MiMo Desktop','zcode':'ZCode','hermes':'Hermes'};
 export const canonicalHarness=value=>harnessNames[slug(value)]||value||'Harness 未记录';
 export const canonicalModel=value=>({'gpt-6-1-sol':'GPT-6.1 Sol','gpt-6-sol':'GPT-6 Sol','gpt-6-luna':'GPT-6 Luna','stealth-space-bunny-alpha':'Space Bunny Alpha','space-bunny-alpha':'Space Bunny Alpha','gpt-5-6-luna':'GPT-5.6 Luna','gpt-5-6-sol':'GPT-5.6 Sol','gpt-5-6-terra':'GPT-5.6 Terra'})[slug(value)]||value||'模型未记录';
 export function components(record){return {topic:slug(record.topic),model:slug(canonicalModel(record.model)),harness:slug(canonicalHarness(record.harness)),variant:slug(record.variant||'default')};}

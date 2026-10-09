@@ -1,0 +1,71 @@
+{
+  "id": "konbini--space-bunny-alpha--hermes--max--r001",
+  "title": "雨夜便利店 · Space Bunny Alpha · Hermes",
+  "topic": "konbini",
+  "topicLabel": "雨夜便利店",
+  "model": "Space Bunny Alpha",
+  "harness": "Hermes",
+  "modelEvidence": "用户于 2026-10-09 指定 Space Bunny Alpha、Hermes、effort=max；未独立定位执行会话，不推测精确 API 模型标识。",
+  "date": "2026-10-09",
+  "promptVariant": "原始提示词",
+  "promptHash": "b9088c9e8553018721778be0680f197d87175aee0774b394029565f09bbaa795",
+  "description": "雨夜便利店街角微缩景观。",
+  "notes": [
+    "原始单文件 HTML 原样归档；Three.js 已内嵌，原许可注释保留。",
+    "提示词、模型、Harness 和思考强度根据用户本次补充记录。"
+  ],
+  "controls": "拖拽旋转，滚轮缩放，右键拖拽平移；触屏支持旋转和双指缩放。",
+  "adapter": "html",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "konbini--space-bunny-alpha--hermes--max--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 78,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
+    "errors": [],
+    "requests": [],
+    "screenshot": "konbini--space-bunny-alpha--hermes--max--r001.png",
+    "screenshotHash": "1a0e80c9be3dd35b68d25e8edb945f74e06dcb750307e4fcc56be318b9c5d915",
+    "sourceFingerprint": "ff2ba0b4bf4f6c4abf8e7aa0a1c4379b8d43356e4a0101536e9833f880d8b9cd",
+    "demoFingerprint": "6ec7fd4a04636a941b896a11d50aa78f54da877820dc1c957027017378893ce0",
+    "date": "2026-10-09T14:51:11.119Z",
+    "origin": "http://127.0.0.1:55948/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-10-09T14:52:36.075Z",
+      "summary": "已查看实际雨夜便利店、橱窗、贩卖机、电线杆与降雨画面，无菜单遮挡；实测拖拽旋转、滚轮缩放、右键平移均响应，手机 390×844 画布正常铺满，无脚本错误。",
+      "sourceFingerprint": "ff2ba0b4bf4f6c4abf8e7aa0a1c4379b8d43356e4a0101536e9833f880d8b9cd",
+      "demoFingerprint": "6ec7fd4a04636a941b896a11d50aa78f54da877820dc1c957027017378893ce0"
+    }
+  },
+  "sourceFingerprint": "ff2ba0b4bf4f6c4abf8e7aa0a1c4379b8d43356e4a0101536e9833f880d8b9cd",
+  "serial": 1,
+  "variant": "max",
+  "effort": "max",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "用户于 2026-10-09 确认提示词与此前雨夜便利店相同；沿用已收录 Space Bunny Alpha / Pi 案例的原文，未独立定位 Hermes 执行会话。 复用记录：konbini--space-bunny-alpha--pi--default--r001。",
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "6ec7fd4a04636a941b896a11d50aa78f54da877820dc1c957027017378893ce0"
+}
