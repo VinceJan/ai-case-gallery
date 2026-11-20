@@ -62,5 +62,9 @@
   "mimo-x-pro-preview": {
     "label": "MiMo X Pro Preview",
     "exactId": null
+  },
+  "gpt-6-2-sol": {
+    "label": "GPT-6.2 Sol",
+    "exactId": "gpt-6.2-sol"
   }
 }

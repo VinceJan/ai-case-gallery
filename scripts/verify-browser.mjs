@@ -16,7 +16,11 @@ const all=online?await readCases():await readCandidates(),records=all.filter(c=>
 for(const id of ids)if(!records.some(c=>c.id===id))throw Error('案例不存在或尚无展示产物：'+id);
 const edge='C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
 const executablePath=await fs.access(edge).then(()=>edge).catch(()=>undefined);
-const browser=await chromium.launch({executablePath,headless:true,args:['--use-angle=gl','--enable-webgl','--ignore-gpu-blocklist']});
+// On Windows, use Edge's native ANGLE backend. Forcing OpenGL can reset the
+// graphics context during shadow compilation even when the demo runs normally.
+const graphicsArgs=['--enable-webgl','--ignore-gpu-blocklist'];
+if(process.platform!=='win32')graphicsArgs.unshift('--use-angle=gl');
+const browser=await chromium.launch({executablePath,headless:true,args:graphicsArgs});
 const output=path.join(ROOT,'.work/verification');await fs.mkdir(output,{recursive:true});
 const results=[];let cursor=0;
 try {

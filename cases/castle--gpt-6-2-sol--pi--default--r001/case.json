@@ -1,0 +1,72 @@
+{
+  "id": "castle--gpt-6-2-sol--pi--default--r001",
+  "title": "城堡与农田 · GPT-6.2 Sol · Pi",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "GPT-6.2 Sol",
+  "harness": "Pi",
+  "modelEvidence": "本次 Pi 执行会话的主会话助手记录为 openai-codex / gpt-6.2-sol，思考设置为 high。",
+  "date": "2026-11-21",
+  "promptVariant": "原始提示词",
+  "promptHash": "027b2c95ea5a2652b6628e16d663f2bf38798a0d9ef52d63d1ae34119083806e",
+  "description": "《蓟丘领》是一座可环绕观赏的中世纪微缩领地。高台城堡、木筋村庄与前方农田由小径和水渠串联，像素骑士和农夫在场景中走动，可切换四种天气。",
+  "notes": [
+    "原始提示词包含无 UI 观赏和天气 UI；成品默认隐藏面板，按 W 或从右下角唤出。",
+    "收录时补充两项天气交互兼容库的许可文本；未修改场景或交互源码。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "拖拽旋转，滚轮或双指缩放；按 W 或点击右下角打开天气面板。聚焦画面后也可以用方向键、加减键和 Home。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "castle--gpt-6-2-sol--pi--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 1,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 53,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
+    "errors": [],
+    "requests": [],
+    "screenshot": "castle--gpt-6-2-sol--pi--default--r001.png",
+    "screenshotHash": "1686e5a7ac2536b5f34773c44dd0cf3d7b1172f301df5abdc40347c0ad8ef3ed",
+    "sourceFingerprint": "e992b8b35615c7e3e6d5d901c211fcccb48458b1276c95d639ce161c812fd370",
+    "demoFingerprint": "487e8bc1b67cd99e713a9691a6d975a270da097db29b2a6e49fb07d5a11083f9",
+    "date": "2026-11-20T16:50:48.553Z",
+    "origin": "http://127.0.0.1:61186/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-11-20T16:52:02.603Z",
+      "summary": "已逐图复核高台城堡、城墙、护城河与吊桥、村庄、农田及两名像素角色。场景默认无界面遮挡。实测拖拽旋转、滚轮缩放、W 打开天气、切换细雨和 Esc 关闭均正常；Windows Edge 原生 WebGL 后端无脚本或资源错误。",
+      "sourceFingerprint": "e992b8b35615c7e3e6d5d901c211fcccb48458b1276c95d639ce161c812fd370",
+      "demoFingerprint": "487e8bc1b67cd99e713a9691a6d975a270da097db29b2a6e49fb07d5a11083f9"
+    }
+  },
+  "sourceFingerprint": "e992b8b35615c7e3e6d5d901c211fcccb48458b1276c95d639ce161c812fd370",
+  "serial": 1,
+  "variant": "default",
+  "effort": "high",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "逐字保存本次执行会话中用户的作品需求正文；不包含浏览器工具说明或后续对话。",
+  "exactModelId": "gpt-6.2-sol",
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "487e8bc1b67cd99e713a9691a6d975a270da097db29b2a6e49fb07d5a11083f9"
+}

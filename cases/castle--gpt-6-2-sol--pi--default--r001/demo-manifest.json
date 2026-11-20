@@ -1,0 +1,50 @@
+{
+  "sha256": "487e8bc1b67cd99e713a9691a6d975a270da097db29b2a6e49fb07d5a11083f9",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-C65ZpX_r.css",
+      "sha256": "ba654b0d38ec6eb3fb96869a5805f9d017405fa9f19a1a9e4c957d6b6ac7fbec",
+      "bytes": 4640
+    },
+    {
+      "path": "assets/index-Cs1QYQ2S.js",
+      "sha256": "6f8ccfca7eb3f18562967453b1371ca37f48a1a5bf2caaa5c69b67a7b0dfb532",
+      "bytes": 106607
+    },
+    {
+      "path": "assets/invokers-polyfill-BWFjuSge.js",
+      "sha256": "8be57be68fb1831297a36fcc1064670ce1878078178800ee8814c20f33c57eb3",
+      "bytes": 6701
+    },
+    {
+      "path": "assets/popover-DtqSrbDJ.js",
+      "sha256": "89a65fc2f12795e883d2efe323b354bbbd56efa45653816fa3856452bb799c7b",
+      "bytes": 10841
+    },
+    {
+      "path": "assets/three-BXYQOm4w.js",
+      "sha256": "51cb93008ee02b591b2593cc150c9349a2e3bb2daea681b79a2446b6d842c0fe",
+      "bytes": 718463
+    },
+    {
+      "path": "index.html",
+      "sha256": "175f9c2ed9c7cfd312dcb1c3eb329282ed2e7ae8465b5500138fd2ec4d8cb9d3",
+      "bytes": 3244
+    },
+    {
+      "path": "licenses/invokers-polyfill.txt",
+      "sha256": "d59c04cc2135d0b04346e02f1aafe07526c5a4135ade411ebed7a21b2c785284",
+      "bytes": 1069
+    },
+    {
+      "path": "licenses/oddbird-popover-polyfill.txt",
+      "sha256": "f8d784e2c8f2e41d9d695bb87dd466f70811a1fe5e912c77be6694861a662176",
+      "bytes": 1476
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "sha256": "e992b8b35615c7e3e6d5d901c211fcccb48458b1276c95d639ce161c812fd370",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "bytes": 20
+    },
+    {
+      "path": "README.md",
+      "sha256": "b9ea407849d1ce08f7297cb8066e5f9439bdb04e862d5f34b2147e5cc8d20e43",
+      "bytes": 1218
+    },
+    {
+      "path": "index.html",
+      "sha256": "886310b6a2403d62340edb8f321fb66142cebe6328b7d2c4a54bfd612101fdb0",
+      "bytes": 3070
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "821983a921e74d82a9b1ec3503ef03b458ea3de2161f19da4cdbc1a9fb6e62e2",
+      "bytes": 36578
+    },
+    {
+      "path": "package.json",
+      "sha256": "db4a560860cd17420c9f876ed5cee554a73b2cf11ca72ce6229b5ed37db62240",
+      "bytes": 329
+    },
+    {
+      "path": "preview.webp",
+      "sha256": "f5c628f663e67f80aaba45c967a3ec0a2128427c3c372c6dbce4e85ac7d08fb4",
+      "bytes": 122452
+    },
+    {
+      "path": "public/licenses/invokers-polyfill.txt",
+      "sha256": "d59c04cc2135d0b04346e02f1aafe07526c5a4135ade411ebed7a21b2c785284",
+      "bytes": 1069
+    },
+    {
+      "path": "public/licenses/oddbird-popover-polyfill.txt",
+      "sha256": "f8d784e2c8f2e41d9d695bb87dd466f70811a1fe5e912c77be6694861a662176",
+      "bytes": 1476
+    },
+    {
+      "path": "src/castle.js",
+      "sha256": "454e082819ee5ef7462af92e36dc8ea69d8b3ae02de2e9eb679002d04cf56ce3",
+      "bytes": 25017
+    },
+    {
+      "path": "src/characters.js",
+      "sha256": "5c86c5e4469aaf246dda5a6fd0021428cb2dbbabd3f18069550471b4672c1499",
+      "bytes": 8262
+    },
+    {
+      "path": "src/fields.js",
+      "sha256": "14bdd7d215bc4be547739877d685bede288c99887f7699da635ba627f48062f6",
+      "bytes": 24847
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "3b56254ae4dfb6f19ebdf45dca50631ce38a0f68532c21a8263d1453be5ca97f",
+      "bytes": 6467
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "35f081bee0dcc479eb82f1c84cf3aec4ae3cc55497b68b570c1a6cc59a1913cf",
+      "bytes": 4690
+    },
+    {
+      "path": "src/terrain.js",
+      "sha256": "1d179210cb4e69cb167428715b76377e2e772deae05265b6abf1abc38990b4ea",
+      "bytes": 7104
+    },
+    {
+      "path": "src/village.js",
+      "sha256": "d814a8dd48289a6eb7c7af314c28f2cdb907ee92b5cfacaab381dd09d52b85ad",
+      "bytes": 42044
+    },
+    {
+      "path": "src/weather.js",
+      "sha256": "c99f8094cebf064d86f8d527684a9eca86f29130f9d779cfa0e0c7045f4a05a6",
+      "bytes": 7439
+    },
+    {
+      "path": "src/world.js",
+      "sha256": "cc35dbb278f9df97ab830d0c5720d502d0ee45aaff71ee9e68ac3997e63a1adf",
+      "bytes": 6142
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "c7649376682a22a456322ee13438f1baac1ff9ef5de581b3f81e4780efeac303",
+      "bytes": 173
+    }
+  ]
+}
