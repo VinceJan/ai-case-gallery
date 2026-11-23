@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ebeedc">
+  <meta name="description" content="在群山之间的小镇散步，穿过铁路道口，把一份便当送到车站。">
+  <title>樱花小镇 · Sakura Town</title>
+</head>
+<body>
+  <main id="game" aria-label="樱花小镇">
+    <div id="viewport" aria-label="可散步的三维小镇"></div>
+    <div class="wash" aria-hidden="true"></div>
+    <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="flower" viewBox="0 0 32 32"><path d="M16 8C13.8 1.1 6.7 3.5 8 9.1l-1.5-.3c-6.3-.1-6.1 7.1-.8 8.4l1.7.3C2.8 23 7.6 28.2 12.2 24.8l1.6-1.4c.1 7.4 7.4 7.6 8.1 1.4l.1-1.7c5.4 4.8 10.1-1.4 5.5-5.3l-1.4-1.1c6-2.5 3.4-9.2-2.1-7.6l-2 .7C24.4 3.6 17.5 1 16 8Z" fill="currentColor"/><circle cx="16.5" cy="15.5" r="2" fill="#fff6eb"/><path d="m16.5 15.5 3.6-2.7m-3.6 2.7 1.3 4m-1.3-4-3.9-1.6" stroke="#fff6eb" stroke-linecap="round" fill="none"/></symbol>
+        <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+        <symbol id="sound" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3zM16 9a4.2 4.2 0 0 1 0 6m2.5-8.5a7.7 7.7 0 0 1 0 11"/></symbol>
+        <symbol id="mute" viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3zM16 10l5 5m0-5-5 5"/></symbol>
+        <symbol id="book" viewBox="0 0 24 24"><path d="M4 5h6l2 2 2-2h6v14h-6l-2 2-2-2H4zM12 7v14"/></symbol>
+        <symbol id="map" viewBox="0 0 24 24"><path d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2zm6-2v14m6-12v14"/></symbol>
+        <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 10-7 10s-7-5-7-10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+        <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h13m-5-5 5 5-5 5"/></symbol>
+        <symbol id="train" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="15" rx="4"/><path d="M6 11h12M12 4v7m-4 7-3 3m11-3 3 3"/><path d="M8 14h.1m7.9 0h.1"/></symbol>
+        <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+      </defs>
+    </svg>
+    <header class="top">
+      <div class="brand">
+        <span class="logo"><svg><use href="#flower"/></svg></span>
+        <div><h1>樱花小镇</h1><p>SAKURA TOWN</p></div>
+      </div>
+      <div class="clock paper" aria-label="游戏时间">
+        <span class="sun"><svg class="icon"><use href="#sun"/></svg></span>
+        <div><small id="cal">春・第一日</small><strong id="clock">08:15</strong></div>
+      </div>
+      <nav class="top-actions" aria-label="游戏菜单">
+        <button id="sound-btn" class="paper icon-btn" aria-label="打开环境音" aria-pressed="false" title="环境音"><svg class="icon"><use href="#mute"/></svg></button>
+        <button id="guide-btn" class="paper guide-btn"><svg class="icon"><use href="#book"/></svg><span>散步指南</span></button>
+      </nav>
+    </header>
+    <aside class="journal paper" aria-labelledby="journal-title">
+      <div class="journal-header"><svg class="icon"><use href="#book"/></svg><h2 id="journal-title">散步手记</h2><span>01</span></div>
+      <div class="journal-body">
+        <div class="eyebrow"><span></span><span id="quest-tag">今日委托</span></div>
+        <h3 id="quest-title">春风里的便当</h3>
+        <p id="quest-desc" role="status">去春风茶屋门口，与小春说说话。</p>
+        <button id="route-btn" type="button"><svg class="icon"><use href="#pin"/></svg><span id="route-label">春风茶屋</span><svg class="icon route-arrow"><use href="#arrow"/></svg></button>
+        <p class="progress" id="progress" aria-label="当前任务进度"><i></i><i></i><i></i></p>
+      </div>
+    </aside>
+    <button id="marker" class="marker" hidden type="button"><span id="marker-name">小春</span><i></i></button>
+    <button class="interact paper" id="interact" type="button" hidden><kbd>E</kbd><span id="interact-label">交谈</span></button>
+    <div class="toast paper" id="toast" role="status" hidden></div>
+    <footer class="bottom">
+      <div class="place">
+        <svg class="icon"><use href="#pin"/></svg>
+        <div><small>当前位置</small><strong id="place">站前街道</strong></div>
+      </div>
+      <div class="controls paper" aria-label="快捷键">
+        <span class="keyset"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span><span>移动</span><i></i><kbd>E</kbd><span>互动</span><i></i><kbd>M</kbd><span>地图</span>
+      </div>
+      <button class="map-card paper" id="map-btn" aria-label="打开小镇地图">
+        <span class="map-head"><svg class="icon"><use href="#map"/></svg><strong>小镇地图</strong><kbd>M</kbd></span>
+        <svg id="mini-map" viewBox="0 0 220 142" aria-hidden="true"></svg>
+      </button>
+    </footer>
+    <div id="fatal" class="fatal paper" role="alert" hidden></div>
+  </main>
+  <dialog id="overlay" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <div class="dialog-head"><span class="logo small"><svg><use href="#flower"/></svg></span><div><small id="dialog-kicker"></small><h2 id="dialog-title"></h2></div></div>
+      <div id="dialog-body"></div>
+      <form method="dialog" class="dialog-actions"><button type="submit" id="dialog-ok" autofocus>继续散步</button></form>
+    </div>
+  </dialog>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

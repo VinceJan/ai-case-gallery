@@ -1,0 +1,75 @@
+{
+  "sha256": "5bfc5a250197f0d7b13b985ff602b0cdc07ebbc41117e795f1ef213627d76a45",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "d7aa963f7f0eb1272e445752499d95e81a0db9603c739962bf1448d851479977",
+      "bytes": 28
+    },
+    {
+      "path": "README.md",
+      "sha256": "41e3b880586ff5263fea6c96dcc2f31023f726f7018d1a8a9889c658eeb70577",
+      "bytes": 1362
+    },
+    {
+      "path": "index.html",
+      "sha256": "92763f0fc3738dc1b160d8934172b144664400b2bbc4d2ec37fab0a12f2624c4",
+      "bytes": 5553
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "fae63427d76f9b01e39599085f3bac8c563d00bef041925e43c15f90f6b58893",
+      "bytes": 35836
+    },
+    {
+      "path": "package.json",
+      "sha256": "5614e0a90c18e67e9f74751d06d5b5896102ac99813d6b1cac95dfbc3617ba4a",
+      "bytes": 294
+    },
+    {
+      "path": "src/architecture.js",
+      "sha256": "437a683aa4403817fff07e01cc9214f7e4244a50be0f40e6b8aff495443a34c3",
+      "bytes": 39678
+    },
+    {
+      "path": "src/interface.js",
+      "sha256": "0bb2600e4dd607004efcc856fb8dbec54c3f011625a1d898b0c234ce285212b7",
+      "bytes": 6686
+    },
+    {
+      "path": "src/life.js",
+      "sha256": "5e4fe5ba4811b7d9e2579e9b935ba5089eb2b7f2765a792a098498d87add0f08",
+      "bytes": 26164
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "a08328f66fa533f3cf398179833e8512126da2b7f74cf95c03d93305712079c0",
+      "bytes": 22594
+    },
+    {
+      "path": "src/sim.js",
+      "sha256": "2803ff3b811a6960d71af7c2f1eed222c766b771989cbd38314085fb839d02fb",
+      "bytes": 3207
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "5c7826a3fd622e612c57e29416eb481a2e9c4c43ef2acad3ede442d510352ed2",
+      "bytes": 9344
+    },
+    {
+      "path": "src/world.js",
+      "sha256": "fcf1f49ee6f5190700298942067b3c77afbe73b4d5173dd59540450215e2d5fb",
+      "bytes": 14528
+    },
+    {
+      "path": "test/sim.test.js",
+      "sha256": "e57b13429429f4dda55c3c343e59021152a9fc15f6b0d03b7f1030c1f591b009",
+      "bytes": 5203
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "8b4862b519f64b4dc6d3cf048d2c6953fb3d414e42615274462c7ae2a0167f6b",
+      "bytes": 351
+    }
+  ]
+}

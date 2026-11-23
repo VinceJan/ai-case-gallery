@@ -1,0 +1,71 @@
+{
+  "id": "sakura-town--gpt-6-2-sol--pi--default--r001",
+  "title": "樱花小镇 · GPT-6.2 Sol · Pi",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "GPT-6.2 Sol",
+  "harness": "Pi",
+  "modelEvidence": "本次作品生成的 Pi 主会话助手记录为 openai-codex / gpt-6.2-sol；思考设置为 high。",
+  "date": "2026-11-23",
+  "promptVariant": "原始提示词",
+  "promptHash": "4045e2c3c7f4d3ed3b6aa7645e733e2de3c3b67cce11e785bbdece89dd7bb0af",
+  "description": "沿樱花掩映的站前街散步，替小春送一份竹笋便当。等列车驶过道口，在站长室交接，再去河岸坐坐，捡一片花瓣做成明信片。茶屋、车站和三位居民把这段短旅串了起来。",
+  "notes": [
+    "无需外部素材请求；场景、招牌和音效在浏览器中生成。需要支持 WebGL 2 的浏览器。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "WASD / 方向键移动，E 互动，M 看地图。也可点击或轻触路面步行，点手记里的地点前往任务目标。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "sakura-town--gpt-6-2-sol--pi--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 10,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 51,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
+    "errors": [],
+    "requests": [],
+    "screenshot": "sakura-town--gpt-6-2-sol--pi--default--r001.png",
+    "screenshotHash": "0b7abe7324188767117e8f349afd4d567b6b427c6a0d7320f8f9f0496f653b12",
+    "sourceFingerprint": "5bfc5a250197f0d7b13b985ff602b0cdc07ebbc41117e795f1ef213627d76a45",
+    "demoFingerprint": "870b822c543313853f6a2eb9e9267187e9f546fd08262b4f8ca5f949e12041f7",
+    "date": "2026-11-23T09:54:59.229Z",
+    "origin": "http://127.0.0.1:41969/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-11-23T09:57:22.205Z",
+      "summary": "复核了站前街、落杆道口、河岸和茶屋切面场景。对当前候选发布版实测手记寻路、E 与居民交谈、茶屋取便当、穿越道口、车站交付、河边休息和花瓣明信片支线。刷新后保留完成进度，M 打开地图、Esc 关闭正常。",
+      "sourceFingerprint": "5bfc5a250197f0d7b13b985ff602b0cdc07ebbc41117e795f1ef213627d76a45",
+      "demoFingerprint": "870b822c543313853f6a2eb9e9267187e9f546fd08262b4f8ca5f949e12041f7"
+    }
+  },
+  "sourceFingerprint": "5bfc5a250197f0d7b13b985ff602b0cdc07ebbc41117e795f1ef213627d76a45",
+  "serial": 1,
+  "variant": "default",
+  "effort": "high",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "逐字保存本次执行会话中用户的作品需求正文；不包含浏览器工具说明或后续对话。",
+  "exactModelId": "gpt-6.2-sol",
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "870b822c543313853f6a2eb9e9267187e9f546fd08262b4f8ca5f949e12041f7"
+}

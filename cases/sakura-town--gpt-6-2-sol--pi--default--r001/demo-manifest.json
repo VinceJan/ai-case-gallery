@@ -1,0 +1,35 @@
+{
+  "sha256": "870b822c543313853f6a2eb9e9267187e9f546fd08262b4f8ca5f949e12041f7",
+  "files": [
+    {
+      "path": "THREE-LICENSE.txt",
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "bytes": 1081
+    },
+    {
+      "path": "assets/index-BipBxDTk.js",
+      "sha256": "312eff790ac0da2640bb30d8b1bce6fec1d7058045a6a5aa92406b8e5130d8dd",
+      "bytes": 74761
+    },
+    {
+      "path": "assets/index-D94gKHJq.css",
+      "sha256": "0a97d7b02649001d27a21d1f1bbc5fe8cb5a97d1ce06c57e598bc28c12bb96fc",
+      "bytes": 9262
+    },
+    {
+      "path": "assets/three-core-BzZqwtjR.js",
+      "sha256": "37bd1aed283fec0d591971c5f451a78774815cde620b38f71dc99a6012ce8fd2",
+      "bytes": 196477
+    },
+    {
+      "path": "assets/three-renderer-D4YLiFdX.js",
+      "sha256": "3322dc6fe737192e85852e2936b16821bc3000e5d27939e5a2f4925d19202faf",
+      "bytes": 324327
+    },
+    {
+      "path": "index.html",
+      "sha256": "5ee7c572710a47e3a0b463c5d68297e7a009c68cca084c6a1eb8f9370ac6faa7",
+      "bytes": 5816
+    }
+  ]
+}
