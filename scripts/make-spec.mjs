@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
+import { detectProjectMeta, shanghaiToday } from './spec-utils.mjs';
 
 const args = process.argv.slice(2);
 if (args.includes('--help') || args.includes('-h')) {
@@ -34,74 +35,26 @@ if (!opts.model || !opts.harness || !opts.topic) {
   throw Error('请提供 --model、--harness、--topic；ID 与标题由导入脚本统一生成');
 }
 
-const source = path.resolve(opts.source);
-const entries = await fs.readdir(source);
-let project = '.';
-if (!entries.includes('package.json')) {
-  for (const name of entries) {
-    const p = path.join(source, name);
-    if (
-      (await fs.stat(p)).isDirectory() &&
-      (await fs.access(path.join(p, 'package.json')).then(() => true).catch(() => false))
-    ) {
-      project = name;
-      break;
-    }
-  }
-}
-
-const files = await fs.readdir(path.join(source, project));
-let adapter = opts.adapter || 'materials';
-let entry = opts.entry || 'index.html';
-
-if (!opts.adapter) {
-  if (files.includes('package.json')) {
-    const pkg = JSON.parse(await fs.readFile(path.join(source, project, 'package.json'), 'utf8'));
-    if (pkg.dependencies?.vite || pkg.devDependencies?.vite) adapter = 'vite';
-    else if (pkg.scripts?.build) adapter = 'custom';
-    else if (files.includes('src')) adapter = 'bundle';
-    else adapter = 'static';
-  } else {
-    const html = files.find((f) => f.endsWith('.html'));
-    const svg = files.find((f) => f.endsWith('.svg'));
-    if (html) {
-      adapter = 'html';
-      entry = html;
-    } else if (svg) {
-      adapter = 'svg';
-      entry = svg;
-    }
-  }
-}
-
-const detectedPrompt =
-  opts.prompt ||
-  entries.find((f) => /prompt|提示词|sakura_town|castle\.txt|store\.txt/i.test(f) && /\.(md|txt)$/.test(f));
-
-const todayShanghai = new Intl.DateTimeFormat('en-CA', {
-  timeZone: 'Asia/Shanghai',
-  year: 'numeric',
-  month: '2-digit',
-  day: '2-digit',
-}).format(new Date());
+const detected = await detectProjectMeta(opts.source);
+const promptFile = opts.prompt || detected.detectedPrompt;
 
 const spec = {
-  source,
+  source: detected.source,
   topic: opts.topic,
   ...(opts.title ? { topicLabel: opts.title } : {}),
   model: opts.model,
   harness: opts.harness,
   variant: opts.variant || 'default',
   ...(opts.effort ? { effort: opts.effort } : {}),
-  date: opts.date || todayShanghai,
-  adapter,
-  project,
-  entry,
+  date: opts.date || shanghaiToday(),
+  adapter: opts.adapter || detected.adapter,
+  project: opts.project || detected.project,
+  entry: opts.entry || detected.entry,
   exactModelId: opts['exact-model-id'] || null,
   modelEvidence: opts['model-evidence'] || '用户收录时提供',
   ...(opts['prompt-text']
     ? { promptText: opts['prompt-text'] }
-    : { prompt: detectedPrompt ? path.resolve(source, detectedPrompt) : null }),
+    : { prompt: promptFile ? path.resolve(detected.source, promptFile) : null }),
   ...(opts.description ? { description: opts.description } : {}),
   ...(opts.controls ? { controls: opts.controls } : {}),
 };

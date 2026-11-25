@@ -1,8 +1,11 @@
 ﻿[CmdletBinding()]
 param(
     [switch]$LocalOnly,
-    [string]$Message = 'Update verified gallery cases',
+    [string]$PromoteId = '',
+    [string]$Review = '',
+    [string]$Message = '',
     [string[]]$VerifyOnlineIds = @(),
+    [string]$RemoveSource = '',
     [switch]$SkipClean
 )
 
@@ -26,6 +29,36 @@ try {
     if (-not (Test-Path -LiteralPath 'node_modules')) {
         Write-Host '[0/6] 安装画廊依赖...'
         Invoke-Checked 'npm' @('ci')
+    }
+
+    # Pre-validate -RemoveSource before doing any work (fail-fast safety guard)
+    if ($RemoveSource) {
+        if ($LocalOnly) {
+            throw '-RemoveSource 只能在云端发布并核验通过后使用，不能与 -LocalOnly 同时使用'
+        }
+        Invoke-Checked 'node' @('scripts/safe-remove-source.mjs', '--check', $RemoveSource)
+    }
+
+    # Optional integrated review + promote step (still enforces fingerprint-bound browser verification!)
+    if ($PromoteId) {
+        if (-not $Review) {
+            throw '使用 -PromoteId 时必须提供 -Review "<实际画面复核说明>"（请先查看 .work/verification/<ID>.png）'
+        }
+        Write-Host "[0/6] 登记画面复核并转正收录：$PromoteId"
+        Invoke-Checked 'node' @('scripts/review-case.mjs', $PromoteId, $Review)
+        Invoke-Checked 'node' @('scripts/promote-case.mjs', $PromoteId)
+
+        if (-not $Message) {
+            $caseMeta = Get-Content -LiteralPath (Join-Path 'cases' "$PromoteId\case.json") -Raw -Encoding UTF8 | ConvertFrom-Json
+            $Message = "Add verified $($caseMeta.topic) case for $($caseMeta.model) on $($caseMeta.harness)"
+        }
+        if ($VerifyOnlineIds -notcontains $PromoteId) {
+            $VerifyOnlineIds += $PromoteId
+        }
+    }
+
+    if (-not $Message) {
+        $Message = 'Update verified gallery cases'
     }
 
     Write-Host '[1/6] 运行自动化回归测试 (npm test)...'
@@ -88,9 +121,19 @@ try {
         Invoke-Checked 'node' @('scripts/clean-work.mjs', '--all')
     }
 
+    if ($RemoveSource) {
+        Write-Host '云端与线上验收全部通过，正在按授权安全删除原测试目录...'
+        Invoke-Checked 'node' @('scripts/safe-remove-source.mjs', $RemoveSource)
+    }
+
     Write-Host ''
     Write-Host '发布与云端文件校验完成：https://vincejan.github.io/ai-case-gallery/'
-    Write-Host '原作品测试目录未自动删除；请在确认公网画面无误后按需手动清理。'
+    if ($PromoteId) {
+        Write-Host "新作品详情页：https://vincejan.github.io/ai-case-gallery/cases/$PromoteId/"
+    }
+    if (-not $RemoveSource) {
+        Write-Host '原作品测试目录未自动删除；如需清理可在发布时追加 -RemoveSource "<原目录>"。'
+    }
 } finally {
     Pop-Location
 }

@@ -42,3 +42,28 @@ test('make-spec 默认输出到 .work/spec.json，clean-work --all 清理缓存�
   }
  }finally{const parent=path.resolve(ROOT,'.work');if(path.dirname(base)!==parent)throw Error('测试临时路径越界');await fs.rm(base,{recursive:true,force:true});}
 });
+
+test('spec 校验自动探测与安全删除防护生效，discard 仅操作 .work/incoming',async()=>{
+ const {prepareAndValidateSpec,assertSafeSourceRemoval}=await import('./spec-utils.mjs');
+ await fs.mkdir(path.join(ROOT,'.work'),{recursive:true});
+ const base=await fs.mkdtemp(path.join(ROOT,'.work/spec-guard-'));
+ try{
+  const src=path.join(base,'demo-work');await fs.mkdir(src);await fs.writeFile(path.join(src,'index.html'),'<html></html>');await fs.writeFile(path.join(src,'package.json'),'{"devDependencies":{"vite":"^6.0.0"}}');
+  const enriched=await prepareAndValidateSpec({source:src,topic:'castle',model:'Test Model',harness:'Antigravity'});
+  assert.equal(enriched.adapter,'vite');assert.match(enriched.date,/^\d{4}-\d{2}-\d{2}$/);
+  await assert.rejects(prepareAndValidateSpec({source:src,topic:'castle',model:'M',harness:'H',adapter:'unknown-kind'}),/不支持的 adapter/);
+  await assert.rejects(prepareAndValidateSpec({source:src,topic:'brand-new-topic-xyz',model:'M',harness:'H'}),/topicLabel/);
+  assert.throws(()=>assertSafeSourceRemoval(ROOT),/安全拦截/);
+  assert.throws(()=>assertSafeSourceRemoval(path.join(ROOT,'cases')),/安全拦截/);
+  assert.throws(()=>assertSafeSourceRemoval(path.dirname(ROOT)),/安全拦截/);
+  assert.throws(()=>assertSafeSourceRemoval(path.parse(ROOT).root),/安全拦截/);
+  const allowed=assertSafeSourceRemoval(path.join(path.dirname(ROOT),'InterestingThings','my-demo'));
+  assert.ok(allowed.endsWith(path.join('InterestingThings','my-demo')));
+
+  await fs.mkdir(path.join(base,'.work/incoming/bad-run-r001'),{recursive:true});
+  await fs.mkdir(path.join(base,'registry'),{recursive:true});await fs.writeFile(path.join(base,'registry/topics.json'),'{}');await fs.writeFile(path.join(base,'package.json'),'{"private":true}');
+  await run(process.execPath,[path.join(ROOT,'scripts/discard-candidate.mjs'),'bad-run-r001'],{env:{...process.env,GALLERY_ROOT:base}});
+  await assert.rejects(fs.access(path.join(base,'.work/incoming/bad-run-r001')));
+  await assert.rejects(run(process.execPath,[path.join(ROOT,'scripts/discard-candidate.mjs'),'../cases'],{env:{...process.env,GALLERY_ROOT:base}}));
+ }finally{const parent=path.resolve(ROOT,'.work');if(path.dirname(base)!==parent)throw Error('测试临时路径越界');await fs.rm(base,{recursive:true,force:true});}
+});
