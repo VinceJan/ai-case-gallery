@@ -1,0 +1,75 @@
+{
+  "sha256": "7edc9903d90bf812e5d67b8ab11b3f624007178235cc6ba0637703e59150005f",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "18d05dfde14bff2bfa1f450014df34789448ca31aec5605dc0363f8ccd56d97f",
+      "bytes": 363
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1041a5b4d2ecf30fcfc068656ffa6ffde9c98b46a8fe6a98259505d4a36b6953",
+      "bytes": 35904
+    },
+    {
+      "path": "package.json",
+      "sha256": "a87743f47a6a4e278473751d4f0fde982dbe93ffa05f1abe00cbe93760e49c20",
+      "bytes": 288
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "31a5508dab49cf52c99ee4b3266ce08047b3ef0e1835790f43abee49f04d82f6",
+      "bytes": 4826
+    },
+    {
+      "path": "src/scene/castle.js",
+      "sha256": "2dcaa5731ef5327b3db9863e05131d2bc8f71ccfe8baf136df70d6d8a1ca7b25",
+      "bytes": 27924
+    },
+    {
+      "path": "src/scene/farmland.js",
+      "sha256": "988a75da68f3bd0af00c4ac4cf14ec5d9db4f27e81f8945a7726d263f5862c69",
+      "bytes": 30224
+    },
+    {
+      "path": "src/scene/materials.js",
+      "sha256": "9c58253ec6a061bfe71e1b23a3089182826ec400fb12a23057a8b1bf37051c4d",
+      "bytes": 14333
+    },
+    {
+      "path": "src/scene/outlineComposer.js",
+      "sha256": "667540c7697f7ee38fe4992580bd3265e4798f3628768a83ae68ee00ac6da1c0",
+      "bytes": 9990
+    },
+    {
+      "path": "src/scene/pixelCharacters.js",
+      "sha256": "bf9072679e7b9e03086e33d202750146dac19ded5a3aecef0d9227d6c120c68a",
+      "bytes": 26836
+    },
+    {
+      "path": "src/scene/terrain.js",
+      "sha256": "0707fc4b16b1d21440778fae833cd438f7287744c5737c2ddb726a7e6546bd2e",
+      "bytes": 29575
+    },
+    {
+      "path": "src/scene/village.js",
+      "sha256": "9c451e106b72bc66dd26bbddc13ef9a9a534faf6e157b6b68d330ecdca86ed74",
+      "bytes": 33466
+    },
+    {
+      "path": "src/scene/weather.js",
+      "sha256": "d7299bdd025f9e03663c06b6b1dc28783c12c8f60df6ab1dc6d019e004582618",
+      "bytes": 17306
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "45b14dc794beac11c13d9e8b4712f17ca113aa94ab97bbee06e161fd110f481c",
+      "bytes": 3682
+    },
+    {
+      "path": "src/ui/weatherUI.js",
+      "sha256": "c60f1f036736eae9acb94802a2cee0eeb6415bc124ecb2b3e0dafb7f3e949d9a",
+      "bytes": 3563
+    }
+  ]
+}

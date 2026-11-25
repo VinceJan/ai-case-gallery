@@ -1,0 +1,71 @@
+{
+  "id": "castle--gemini-4-neon--antigravity--default--r001",
+  "title": "城堡与农田 · Gemini 4 Neon · Antigravity",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "Gemini 4 Neon",
+  "harness": "Antigravity",
+  "modelEvidence": "本次 Antigravity 执行会话设置记录模型选择为 Gemini 4 Neon (High)。",
+  "date": "2026-11-25",
+  "promptVariant": "原始提示词",
+  "promptHash": "19a6b5153fed2a6e837a7f7ac1440745e3e8b55d271286e31ff035207c57c95d",
+  "description": "三渲二轮廓线风格的中世纪城堡与农田村庄微缩领地。高台领地宅堡、木筋茅草村庄、风车与水车磨坊及水渠麦田层层递进，像素小骑士与农夫在场景中巡逻劳作，支持晴雨雪雾与日暮星夜切换。",
+  "notes": [
+    "原始提示词同时包含“无任何 UI”与“最后加入天气系统与UI”；默认展示底部克制控制条，点击右下角眼睛图标或按 H 键可切换至无 UI 纯净观赏视角。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "拖拽旋转视角，滚轮缩放，右键平移；底部栏切换晴朗/细雨/飘雪/薄雾与日间/暮色/星夜，点击右下角眼睛图标或按 H 键隐藏/显示界面。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "castle--gemini-4-neon--antigravity--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 1,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 51,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [],
+    "errors": [],
+    "requests": [],
+    "screenshot": "castle--gemini-4-neon--antigravity--default--r001.png",
+    "screenshotHash": "d088e8219b7afec660a6f4e3daca669c679200e26f50a60d8d1920bf0b73a572",
+    "sourceFingerprint": "7edc9903d90bf812e5d67b8ab11b3f624007178235cc6ba0637703e59150005f",
+    "demoFingerprint": "632b752c0e497b5ddf82d885e283aa1f76dbfd0160fc3583c0e1bc939cc16888",
+    "date": "2026-11-25T08:31:30.455Z",
+    "origin": "http://127.0.0.1:55833/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-11-25T08:32:13.951Z",
+      "summary": "已复核 1280x800 实际渲染截图：圆角石砌底座、后方高台城堡（主堡、雉堞、角楼尖顶、城门吊桥、护城河与旗帜）、中部木筋村庄（茅草房、炊烟、集市、水井、马车、铁匠铺、风车与水车磨坊、谷仓草垛）、前方农田水渠小桥、麦田稻草人与牛羊树林均完整呈现，三渲二墨线清晰；村庄前像素小骑士与农田内三名像素农夫受光与柔和轮廓影正常；底部天气与光影控制条无主场景遮挡，Windows Edge 原生 WebGL 后端无脚本或资源错误。",
+      "sourceFingerprint": "7edc9903d90bf812e5d67b8ab11b3f624007178235cc6ba0637703e59150005f",
+      "demoFingerprint": "632b752c0e497b5ddf82d885e283aa1f76dbfd0160fc3583c0e1bc939cc16888"
+    }
+  },
+  "sourceFingerprint": "7edc9903d90bf812e5d67b8ab11b3f624007178235cc6ba0637703e59150005f",
+  "serial": 1,
+  "variant": "default",
+  "effort": "high",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "逐字保存本次执行会话中用户的作品需求正文；不包含后续归档与清理对话。",
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "632b752c0e497b5ddf82d885e283aa1f76dbfd0160fc3583c0e1bc939cc16888"
+}

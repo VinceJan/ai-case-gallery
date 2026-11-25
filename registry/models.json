@@ -66,5 +66,9 @@
   "gpt-6-2-sol": {
     "label": "GPT-6.2 Sol",
     "exactId": "gpt-6.2-sol"
+  },
+  "gemini-4-neon": {
+    "label": "Gemini 4 Neon",
+    "exactId": null
   }
 }
