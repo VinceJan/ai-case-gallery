@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>樱花小镇 | Sakura Town</title>
+    <link rel="stylesheet" href="/src/sakura-ui.css" />
+  </head>
+  <body>
+    <div id="game-container"></div>
+
+    <!-- Title / Welcome Overlay -->
+    <div id="title-overlay" class="title-overlay">
+      <div class="title-card">
+        <div class="title-badge">晚春 · 地方铁路小镇生活模拟</div>
+        <h1 class="title-main">樱花小镇</h1>
+        <div class="title-sub">SAKURA TOWN · 桜町</div>
+        <p class="title-desc">
+          微风拂过樱花铁道，列车缓缓停靠在小小的木造站台。<br />
+          在这里漫步、推开便利店与咖啡馆的门、认识几位邻居，度过一段宁静的春日时光。
+        </p>
+        <div class="title-actions">
+          <button id="btn-start" class="btn-primary">踏入小镇</button>
+          <button id="btn-reset-save" class="btn-secondary hidden">重新开始存档</button>
+        </div>
+        <div class="title-controls-preview">
+          <span><b>WASD</b> 移动</span>
+          <span><b>Shift</b> 小跑</span>
+          <span><b>鼠标拖拽 / Q R</b> 视角</span>
+          <span><b>E / 空格</b> 交互</span>
+          <span><b>Tab</b> 小镇笔记</span>
+          <span><b>1-5</b> 物品栏</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main HUD -->
+    <div id="hud" class="hud hidden">
+      <!-- Top Left: Time, Weather, Location, Event -->
+      <div class="hud-top-left">
+        <div class="panel clock-panel">
+          <div class="clock-row">
+            <span id="hud-time-icon" class="time-icon">☀️</span>
+            <span id="hud-clock" class="clock-text">08:30</span>
+            <span id="hud-period" class="period-tag">早晨</span>
+          </div>
+          <div class="location-row">
+            <span id="hud-location" class="location-text">桜通り商店街</span>
+            <span id="hud-weather" class="weather-tag">晴 · 樱花微风</span>
+          </div>
+          <div id="hud-event-banner" class="event-banner hidden"></div>
+        </div>
+      </div>
+
+      <!-- Top Right: Yen, Quick Buttons -->
+      <div class="hud-top-right">
+        <div class="panel status-panel">
+          <div class="yen-display">¥ <span id="hud-yen">600</span></div>
+          <div class="hud-buttons">
+            <button id="btn-notebook" class="icon-btn" title="小镇笔记 (Tab)">📖 笔记</button>
+            <button id="btn-weather" class="icon-btn" title="切换晴/樱雨">🌦️</button>
+            <button id="btn-time-speed" class="icon-btn" title="切换时间流速">⏩ 1x</button>
+            <button id="btn-audio" class="icon-btn" title="开关声音">🔊</button>
+            <button id="btn-help" class="icon-btn" title="操作说明">?</button>
+          </div>
+        </div>
+        <div id="hud-active-quest" class="panel quest-tracker">
+          <div class="quest-tracker-label">当前记事</div>
+          <div id="hud-quest-title" class="quest-tracker-title">查看家门口的信箱</div>
+          <div id="hud-quest-hint" class="quest-tracker-hint">桜荘门前有一封欢迎信</div>
+        </div>
+      </div>
+
+      <!-- Center: Subtle Crosshair / Interaction Prompt -->
+      <div id="interact-prompt" class="interact-prompt hidden">
+        <span class="key-cap">E</span>
+        <span id="interact-label">交互</span>
+      </div>
+
+      <!-- Sitting indicator -->
+      <div id="sit-indicator" class="sit-indicator hidden">
+        正在休息 · 按 <span class="key-cap">E</span> 或 <span class="key-cap">WASD</span> 起身
+      </div>
+
+      <!-- Toast Notifications -->
+      <div id="toast-container" class="toast-container"></div>
+
+      <!-- Bottom: Inventory Bar & Mini Controls -->
+      <div class="hud-bottom">
+        <div id="inventory-bar" class="inventory-bar"></div>
+        <div class="controls-strip">
+          WASD 移动 · Shift 小跑 · 拖拽/QR 旋转视角 · E 交互 · Tab 笔记 · M 地图
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialogue Overlay -->
+    <div id="dialogue-box" class="dialogue-box hidden">
+      <div class="dialogue-header">
+        <span id="dialogue-speaker" class="dialogue-speaker">佐藤 健二</span>
+        <span id="dialogue-role" class="dialogue-role">喫茶こもれび 店长</span>
+        <span id="dialogue-hearts" class="dialogue-hearts">♥</span>
+      </div>
+      <div id="dialogue-text" class="dialogue-text"></div>
+      <div id="dialogue-choices" class="dialogue-choices"></div>
+      <div id="dialogue-continue" class="dialogue-continue">点击或按 E / 空格 继续 ▸</div>
+    </div>
+
+    <!-- Notebook & Map Modal -->
+    <div id="notebook-modal" class="modal-backdrop hidden">
+      <div class="modal-card notebook-card">
+        <div class="modal-header">
+          <h2>📖 樱花小镇笔记</h2>
+          <div class="modal-tabs">
+            <button class="tab-btn active" data-tab="quests">小镇记事</button>
+            <button class="tab-btn" data-tab="residents">认识的居民</button>
+            <button class="tab-btn" data-tab="map">小镇导览图</button>
+            <button class="tab-btn" data-tab="system">存档与设置</button>
+          </div>
+          <button id="btn-close-notebook" class="close-btn">✕</button>
+        </div>
+        <div id="notebook-content" class="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Simple Info / Notice Modal -->
+    <div id="notice-modal" class="modal-backdrop hidden">
+      <div class="modal-card notice-card">
+        <div class="modal-header">
+          <h2 id="notice-title">町内掲示板</h2>
+          <button id="btn-close-notice" class="close-btn">✕</button>
+        </div>
+        <div id="notice-body" class="modal-body"></div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

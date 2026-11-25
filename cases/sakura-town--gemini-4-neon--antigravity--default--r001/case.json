@@ -1,0 +1,76 @@
+{
+  "id": "sakura-town--gemini-4-neon--antigravity--default--r001",
+  "title": "樱花小镇 · Gemini 4 Neon · Antigravity",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Gemini 4 Neon",
+  "harness": "Antigravity",
+  "modelEvidence": "本次 Antigravity 执行会话设置记录模型选择为 Gemini 4 Neon (High)。",
+  "date": "2026-11-25",
+  "promptVariant": "原始提示词",
+  "promptHash": "fa35446d5503051a9e8821c8b9cb2a408e14217cb5939d61a52fde4186a423c2",
+  "description": "日式动画 Cel-Shading 风格的平面山谷盆地乡镇生活模拟游戏。涵盖駅前商店街、樱川红桥、樱森神社、3 栋可推门进入且屋顶剖切的室内空间、真实停站运行的双节电车与落杆鸣铃踏切道口、5 位按作息漫步的居民与橘猫，以及垂钓、胶片相机拍照、长椅小憩、抽签寄信等日常交互与 5 段生活见闻。",
+  "notes": [
+    "无需外部素材请求，所有 Cel-Shading 纹理、日式招牌、道口铃声、电车与环境音效均在浏览器中程序化生成。",
+    "初始标题层覆盖实时旋转小镇画面，配置 entryAction 自动点击 #btn-start（走进小镇）进入可游玩主视角。",
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "WASD / 方向键移动，Shift 慢跑，鼠标拖拽或 Q/R 旋转视角，滚轮缩放；E / Space 交互、钓鱼提竿与拍照快门，C 键打开胶片相机，Tab 打开手账（见闻/行囊/作息/相册），Esc 退出当前界面。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "sakura-town--gemini-4-neon--antigravity--default--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 2,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 59,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "指定入口"
+    ],
+    "errors": [],
+    "requests": [],
+    "screenshot": "sakura-town--gemini-4-neon--antigravity--default--r001.png",
+    "screenshotHash": "105ab2c57ea05e924928ea0bf43eda256738b1f5cf4396d454873c0375b82275",
+    "sourceFingerprint": "b98ab5959a67e07bf9b5402b39fe88a9a766df26ee9075bcf56deea35dd852d2",
+    "demoFingerprint": "058f4f3a29fc6fb65ea16bcb397c7398e728fbc5e95893438e1ebddf2d23f0e0",
+    "date": "2026-11-25T09:16:47.248Z",
+    "origin": "http://127.0.0.1:16624/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-11-25T09:17:20.717Z",
+      "summary": "已复核 1280x800 实际渲染截图：自动点击 #btn-start 跳过标题层进入可游玩主视角，画面完整无遮挡；中心角色立于商店街斑马线前，左侧町内掲示板、樱花站（さくら·樱花）站牌月台与菜地稻草人清晰可见，正前方踏切道口双柱黄黑杆、红灯、等待电车的小悠、北丘观景长椅与樱花针叶山坡层次自然，右侧橙色凸面镜与红色邮筒细节明确；左上角昼夜时钟金币胶囊与右上角实时圆形小地图/功能按钮清晰无重叠，Cel-Shading 光影柔和，WebGL 全程无脚本或资源错误。",
+      "sourceFingerprint": "b98ab5959a67e07bf9b5402b39fe88a9a766df26ee9075bcf56deea35dd852d2",
+      "demoFingerprint": "058f4f3a29fc6fb65ea16bcb397c7398e728fbc5e95893438e1ebddf2d23f0e0"
+    }
+  },
+  "sourceFingerprint": "b98ab5959a67e07bf9b5402b39fe88a9a766df26ee9075bcf56deea35dd852d2",
+  "serial": 1,
+  "variant": "default",
+  "effort": "high",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "逐字保存本次执行会话中用户的作品需求正文；不包含后续归档与清理对话。",
+  "exactModelId": null,
+  "entryAction": {
+    "selector": "#btn-start"
+  },
+  "buildError": null,
+  "demoFingerprint": "058f4f3a29fc6fb65ea16bcb397c7398e728fbc5e95893438e1ebddf2d23f0e0"
+}

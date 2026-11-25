@@ -1,0 +1,130 @@
+{
+  "sha256": "b98ab5959a67e07bf9b5402b39fe88a9a766df26ee9075bcf56deea35dd852d2",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "020af9f21e42dba743a6761244e071e9fd24820c1b00d4688a171c7611dbd9e9",
+      "bytes": 6736
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "7891006c36779f54c29fa858911f40eabda080288d01f8d5f8bb3ef2e483b301",
+      "bytes": 35898
+    },
+    {
+      "path": "package.json",
+      "sha256": "923f982ce561c7538fb121a9d08b754464c7e078ad33ad944cc9362d8b0428f5",
+      "bytes": 285
+    },
+    {
+      "path": "src/art/PropBuilders.js",
+      "sha256": "83dff50f64557dee0e2a1435af28f15de1cd703023b63acfaae579810fd64472",
+      "bytes": 11750
+    },
+    {
+      "path": "src/art/ToonMaterials.js",
+      "sha256": "c8eba1aad36ec241299afce2036506a7abfedcb350d4ceb825c6ad67228e47b8",
+      "bytes": 9186
+    },
+    {
+      "path": "src/core/AudioSystem.js",
+      "sha256": "6c61bc5d16d6ebee67a863f854f2f75090c04ebd9e2fc8c7da2e0b252dae3d8e",
+      "bytes": 13920
+    },
+    {
+      "path": "src/core/CollisionSystem.js",
+      "sha256": "c4491b1f35b15292deb0a474999446839596a67c43415004fac708918c151562",
+      "bytes": 7491
+    },
+    {
+      "path": "src/core/InputManager.js",
+      "sha256": "e7bacbd3019e0271fb63ac5b93ba286340ae917cf94bbb0d9965d92740bd44bb",
+      "bytes": 3109
+    },
+    {
+      "path": "src/core/TimeSystem.js",
+      "sha256": "c1be3b859a7b800a45ee6bb4379b199be4cdab9b77926c700e87b735924dac40",
+      "bytes": 5397
+    },
+    {
+      "path": "src/entities/CharacterMesh.js",
+      "sha256": "218db87e934d1c613084a8004fe3e3becb37f295be61ac909777fc4ed18b1f9f",
+      "bytes": 8422
+    },
+    {
+      "path": "src/entities/NPCSystem.js",
+      "sha256": "b72c8be2bab1badb652c73917390d3996b29ce04f8cca1cc0f35752acb60e11b",
+      "bytes": 9604
+    },
+    {
+      "path": "src/entities/PlayerController.js",
+      "sha256": "6055ed3e45c218fbe6fd4976f92ff0a58b7012eaa2ecb65909386fd9eecb4522",
+      "bytes": 8179
+    },
+    {
+      "path": "src/gameplay/FishingMiniGame.js",
+      "sha256": "29371d7d5a1c74fe2254bab39199754b2bc4912e0149abb1e2c6e65684876110",
+      "bytes": 5189
+    },
+    {
+      "path": "src/gameplay/GameState.js",
+      "sha256": "d468dfce72835779153417a10f3af82bb9b7d26a6aeaab8fae61da806d624f70",
+      "bytes": 5157
+    },
+    {
+      "path": "src/gameplay/InteractionSystem.js",
+      "sha256": "b8f08d4e6dde9feda91168d0167385b14db2c3c1ee0845566cceadc1e21c461b",
+      "bytes": 21949
+    },
+    {
+      "path": "src/gameplay/PhotoSystem.js",
+      "sha256": "501687d2358aba85abbfab19c447c1899a68e258c779d3955a2c5491079fa267",
+      "bytes": 3801
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "a0b972c9917b647764fbe1355241bdc9086d2d6ad4e23f5e4692ec8794b2de7a",
+      "bytes": 10963
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "8974f62fa6410a1a4475cb9fdeb9ca38acadd830937afc6c302bc7d1f7c3bfeb",
+      "bytes": 16449
+    },
+    {
+      "path": "src/ui/UIManager.js",
+      "sha256": "95049745e548109295292b4f1278e3ef9c9fc1db933e6f6412b9ec66f854f480",
+      "bytes": 15245
+    },
+    {
+      "path": "src/world/AtmosphereSystem.js",
+      "sha256": "124d6ecd2d6337f1d5035c68b22e991565ba5b341b4ed4bde99c83d8046d15e7",
+      "bytes": 7167
+    },
+    {
+      "path": "src/world/RailwaySystem.js",
+      "sha256": "23052dc567e8aa707517e3bd18137a16317f0c59e1fccb6fc344acbc3e1a834b",
+      "bytes": 18344
+    },
+    {
+      "path": "src/world/ShrineBuilder.js",
+      "sha256": "c47ff37deb7b391bb0e1a8b776624bf116fd8837e18014dcb2fefef12bd84115",
+      "bytes": 7502
+    },
+    {
+      "path": "src/world/TerrainBuilder.js",
+      "sha256": "546c30aac071f44469c3359c964b39856a382a14fa813ab8c6c2888865d59282",
+      "bytes": 14523
+    },
+    {
+      "path": "src/world/TownBuilder.js",
+      "sha256": "a2640c8dd0b167f7cab86a0aed5fa0a28c53ecf7eaee9641a08b3f899b0805e1",
+      "bytes": 22802
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "9a9b2688cb3550e91c06d2c12a98747a676603480807990f8d920919d36d0199",
+      "bytes": 206
+    }
+  ]
+}

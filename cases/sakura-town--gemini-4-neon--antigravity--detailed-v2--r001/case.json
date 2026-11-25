@@ -1,0 +1,72 @@
+{
+  "id": "sakura-town--gemini-4-neon--antigravity--detailed-v2--r001",
+  "title": "樱花小镇 · Gemini 4 Neon · Antigravity",
+  "topic": "sakura-town",
+  "topicLabel": "樱花小镇",
+  "model": "Gemini 4 Neon",
+  "harness": "Antigravity",
+  "modelEvidence": "本次 Antigravity 执行会话设置记录模型选择为 Gemini 4 Neon (High)。",
+  "date": "2026-11-25",
+  "promptVariant": "详细版 v2",
+  "promptHash": "f923e192205a0e4ffeefc9e79effac516e55f3dc304a00436df266d749796418",
+  "description": "晚春樱花季日式地方铁路乡镇生活模拟游戏。紧凑盆地内集成了联动道口与双节樱花电车、可进入的桜マート便利店/喫茶こもれび/桜荘/桜駅、山坡桜神社与隐藏林道木屋、5位带作息的核心居民、实体掉罐售货机、昼夜樱雨与小镇记事主循环。",
+  "notes": [
+    "展示版使用 Vite 生产构建，资源路径设为相对路径；不等同于功能验收。"
+  ],
+  "controls": "WASD 移动，Shift 小跑，鼠标拖拽或 Q/R 旋转视角，滚轮缩放，E/空格 交互，Tab 打开小镇笔记，M 打开实时导览图，1–5 使用随身物品。",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "status": "verified",
+  "cover": "verified-cover.webp",
+  "gallery": [
+    "verified-cover.webp"
+  ],
+  "verification": {
+    "id": "sakura-town--gemini-4-neon--antigravity--detailed-v2--r001",
+    "ok": true,
+    "http": 200,
+    "canvases": 1,
+    "svg": 0,
+    "canvasSize": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 800
+    },
+    "canvasVariation": 59,
+    "objectErrors": [],
+    "blockingMenus": [],
+    "rendered": true,
+    "actions": [
+      "踏入小镇"
+    ],
+    "errors": [],
+    "requests": [],
+    "screenshot": "sakura-town--gemini-4-neon--antigravity--detailed-v2--r001.png",
+    "screenshotHash": "b594d353c37206ad9c819e2c52f986b9fc0acb8330b75b3409b22b1ec87f72f6",
+    "sourceFingerprint": "4635d41982f1585e1d0702915bab37ab3387a0e76d73d137217c3c20da15a942",
+    "demoFingerprint": "c01d8d3c6ee4cf8859f576ad045eff13ae70810fabe92505bbb5114a812fc2e1",
+    "date": "2026-11-25T09:16:59.615Z",
+    "origin": "http://127.0.0.1:15765/ai-case-gallery/",
+    "evidenceVersion": 2,
+    "summary": "已加载实际场景并检查入口、交互与渲染。",
+    "manualReview": {
+      "date": "2026-11-25T09:17:47.626Z",
+      "summary": "已复核 1280x800 实际渲染截图：点击「踏入小镇」后进入清爽的晚春日式盆地小镇，左下可见桜荘铭牌、木推拉门、红色信箱与「阅读信箱里的欢迎信」交互提示，中景可见玩家角色、桜駅月台（含黄色盲道、长椅、候车居民）与铁轨，远景可见铁路道口、桜神社鸟居、喫茶こもれび招牌、樱花树、飘落花瓣与群山；左上时间天气、右上记事与底部物品栏布局清晰无遮挡，无脚本与资源报错。",
+      "sourceFingerprint": "4635d41982f1585e1d0702915bab37ab3387a0e76d73d137217c3c20da15a942",
+      "demoFingerprint": "c01d8d3c6ee4cf8859f576ad045eff13ae70810fabe92505bbb5114a812fc2e1"
+    }
+  },
+  "sourceFingerprint": "4635d41982f1585e1d0702915bab37ab3387a0e76d73d137217c3c20da15a942",
+  "serial": 1,
+  "variant": "detailed-v2",
+  "effort": "high",
+  "provenance": null,
+  "promptSource": null,
+  "promptEvidence": "逐字保存本次执行会话中用户的作品需求正文（详细版 v2）；不包含后续归档与清理对话。",
+  "exactModelId": null,
+  "entryAction": null,
+  "buildError": null,
+  "demoFingerprint": "c01d8d3c6ee4cf8859f576ad045eff13ae70810fabe92505bbb5114a812fc2e1"
+}

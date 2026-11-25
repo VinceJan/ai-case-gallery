@@ -1,0 +1,95 @@
+{
+  "sha256": "4635d41982f1585e1d0702915bab37ab3387a0e76d73d137217c3c20da15a942",
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "7b1c1318c2bd64e5f3cd888173294ec787316258e748c5ffd0fcafecf71f4a1a",
+      "bytes": 6003
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "051dc1a4782bdb6c5891fd9bac23c8497862288e83dfcbc5d8a88f5c4040675e",
+      "bytes": 35894
+    },
+    {
+      "path": "package.json",
+      "sha256": "6aebf3827049e1a8b914b89d152a21cf789df379a64c6b8db634ca9839cab310",
+      "bytes": 283
+    },
+    {
+      "path": "src/core/collision.js",
+      "sha256": "4358e25b8ad7d268f7545b4a4886db970614717c612e2160ea0a2de79de808de",
+      "bytes": 7461
+    },
+    {
+      "path": "src/core/player.js",
+      "sha256": "5a56b628f718bdb0a8ada82c6046c93686501a5e9c3fbb14711bf6e06ab4620b",
+      "bytes": 13724
+    },
+    {
+      "path": "src/core/toonMaterials.js",
+      "sha256": "5507c213ba816844cec44932e3b1ea6b2b46167530d6b53f903d6153a133fca6",
+      "bytes": 8227
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "ef83749596346c0a0fb8c6870a8888648be38c8e20b3a9719c89751924f6707e",
+      "bytes": 3997
+    },
+    {
+      "path": "src/sakura-ui.css",
+      "sha256": "f462ca7b54c66bdb778f5622ada58fc89148133d829a12cddc9592d88b6b7cdf",
+      "bytes": 13085
+    },
+    {
+      "path": "src/systems/audio.js",
+      "sha256": "7c08ea57248b4ef9e2d5666f00b6d80751b741ec6202ebeccbbb1d8a83f1024a",
+      "bytes": 8793
+    },
+    {
+      "path": "src/systems/gameState.js",
+      "sha256": "b350c533535df75864b78895fd2af383f2080236bbedb293dc4d94424712a431",
+      "bytes": 10591
+    },
+    {
+      "path": "src/systems/interactions.js",
+      "sha256": "e42950c5f0820af019f32f86b8b8c8c31a8e8e64fe6958b5d4a3995769771f22",
+      "bytes": 26778
+    },
+    {
+      "path": "src/systems/npcs.js",
+      "sha256": "ba8150226a6e0449b727a7e1a80ae93141c25fbc9fc467c319fff927e219a36a",
+      "bytes": 19750
+    },
+    {
+      "path": "src/systems/railway.js",
+      "sha256": "9ee94fe0085abed2666a9fe61c0223116bceadcc028975ce59a0b2bb7e26a3b3",
+      "bytes": 17349
+    },
+    {
+      "path": "src/ui/hud.js",
+      "sha256": "4f3dab2091890eaf3f57ff637d0d46c0a51eca5d550407644e3165362f09b4ef",
+      "bytes": 20143
+    },
+    {
+      "path": "src/world/atmosphere.js",
+      "sha256": "50af573ebb0bf8379db6cab32ca56d52e78736a3e64dfaaeeb681c5f0cbf6446",
+      "bytes": 11461
+    },
+    {
+      "path": "src/world/buildings.js",
+      "sha256": "ec68826ee15a4ece0efbbd5a51d2d17ac242c6854a72605ec17a13f5c3e47ae7",
+      "bytes": 43093
+    },
+    {
+      "path": "src/world/terrain.js",
+      "sha256": "d0ddd752ef1e5666dc0266fc0be32aed7e9425a5d96ca8d909485b15d3b54de1",
+      "bytes": 17319
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "d45db6a924b0b4b15506ee73780f32f35821f133857b3a5c895aca1180d114d0",
+      "bytes": 160
+    }
+  ]
+}
