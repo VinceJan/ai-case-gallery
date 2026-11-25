@@ -23,3 +23,22 @@ const modules=path.join(ROOT,'bundle-case');await fs.mkdir(modules);await fs.wri
   const script=path.join(base,'worker.mjs');await fs.writeFile(script,worker);const result=await run(process.execPath,[script],{env:{...process.env,GALLERY_ROOT:base},timeout:120000,maxBuffer:200000});assert.ok(result.stdout.includes('隔离构建通过'));
  }finally{const parent=path.resolve(ROOT,'.work');if(path.dirname(base)!==parent)throw Error('测试临时路径越界');await fs.rm(base,{recursive:true,force:true});}
 });
+
+test('make-spec 默认输出到 .work/spec.json，clean-work --all 清理缓存但保留 .work/incoming',async()=>{
+ await fs.mkdir(path.join(ROOT,'.work'),{recursive:true});
+ const base=await fs.mkdtemp(path.join(ROOT,'.work/clean-test-'));
+ try{
+  await fs.mkdir(path.join(base,'registry'));await fs.writeFile(path.join(base,'registry/topics.json'),'{"castle":{"label":"城堡与农田"}}');await fs.writeFile(path.join(base,'package.json'),'{"private":true}');
+  const src=path.join(base,'sample-work');await fs.mkdir(src);await fs.writeFile(path.join(src,'index.html'),'<html></html>');await fs.writeFile(path.join(src,'package.json'),'{"devDependencies":{"vite":"^6.0.0"}}');
+  await run(process.execPath,[path.join(ROOT,'scripts/make-spec.mjs'),'--source',src,'--topic','castle','--model','Test Model','--harness','Antigravity','--effort','high'],{env:{...process.env,GALLERY_ROOT:base}});
+  const spec=JSON.parse(await fs.readFile(path.join(base,'.work/spec.json'),'utf8'));
+  assert.equal(spec.adapter,'vite');assert.equal(spec.effort,'high');assert.equal(spec.topic,'castle');
+  await fs.mkdir(path.join(base,'.work/incoming/keep-me'),{recursive:true});await fs.writeFile(path.join(base,'.work/incoming/keep-me/case.json'),'{}');
+  await fs.mkdir(path.join(base,'.work/build/tmp-case'),{recursive:true});await fs.mkdir(path.join(base,'.work/verification'),{recursive:true});await fs.mkdir(path.join(base,'.work/cloud-check-ABC'),{recursive:true});await fs.writeFile(path.join(base,'.work/debug.log'),'log');await fs.mkdir(path.join(base,'dist'),{recursive:true});await fs.mkdir(path.join(base,'public/generated'),{recursive:true});
+  await run(process.execPath,[path.join(ROOT,'scripts/clean-work.mjs'),'--all'],{env:{...process.env,GALLERY_ROOT:base}});
+  await fs.access(path.join(base,'.work/incoming/keep-me/case.json'));
+  for(const gone of ['.work/build','.work/verification','.work/spec.json','.work/cloud-check-ABC','.work/debug.log','dist','public/generated']){
+   await assert.rejects(fs.access(path.join(base,gone)));
+  }
+ }finally{const parent=path.resolve(ROOT,'.work');if(path.dirname(base)!==parent)throw Error('测试临时路径越界');await fs.rm(base,{recursive:true,force:true});}
+});

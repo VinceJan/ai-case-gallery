@@ -1,16 +1,16 @@
 # 造物集 · AI Case Gallery
 
-[在线作品集](https://vincejan.github.io/ai-case-gallery/) · [维护流程](docs/maintenance.md) · [命名规范](docs/naming.md)
+[在线作品集](https://vincejan.github.io/ai-case-gallery/) · [标准维护与发布流程 (SOP)](docs/maintenance.md) · [命名规范](docs/naming.md) · [Spec 模板](docs/spec.example.json)
 
-只收藏能在浏览器中真正展示的成品。每条保存模型/Harness 依据、提示词来源、可恢复源码、实际截图、发布版与文件指纹。
+只收藏能在浏览器中真正运行的 AI 作品成品。每条案例完整保留模型/Harness 来源依据、原始提示词、可恢复源码（`source/`）、独立静态展示版（`demo/`）、实测封面图与 SHA-256 文件指纹。
 
-固定维护项目：`E:\tmp\ai-case-gallery`。以后把新作品路径和模型、Harness、题目、提示词交给 Agent，按 [AGENTS.md](AGENTS.md) 与 [项目 Skill](.agents/skills/maintain-gallery/SKILL.md) 完成收录和发布。使用普通文件与 Git，不需要上传账号或后台服务。
+---
 
-流程：导入本地候选 → 独立构建 → 浏览器加载 → 实际画面和必要交互复核 → 收录 → 推送 → 公网与云端恢复校验。设计阶段和失败候选留本地待处理区，不进入网站。具体命令见维护文档。
+## 快速开始
 
-案例标题：`题目 · 模型 · Harness`。稳定目录：`题目--模型--harness--版本--r001`。版本和运行序号区分同模型的重复测试；旧详情与作品入口保留跳转。
+### 1. 本地预览网站
 
-本地预览（Node 24、npm、Git，验证使用本机 Edge；发布需要登录 gh）：
+环境要求：Node 24、npm、Git（浏览器验证优先使用本机 Edge，自动回退 Chromium；推送发布需登录 `gh`）。
 
 ```powershell
 cd E:\tmp\ai-case-gallery
@@ -20,10 +20,43 @@ npm run build
 npm run preview
 ```
 
-`source/` 不保存依赖和 .git；依赖由 package.json 和锁文件重新安装。`demo/` 保存独立静态发布版。站点更新直接使用已验证 demo，不重新安装全部案例依赖。支持 Vite、JS 打包、单文件 HTML、静态目录与原始 SVG。
+### 2. 收录并发布一个新作品（三步完成）
 
-GitHub Actions 是推送后的自动检查和发布流程，GitHub Pages 是托管这些网页的地方。本站两者已配置完成。已收录并验收的变更可以运行 `./Publish-Cases.ps1` 发布；候选的人工复核由 Agent 完成。
+详细字段与故障排查请直接阅读 [docs/maintenance.md](docs/maintenance.md)；把新作品交给 AI Agent 时，Agent 会按 [AGENTS.md](AGENTS.md) 与 [maintain-gallery Skill](.agents/skills/maintain-gallery/SKILL.md) 自动执行以下三步：
 
-原测试目录不会自动删除。发布后先确认云端源码、提示词和素材齐全、可以取回，再按用户要求清理；日常临时构建依赖用 clean-work 脚本移除。
+```powershell
+# 第一步：参考 docs/spec.example.json 准备好 .work/spec.json，一键导入 + 隔离构建 + 浏览器验收
+npm run intake -- --spec .work/spec.json
 
-组织方式参考 [Nagi Bench](https://github.com/nagi-studio/nagi-bench)，恢复自关闭 PR 的作品记录原始提交与来源。标准任务/注册数据遵循 CC-BY-4.0，许可保留于 licenses/NAGI-DATA.txt；站点代码采用 MIT，案例沿用各自原有许可。本次恢复 PR 的标准任务原文已由用户确认使用。
+# 第二步：打开 .work/verification/<ID>.png 人工复核画面，登记复核并转正收录
+npm run review -- <ID> "具体画面复核说明"
+npm run promote -- <ID>
+
+# 第三步：一键回归测试、指纹校验、推送、监控 Pages、云端逐文件核验与自动清理本地缓存
+./Publish-Cases.ps1 -Message "Add verified <作品> case for <Model> on <Harness>" -VerifyOnlineIds "<ID>"
+```
+
+### 3. 日常清理本地临时产物
+
+```powershell
+npm run clean
+```
+
+会自动清理 `.work/build`、`.work/verification`、临时云端克隆目录、`dist/`、`.astro/` 与 `public/generated/`，同时严格保留 `.work/incoming/` 中的待处理/历史排除候选，且不会擅自删除原始测试目录。
+
+---
+
+## 目录结构
+
+- `cases/<ID>/`：已验收的正式案例（`source/` 原始源码、`demo/` 静态发布版、`media/` 封面、`prompt.md`、`case.json` 与清单文件）。
+- `registry/`：统一的题目、模型、Harness 词表与迁移记录。
+- `scripts/`：导入、隔离构建、浏览器验收、人工复核、转正、云端校验与清理脚本。
+- `docs/`：标准化收录与发布 SOP、命名规范与 Spec 模板。
+- `.work/`（Git 忽略）：本地临时构建与验收工作区（`.work/incoming/` 存放待验收或排除候选）。
+
+---
+
+## 命名与归属说明
+
+- 展示标题统一为 `题目 · 模型 · Harness`；目录与稳定链接格式为 `<topic>--<model>--<harness>--<variant>--r001`（由 `scripts/naming.mjs` 统一生成，旧链接自动跳转）。
+- 组织方式参考 [Nagi Bench](https://github.com/nagi-studio/nagi-bench)，恢复自关闭 PR 的作品保留原始提交与来源。标准任务/注册数据遵循 CC-BY-4.0（见 `licenses/NAGI-DATA.txt`）；站点代码采用 MIT，各案例沿用原有许可。

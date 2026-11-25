@@ -7,11 +7,19 @@
     "dev": "astro dev --host 127.0.0.1",
     "build": "node scripts/prepare-site.mjs && astro build",
     "preview": "astro preview --host 127.0.0.1",
+    "spec": "node scripts/make-spec.mjs",
+    "intake": "node scripts/intake-case.mjs",
     "import": "node scripts/import-case.mjs",
     "rebuild": "node scripts/build-demo.mjs",
+    "verify:new": "node scripts/verify-new.mjs",
+    "review": "node scripts/review-case.mjs",
+    "promote": "node scripts/promote-case.mjs",
     "check": "node scripts/check.mjs",
     "test": "node --test scripts/*.test.mjs",
-    "verify:browser": "node scripts/verify-browser.mjs"
+    "verify:browser": "node scripts/verify-browser.mjs",
+    "verify:site": "node scripts/verify-site.mjs",
+    "verify:cloud": "node scripts/verify-cloud.mjs",
+    "clean": "node scripts/clean-work.mjs --all"
   },
   "dependencies": {
     "astro": "7.3.5",

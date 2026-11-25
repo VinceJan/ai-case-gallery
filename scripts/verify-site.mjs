@@ -1,8 +1,97 @@
-import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';import {chromium} from 'playwright';import {ROOT,readCases} from './lib.mjs';
-const origin=process.argv.find(x=>x.startsWith('--url='))?.slice(6)||'http://127.0.0.1:4321/ai-case-gallery/';const records=await readCases();const browser=await chromium.launch({executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe',headless:true});const context=await browser.newContext({viewport:{width:1440,height:960},permissions:['clipboard-read','clipboard-write']});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto(origin);assert.equal(await page.locator('[data-card]').count(),records.length);assert.equal(await page.locator('#status-filter').count(),0);
-for(const topic of new Set(records.map(c=>c.topic))){await page.locator(`[data-topic-filter="${topic}"]`).click();assert.equal(await page.locator('[data-card]:visible').count(),records.filter(c=>c.topic===topic).length);}
-await page.locator('[data-topic-filter="all"]').click();await page.locator('#search').fill('no-result-xyz');assert.equal(await page.locator('[data-card]:visible').count(),0);await page.locator('#reset-filters').click();assert.equal(await page.locator('[data-card]:visible').count(),records.length);
-await fs.mkdir(path.join(ROOT,'.work/verification'),{recursive:true});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(ROOT,'.work/verification/site-desktop.png'),fullPage:false});await page.setViewportSize({width:390,height:844});await page.evaluate(()=>scrollTo(0,0));await page.screenshot({path:path.join(ROOT,'.work/verification/site-mobile.png')});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
-const old=records.find(c=>c.legacyIds?.includes('konbini-offline-unattributed'));await page.goto(origin+'cases/konbini-offline-unattributed/');await page.waitForURL('**/cases/'+old.id+'/');assert.ok((await page.locator('h1').innerText()).includes('Space Bunny Alpha'));assert.ok((await page.locator('h1').innerText()).includes('Pi'));assert.equal(await page.locator('#load-demo').count(),0);assert.equal(await page.locator('article img:visible').count(),0);assert.equal(await page.locator('.work-fold[open]').count(),0);assert.ok(await page.locator('#demo-frame').getAttribute('src'));assert.equal(await page.getByText('案例编号',{exact:true}).isVisible(),false);await page.locator('#generation-fold>summary').click();assert.equal(await page.getByText('案例编号',{exact:true}).isVisible(),true);await page.locator('#generation-fold>summary').click();assert.equal(await page.getByRole('link',{name:'在新窗口打开作品'}).getAttribute('target'),'_blank');
-const recovered=records.find(c=>c.provenance?.kind==='github-pr');if(recovered){await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{writeText:async text=>{window.__testCopied=text;}}}));await page.goto(origin+'cases/'+recovered.id+'/');assert.equal(await page.getByRole('link',{name:'原始 PR ↗'}).isVisible(),false);await page.locator('#run-fold>summary').click();assert.ok(await page.getByRole('link',{name:'原始 PR ↗'}).isVisible());await page.locator('#run-fold>summary').click();await page.locator('#prompt-fold>summary').click();await page.locator('#copy-prompt').click();assert.equal(await page.evaluate(()=>window.__testCopied),await fs.readFile(path.join(ROOT,'cases',recovered.id,'prompt.md'),'utf8'));const canvas=page.frameLocator('#demo-frame').locator('canvas').first();await canvas.waitFor({timeout:45000});assert.ok(await canvas.isVisible());}
-await page.goto(origin+'compare/?runs=konbini-offline-unattributed,konbini-space-bunny-pi');await page.locator('.compare-item').first().waitFor();assert.equal(await page.locator('.compare-item').count(),2);assert.equal(errors.length,0,errors.join('\n'));await browser.close();console.log('通过：首页筛选、手机布局、详情默认真实作品、信息折叠、提示词复制、PR 来源与旧链接跳转/对比。');
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { chromium } from 'playwright';
+import { ROOT, readCases } from './lib.mjs';
+
+const origin =
+  process.argv.find((x) => x.startsWith('--url='))?.slice(6) ||
+  'http://127.0.0.1:4321/ai-case-gallery/';
+const records = await readCases();
+
+const edge = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
+const executablePath = await fs.access(edge).then(() => edge).catch(() => undefined);
+const browser = await chromium.launch({ executablePath, headless: true });
+
+try {
+  const context = await browser.newContext({
+    viewport: { width: 1440, height: 960 },
+    permissions: ['clipboard-read', 'clipboard-write'],
+  });
+  const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror', (e) => errors.push(e.message));
+
+  await page.goto(origin);
+  assert.equal(await page.locator('[data-card]').count(), records.length);
+  assert.equal(await page.locator('#status-filter').count(), 0);
+
+  for (const topic of new Set(records.map((c) => c.topic))) {
+    await page.locator(`[data-topic-filter="${topic}"]`).click();
+    assert.equal(
+      await page.locator('[data-card]:visible').count(),
+      records.filter((c) => c.topic === topic).length
+    );
+  }
+
+  await page.locator('[data-topic-filter="all"]').click();
+  await page.locator('#search').fill('no-result-xyz');
+  assert.equal(await page.locator('[data-card]:visible').count(), 0);
+  await page.locator('#reset-filters').click();
+  assert.equal(await page.locator('[data-card]:visible').count(), records.length);
+
+  await fs.mkdir(path.join(ROOT, '.work/verification'), { recursive: true });
+  await page.evaluate(() => scrollTo(0, 0));
+  await page.screenshot({ path: path.join(ROOT, '.work/verification/site-desktop.png'), fullPage: false });
+
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.evaluate(() => scrollTo(0, 0));
+  await page.screenshot({ path: path.join(ROOT, '.work/verification/site-mobile.png') });
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+
+  const old = records.find((c) => c.legacyIds?.includes('konbini-offline-unattributed'));
+  await page.goto(origin + 'cases/konbini-offline-unattributed/');
+  await page.waitForURL('**/cases/' + old.id + '/');
+  assert.ok((await page.locator('h1').innerText()).includes('Space Bunny Alpha'));
+  assert.ok((await page.locator('h1').innerText()).includes('Pi'));
+  assert.equal(await page.locator('#load-demo').count(), 0);
+  assert.equal(await page.locator('article img:visible').count(), 0);
+  assert.equal(await page.locator('.work-fold[open]').count(), 0);
+  assert.ok(await page.locator('#demo-frame').getAttribute('src'));
+  assert.equal(await page.getByText('案例编号', { exact: true }).isVisible(), false);
+  await page.locator('#generation-fold>summary').click();
+  assert.equal(await page.getByText('案例编号', { exact: true }).isVisible(), true);
+  await page.locator('#generation-fold>summary').click();
+  assert.equal(await page.getByRole('link', { name: '在新窗口打开作品' }).getAttribute('target'), '_blank');
+
+  const recovered = records.find((c) => c.provenance?.kind === 'github-pr');
+  if (recovered) {
+    await page.addInitScript(() =>
+      Object.defineProperty(navigator, 'clipboard', {
+        value: { writeText: async (text) => { window.__testCopied = text; } },
+      })
+    );
+    await page.goto(origin + 'cases/' + recovered.id + '/');
+    assert.equal(await page.getByRole('link', { name: '原始 PR ↗' }).isVisible(), false);
+    await page.locator('#run-fold>summary').click();
+    assert.ok(await page.getByRole('link', { name: '原始 PR ↗' }).isVisible());
+    await page.locator('#run-fold>summary').click();
+    await page.locator('#prompt-fold>summary').click();
+    await page.locator('#copy-prompt').click();
+    assert.equal(
+      await page.evaluate(() => window.__testCopied),
+      await fs.readFile(path.join(ROOT, 'cases', recovered.id, 'prompt.md'), 'utf8')
+    );
+    const canvas = page.frameLocator('#demo-frame').locator('canvas').first();
+    await canvas.waitFor({ timeout: 45000 });
+    assert.ok(await canvas.isVisible());
+  }
+
+  await page.goto(origin + 'compare/?runs=konbini-offline-unattributed,konbini-space-bunny-pi');
+  await page.locator('.compare-item').first().waitFor();
+  assert.equal(await page.locator('.compare-item').count(), 2);
+  assert.equal(errors.length, 0, errors.join('\n'));
+  console.log('通过：首页筛选、手机布局、详情默认真实作品、信息折叠、提示词复制、PR 来源与旧链接跳转/对比。');
+} finally {
+  await browser.close();
+}

@@ -1,0 +1,23 @@
+{
+  "source": "E:\\tmp\\your-new-work-folder",
+  "topic": "castle",
+  "topicLabel": "城堡与农田",
+  "model": "Gemini 4 Neon",
+  "harness": "Antigravity",
+  "variant": "default",
+  "effort": "high",
+  "date": "2026-11-25",
+  "adapter": "vite",
+  "project": ".",
+  "entry": "index.html",
+  "exactModelId": null,
+  "modelEvidence": "本次 Antigravity 会话记录的模型选择为 Gemini 4 Neon (High)。",
+  "promptVariant": "原始提示词",
+  "promptEvidence": "逐字保存本次会话中用户给出的作品需求原文。",
+  "promptText": "在此粘贴本次生成作品使用的完整原始提示词。",
+  "description": "一句话概括作品画面、风格与核心交互，用于画廊卡片与详情页介绍。",
+  "controls": "拖拽旋转视角，滚轮缩放；说明作品内的快捷键或切换按钮。",
+  "notes": [
+    "如有打包适配、锁文件补充或 UI 显隐说明，写在这里。"
+  ]
+}

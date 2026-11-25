@@ -1,14 +1,28 @@
 ---
 name: maintain-gallery
-description: 收录、恢复、验证和发布本项目的 AI 案例。用于用户把作品路径交给 Agent、修正模型归属、从 PR 恢复作品或维护画廊；不用于生成新的测试作品。
+description: 收录、恢复、验证、发布和清理「造物集（ai-case-gallery）」的 AI 作品案例。用于用户将新作品目录交给 Agent 合并上线、修正模型归属、从 PR 恢复作品或维护画廊；不用于生成新的测试作品。
 ---
 
-在 `E:\tmp\ai-case-gallery` 工作。读取项目根 AGENTS.md、docs/maintenance.md、docs/naming.md，按当前用户授权执行。
+在 `E:\tmp\ai-case-gallery` 中工作。执行前读取 `AGENTS.md`、`docs/maintenance.md`、`docs/naming.md`。
 
-将新作品导入 `.work/incoming/`，使用命名脚本分配 ID。保留原始源码与可恢复素材，记录提示词/模型归属依据。构建后运行浏览器，查看实际画面与必要交互；菜单、空白和失败产物不收录。用 review-case 记录具体复核结果，promote-case 才能移入正式 cases。
+## 标准三步操作
 
-发布时检查文件指纹、tracked 文件、站点构建和公网结果；用 verify-cloud 从 GitHub 重新取回确认。原目录删除仍以用户明确要求为准，不把发布成功当作删除授权。失败候选留本地，说明实际失败原因。
+1. **导入、构建与本地浏览器验收**
+   - 参考 `docs/spec.example.json` 写入 `.work/spec.json`（或运行 `npm run spec`），明确填写 `source`、`topic`、`model`、`harness`、`adapter`、`modelEvidence`、提示词原文及操作说明。
+   - 运行 `npm run intake -- --spec .work/spec.json`，自动完成 `import → build-demo → verify-new`。
+   - 若构建或运行失败，停止转正，保留在 `.work/incoming/` 并如实说明原因。
 
-新模型/Harness 使用统一词表；未知证据写明不确定性。PR 恢复要保留提交、文件路径、注册信息与第三方许可。实现使用现有脚本，不增加上传后台。
+2. **人工查看截图并转正收录**
+   - 实际查看 `.work/verification/<ID>.png`，确认画面完整、交互正常、无开始层或白屏。
+   - 运行 `npm run review -- <ID> "具体看到了什么，操作与 WebGL 检查结果是什么"`。
+   - 运行 `npm run promote -- <ID>`，移入 `cases/<ID>/` 并自动更新 `registry/*.json`。
 
-验收绑定实际 source/demo 文件指纹；重建后重新验证并查看画面，不能沿用旧复核。公开详情默认呈现作品，维护信息折叠。用户明确要求有原作错误的三个 PR 候选继续排除，不修模型代码。
+3. **全检、推送、云端核验与本地清理**
+   - 运行 `./Publish-Cases.ps1 -Message "Add verified <作品> case for <Model> on <Harness>" -VerifyOnlineIds "<ID>"`。
+   - 脚本自动完成：`npm test` → `npm run check -- --tracked` → `npm run build` → `git push` → 监控 `deploy.yml` → `verify-cloud` 全新浅克隆逐文件比对 → `verify-browser --online` 线上渲染检查 → `npm run clean`（自动清理临时构建/截图/`dist`，并保留 `.work/incoming/`）。
+
+## 关键守则
+
+- 验收与人工复核严格绑定当前 `source`/`demo` 文件指纹，重建后必须重新验收与看图，不得沿用旧记录。
+- `source/` 保留原作，展示适配在 `demo/` 完成并写入 `notes`；不修改模型业务代码以凑收录数（2026-10-03 确认的 3 个原作错误 PR 候选继续保留在 `.work/incoming/` 并排除）。
+- 仅使用现有纯文件与 Git 脚本，不新增后台或上传系统；未获用户明确指令不删除用户原始测试目录，确认云端核验通过并获授权后再清理。
