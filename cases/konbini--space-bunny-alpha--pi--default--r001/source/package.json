@@ -11,7 +11,7 @@
     "check": "node tools/check.mjs environment street poles railway station plaza shopsA shopsB houses sakura trains crossing props vehicles characters petals"
   },
   "devDependencies": {
-    "puppeteer-core": "^23.11.1",
+    "puppeteer-core": "^25.18.1",
     "three": "0.170.0"
   }
 }
